@@ -1,0 +1,14 @@
+{
+  "name": "irrivert-db-local",
+  "private": true,
+  "type": "module",
+  "description": "Postgres local para desenvolvimento sem Docker: PGlite + PostGIS servindo o protocolo do Postgres na porta 5433.",
+  "scripts": {
+    "start": "node servidor.mjs"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "0.5.11",
+    "@electric-sql/pglite-postgis": "0.2.11",
+    "@electric-sql/pglite-socket": "0.2.14"
+  }
+}

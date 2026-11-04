@@ -1,0 +1,2021 @@
+{
+ "openapi": "3.0.0",
+ "info": {
+  "title": "API iCrop Vision",
+  "description": "Esta api permite o acesso  para consulta dos dados de clima, manejo e energia relacionados com as fazendas do usuário.<br><strong>É necessário um token de acesso para a consulta dos dados.</strong>",
+  "version": "2.1.1"
+ },
+ "servers": [
+  {
+   "url": "https://vision.icrop.online/rest/v2/data"
+  }
+ ],
+ "tags": [
+  {
+   "name": "Clima",
+   "description": "Dados relacionados ao clima"
+  },
+  {
+   "name": "Manejo",
+   "description": "Dados relacionados ao manejo das parcelas"
+  },
+  {
+   "name": "Energia",
+   "description": "Contas e lançamentos de energia"
+  },
+  {
+   "name": "Apoio",
+   "description": "Recursos auxiliares da API"
+  }
+ ],
+ "paths": {
+  "/energia/contas": {
+   "get": {
+    "tags": [
+     "Energia"
+    ],
+    "summary": "Listar contas de energia",
+    "description": "Lista as contas de energia disponíveis para o usuário autenticado.",
+    "operationId": "energia_contas",
+    "responses": {
+     "200": {
+      "description": "Operação realizada com sucesso.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/ContaEnergia"
+         }
+        }
+       }
+      }
+     },
+     "403": {
+      "description": "Falha de autenticação.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     },
+     "500": {
+      "description": "Erro interno. Consultar setor administrativo.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "Bearer": []
+     }
+    ]
+   }
+  },
+  "/energia/lancamentos/{conta}": {
+   "get": {
+    "tags": [
+     "Energia"
+    ],
+    "summary": "Listar lançamentos de energia",
+    "description": "Lista os lançamentos vinculados a uma conta de energia.",
+    "operationId": "energia_lancamentos",
+    "parameters": [
+     {
+      "name": "conta",
+      "in": "path",
+      "description": "ID da conta de energia",
+      "required": true,
+      "schema": {
+       "type": "integer"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Operação realizada com sucesso.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "total": {
+           "type": "integer",
+           "example": 77
+          },
+          "data": {
+           "type": "array",
+           "items": {
+            "$ref": "#/components/schemas/LancamentoEnergiaResumo"
+           }
+          }
+         }
+        }
+       }
+      }
+     },
+     "403": {
+      "description": "Falha de autenticação.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     },
+     "404": {
+      "description": "Conta de energia não localizada ou sem acesso.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     },
+     "500": {
+      "description": "Erro interno. Consultar setor administrativo.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "Bearer": []
+     }
+    ]
+   }
+  },
+  "/energia/lancamentos/{conta}/{lid}": {
+   "get": {
+    "tags": [
+     "Energia"
+    ],
+    "summary": "Consultar um lançamento de energia",
+    "description": "Consulta um lançamento pelo ID e pela conta de energia.",
+    "operationId": "energia_lancamento",
+    "parameters": [
+     {
+      "name": "conta",
+      "in": "path",
+      "description": "ID da conta de energia",
+      "required": true,
+      "schema": {
+       "type": "integer"
+      }
+     },
+     {
+      "name": "lid",
+      "in": "path",
+      "description": "ID do lançamento de energia",
+      "required": true,
+      "schema": {
+       "type": "integer"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Operação realizada com sucesso.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/LancamentoEnergia"
+        }
+       }
+      }
+     },
+     "403": {
+      "description": "Falha de autenticação.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     },
+     "404": {
+      "description": "Conta de energia não localizada ou sem acesso.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Lançamento não localizado.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     },
+     "500": {
+      "description": "Erro interno. Consultar setor administrativo.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "Bearer": []
+     }
+    ]
+   }
+  },
+  "/estacoes": {
+   "get": {
+    "tags": [
+     "Clima"
+    ],
+    "summary": "Listar as estações climáticas disponíveis",
+    "description": "Listar as estações climáticas disponíveis",
+    "operationId": "estacoes",
+    "responses": {
+     "200": {
+      "description": "Successful operation",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/Estacao"
+         }
+        }
+       }
+      }
+     },
+     "403": {
+      "description": "Falha de autenticação.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     },
+     "500": {
+      "description": "Erro interno. Consultar setor administrativo.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "Bearer": []
+     }
+    ]
+   }
+  },
+  "/clima_por_dia/{estacao}": {
+   "get": {
+    "tags": [
+     "Clima"
+    ],
+    "summary": "Consultar os dados climáticos por dia de uma determinada estação",
+    "description": "Consultar os dados climáticos pode dia de uma determinada estação",
+    "operationId": "clima_por_dia",
+    "parameters": [
+     {
+      "name": "estacao",
+      "in": "path",
+      "description": "ID da estação a ser pesquisada",
+      "required": true,
+      "explode": true,
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "inicio",
+      "in": "query",
+      "description": "Data inicio dos dados (intervalo máximo 1 ano) YYYY-MM-DD",
+      "required": false,
+      "explode": true,
+      "schema": {
+       "type": "string",
+       "format": "date"
+      }
+     },
+     {
+      "name": "fim",
+      "in": "query",
+      "description": "Data fim dos dados (intervalo máximo 1 ano) YYYY-MM-DD",
+      "required": false,
+      "explode": true,
+      "schema": {
+       "type": "string",
+       "format": "date"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful operation",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/ClimaDiario"
+         }
+        }
+       }
+      }
+     },
+     "403": {
+      "description": "Falha de autenticação.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Erro de validação.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     },
+     "500": {
+      "description": "Erro interno. Consultar setor administrativo.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "Bearer": []
+     }
+    ]
+   }
+  },
+  "/clima_por_hora/{estacao}": {
+   "get": {
+    "tags": [
+     "Clima"
+    ],
+    "summary": "Consultar os dados climáticos por hora de uma determinada estação",
+    "description": "Consultar os dados climáticos por hora de uma determinada estação",
+    "operationId": "clima_por_hora",
+    "parameters": [
+     {
+      "name": "estacao",
+      "in": "path",
+      "description": "ID da estação a ser pesquisada",
+      "required": true,
+      "explode": true,
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "inicio",
+      "in": "query",
+      "description": "Data inicio dos dados (intervalo máximo 1 mês) YYYY-MM-DD",
+      "required": false,
+      "explode": true,
+      "schema": {
+       "type": "string",
+       "format": "date"
+      }
+     },
+     {
+      "name": "fim",
+      "in": "query",
+      "description": "Data fim dos dados (intervalo máximo 1 mês) YYYY-MM-DD",
+      "required": false,
+      "explode": true,
+      "schema": {
+       "type": "string",
+       "format": "date"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful operation",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/ClimaHora"
+         }
+        }
+       }
+      }
+     },
+     "403": {
+      "description": "Falha de autenticação.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Erro de validação.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     },
+     "500": {
+      "description": "Erro interno. Consultar setor administrativo.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "Bearer": []
+     }
+    ]
+   }
+  },
+  "/previsao/{estacao}": {
+   "get": {
+    "tags": [
+     "Clima"
+    ],
+    "summary": "Consultar os dados diários de previsão para os próximos dias de uma determinada estação",
+    "description": "Consultar os dados diários de previsão para os próximos dias de uma determinada estação",
+    "operationId": "previsao",
+    "parameters": [
+     {
+      "name": "estacao",
+      "in": "path",
+      "description": "ID da estação a ser pesquisada",
+      "required": true,
+      "explode": true,
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful operation",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/Previsao"
+         }
+        }
+       }
+      }
+     },
+     "403": {
+      "description": "Falha de autenticação.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Erro de validação.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     },
+     "500": {
+      "description": "Erro interno. Consultar setor administrativo.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "Bearer": []
+     }
+    ]
+   }
+  },
+  "/fazendas": {
+   "get": {
+    "tags": [
+     "Manejo"
+    ],
+    "summary": "Listar as fazendas cadastradas",
+    "description": "Listar as fazendas cadastradas",
+    "operationId": "fazendas",
+    "responses": {
+     "200": {
+      "description": "Successful operation",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/Fazenda"
+         }
+        }
+       }
+      }
+     },
+     "403": {
+      "description": "Falha de autenticação.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     },
+     "500": {
+      "description": "Erro interno. Consultar setor administrativo.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "Bearer": []
+     }
+    ]
+   }
+  },
+  "/equipamentos/{fazenda}": {
+   "get": {
+    "tags": [
+     "Manejo"
+    ],
+    "summary": "Listar os equipamentos cadastrados",
+    "description": "Listar os equipamentos cadastrados",
+    "operationId": "equipamentos",
+    "parameters": [
+     {
+      "name": "fazenda",
+      "in": "path",
+      "description": "ID da fazenda a ser pesquisada",
+      "required": true,
+      "explode": true,
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful operation",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/Equipamento"
+         }
+        }
+       }
+      }
+     },
+     "403": {
+      "description": "Falha de autenticação.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     },
+     "500": {
+      "description": "Erro interno. Consultar setor administrativo.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "Bearer": []
+     }
+    ]
+   }
+  },
+  "/parcelas_ativas/{fazenda}": {
+   "get": {
+    "tags": [
+     "Manejo"
+    ],
+    "summary": "Listar todos os equipamentos com parcelas ativas cadastrados na fazenda.",
+    "description": "Listar todos os equipamentos com parcelas ativas cadastrados na fazenda.",
+    "operationId": "parcelasativas",
+    "parameters": [
+     {
+      "name": "fazenda",
+      "in": "path",
+      "description": "ID da fazenda a ser pesquisada",
+      "required": true,
+      "explode": true,
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful operation",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/EquipamentoAtivas"
+         }
+        }
+       }
+      }
+     },
+     "403": {
+      "description": "Falha de autenticação.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Erro de validação.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     },
+     "500": {
+      "description": "Erro interno. Consultar setor administrativo.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "Bearer": []
+     }
+    ]
+   }
+  },
+  "/parcelas_inativas/{fazenda}": {
+   "get": {
+    "tags": [
+     "Manejo"
+    ],
+    "summary": "Listar todos os equipamentos com parcelas inativas cadastrados na fazenda.",
+    "description": "Listar todos os equipamentos com parcelas inativas cadastrados na fazenda.",
+    "operationId": "parcelasinativas",
+    "parameters": [
+     {
+      "name": "fazenda",
+      "in": "path",
+      "description": "ID da fazenda a ser pesquisada",
+      "required": true,
+      "explode": true,
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful operation",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/EquipamentoInativas"
+         }
+        }
+       }
+      }
+     },
+     "403": {
+      "description": "Falha de autenticação.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Erro de validação.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     },
+     "500": {
+      "description": "Erro interno. Consultar setor administrativo.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "Bearer": []
+     }
+    ]
+   }
+  },
+  "/manejo/{fazenda}/{parcela}": {
+   "get": {
+    "tags": [
+     "Manejo"
+    ],
+    "summary": "Listar os dados diários de manejo de uma parcela",
+    "description": "Lista os dados de manejo de uma parcela ativa ou inativa. Acesse o glossário para consultar informações detalhadas sobre os parâmetros retornados.",
+    "operationId": "manejo",
+    "parameters": [
+     {
+      "name": "fazenda",
+      "in": "path",
+      "description": "ID da fazenda a ser pesquisada",
+      "required": true,
+      "explode": true,
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "parcela",
+      "in": "path",
+      "description": "ID da parcela a ser pesquisada",
+      "required": true,
+      "explode": true,
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "de",
+      "in": "query",
+      "description": "Data formato YYYY-MM-DD de início dos dados de manejo",
+      "required": false,
+      "explode": true,
+      "schema": {
+       "type": "string",
+       "format": "date"
+      }
+     },
+     {
+      "name": "ate",
+      "in": "query",
+      "description": "Data formato YYYY-MM-DD de término dos dados de manejo",
+      "required": false,
+      "explode": true,
+      "schema": {
+       "type": "string",
+       "format": "date"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful operation",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/Manejo"
+         }
+        }
+       }
+      }
+     },
+     "403": {
+      "description": "Falha de autenticação.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Erro de validação.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     },
+     "500": {
+      "description": "Erro interno. Consultar setor administrativo.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "Bearer": []
+     }
+    ]
+   }
+  },
+  "/recomendacao/{fazenda}/{parcela}": {
+   "get": {
+    "tags": [
+     "Manejo"
+    ],
+    "summary": "Lista a recomendação para o dia atual de uma parcela ativa",
+    "description": "Lista a recomendação para o dia atual de uma parcela ativa",
+    "operationId": "recomendacao",
+    "parameters": [
+     {
+      "name": "fazenda",
+      "in": "path",
+      "description": "ID da fazenda a ser pesquisada",
+      "required": true,
+      "explode": true,
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "parcela",
+      "in": "path",
+      "description": "ID da parcela a ser pesquisada",
+      "required": true,
+      "explode": true,
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful operation",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Recomendacao"
+        }
+       }
+      }
+     },
+     "403": {
+      "description": "Falha de autenticação.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Erro de validação.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     },
+     "500": {
+      "description": "Erro interno. Consultar setor administrativo.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "Bearer": []
+     }
+    ]
+   }
+  },
+  "/geojson_to_kml/{id_fazenda}": {
+   "get": {
+    "tags": [
+     "Apoio"
+    ],
+    "summary": "Baixar o limite da fazenda em KML",
+    "description": "Converte o GeoJSON cadastrado na fazenda e retorna um arquivo KML.",
+    "operationId": "geojson_to_kml",
+    "parameters": [
+     {
+      "name": "id_fazenda",
+      "in": "path",
+      "description": "ID da fazenda a ser exportada",
+      "required": true,
+      "schema": {
+       "type": "integer"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Arquivo KML gerado com sucesso.",
+      "content": {
+       "application/vnd.google-earth.kml+xml": {
+        "schema": {
+         "type": "string",
+         "format": "binary"
+        }
+       }
+      }
+     },
+     "403": {
+      "description": "Falha de autenticação.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Fazenda inexistente, sem GeoJSON ou com GeoJSON inválido.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     },
+     "500": {
+      "description": "Erro interno. Consultar setor administrativo.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Erro"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "Bearer": []
+     }
+    ]
+   }
+  }
+ },
+ "components": {
+  "schemas": {
+   "Estacao": {
+    "type": "object",
+    "properties": {
+     "id": {
+      "type": "integer",
+      "example": 10
+     },
+     "nome": {
+      "type": "string",
+      "example": "Nome da estação"
+     },
+     "fuso_horario": {
+      "type": "integer",
+      "example": -3
+     },
+     "lat": {
+      "type": "number",
+      "format": "float",
+      "example": -18.938027,
+      "description": "Latitude"
+     },
+     "lng": {
+      "type": "number",
+      "format": "float",
+      "example": -46.994251,
+      "description": "Longitude"
+     },
+     "alt": {
+      "type": "number",
+      "format": "float",
+      "example": 950.54,
+      "description": "Altitude"
+     },
+     "codigo": {
+      "type": "string",
+      "example": "PA_12345",
+      "description": "Código da estação"
+     }
+    }
+   },
+   "ClimaDiario": {
+    "type": "object",
+    "properties": {
+     "data": {
+      "type": "string",
+      "format": "date",
+      "example": "2023-01-10"
+     },
+     "temp_max": {
+      "type": "string",
+      "example": "29.8",
+      "description": "Temp. Máxima ºC"
+     },
+     "temp_med": {
+      "type": "string",
+      "example": "20.3",
+      "description": "Temp. Média ºC"
+     },
+     "temp_min": {
+      "type": "string",
+      "example": "18.3",
+      "description": "Temp. Mínima ºC"
+     },
+     "umidade": {
+      "type": "string",
+      "example": "77",
+      "description": "Umidade do ar em %"
+     },
+     "radiacao": {
+      "type": "string",
+      "example": "834.23",
+      "description": "radiação em w/m2"
+     },
+     "vento": {
+      "type": "string",
+      "example": "3.54",
+      "description": "vento em m/s"
+     },
+     "chuva": {
+      "type": "string",
+      "example": "2.0",
+      "description": "chuva em mm"
+     },
+     "fonte": {
+      "type": "string",
+      "example": "real",
+      "description": "real / triang"
+     },
+     "rajada": {
+      "type": "string",
+      "example": "5.10",
+      "description": "Rajada de vento"
+     },
+     "ventodir": {
+      "type": "string",
+      "example": "128",
+      "description": "Direção do vento em graus"
+     }
+    }
+   },
+   "ClimaHora": {
+    "type": "object",
+    "properties": {
+     "datahora": {
+      "type": "string",
+      "format": "date-time",
+      "example": "2023-01-10 12:15:00"
+     },
+     "temp_max": {
+      "type": "string",
+      "example": "29.8",
+      "description": "Temp. Máxima ºC"
+     },
+     "temp_med": {
+      "type": "string",
+      "example": "20.3",
+      "description": "Temp. Média ºC"
+     },
+     "temp_min": {
+      "type": "string",
+      "example": "18.3",
+      "description": "Temp. Mínima ºC"
+     },
+     "umidade": {
+      "type": "string",
+      "example": "77",
+      "description": "Umidade do ar em %"
+     },
+     "radiacao": {
+      "type": "string",
+      "example": "834.23",
+      "description": "radiação em w/m2"
+     },
+     "vento": {
+      "type": "string",
+      "example": "3.54",
+      "description": "vento em m/s"
+     },
+     "chuva": {
+      "type": "string",
+      "example": "2.0",
+      "description": "chuva em mm"
+     },
+     "rajada": {
+      "type": "string",
+      "example": "5.10",
+      "description": "Rajada de vento"
+     },
+     "ventodir": {
+      "type": "string",
+      "example": "128",
+      "description": "Direção do vento em graus"
+     },
+     "fonte": {
+      "type": "string",
+      "example": "real",
+      "description": "real / triang"
+     }
+    }
+   },
+   "Previsao": {
+    "type": "object",
+    "properties": {
+     "date": {
+      "type": "string",
+      "format": "date",
+      "example": "2023-01-10"
+     },
+     "temp_max": {
+      "type": "string",
+      "example": "29.8",
+      "description": "Temp. Máxima ºC"
+     },
+     "temp_min": {
+      "type": "string",
+      "example": "18.3",
+      "description": "Temp. Mínima ºC"
+     },
+     "rain_prob": {
+      "type": "string",
+      "example": "80",
+      "description": "Prob. de Chuva %"
+     },
+     "rain_total": {
+      "type": "string",
+      "example": "11.54",
+      "description": "Chuva Prevista em mm"
+     },
+     "wind_dir": {
+      "type": "string",
+      "example": "128",
+      "description": "Direção do vento em Graus"
+     },
+     "wind_spd": {
+      "type": "string",
+      "example": "11.2",
+      "description": "Velocidade do vento em m/s"
+     },
+     "obs": {
+      "type": "string",
+      "example": "Sol e Chuva"
+     },
+     "cloud_cover_min": {
+      "type": "string",
+      "example": "40",
+      "description": "Cobertura de nuvens (min) %"
+     },
+     "cloud_cover_max": {
+      "type": "string",
+      "example": "60",
+      "description": "Cobertura de nuvens (max) %"
+     }
+    }
+   },
+   "Fazenda": {
+    "type": "object",
+    "properties": {
+     "id_da_fazenda": {
+      "type": "integer",
+      "example": 10
+     },
+     "nome_da_fazenda": {
+      "type": "string",
+      "example": "Nome da fazenda"
+     },
+     "area_ha": {
+      "type": "string",
+      "example": "500",
+      "description": "Área em ha"
+     },
+     "responsavel": {
+      "type": "string",
+      "example": "Nome do Responsável"
+     },
+     "lat": {
+      "type": "number",
+      "format": "float",
+      "example": -18.938027,
+      "description": "Latitude"
+     },
+     "lng": {
+      "type": "number",
+      "format": "float",
+      "example": -46.994251,
+      "description": "Longitude"
+     }
+    }
+   },
+   "Equipamento": {
+    "type": "object",
+    "properties": {
+     "id_do_equipamento": {
+      "type": "integer",
+      "example": 10
+     },
+     "nome_do_equipamento": {
+      "type": "string",
+      "example": "Nome do Pivô"
+     },
+     "area_ha": {
+      "type": "number",
+      "format": "float",
+      "example": 120.15
+     },
+     "lat": {
+      "type": "number",
+      "format": "float",
+      "example": -17.66085260569278,
+      "description": "Latitude"
+     },
+     "lng": {
+      "type": "number",
+      "format": "float",
+      "example": -47.82952928543091,
+      "description": "Longitude"
+     },
+     "tipo": {
+      "type": "string",
+      "example": "Pivô"
+     },
+     "categoria": {
+      "type": "string",
+      "example": "Pivô central"
+     },
+     "modelo": {
+      "type": "string",
+      "example": "Valley - 8000"
+     },
+     "data_instalacao": {
+      "type": "string",
+      "format": "date-time",
+      "example": "2020-01-01 00:00:00"
+     },
+     "tipo_alimentacao": {
+      "type": "string",
+      "example": "0"
+     },
+     "conjugado": {
+      "type": "integer",
+      "example": 0,
+      "description": "0 para não, 1 para sim"
+     },
+     "situacao": {
+      "type": "string",
+      "example": "Ativo"
+     },
+     "velocidade": {
+      "type": "number",
+      "format": "float",
+      "example": 287.05
+     },
+     "tempo_maximo": {
+      "type": "integer",
+      "example": 21
+     },
+     "comprimento": {
+      "type": "integer",
+      "example": 10
+     },
+     "largura": {
+      "type": "integer",
+      "example": 20
+     },
+     "vazao": {
+      "type": "integer",
+      "example": 0
+     },
+     "raio": {
+      "type": "number",
+      "format": "float",
+      "example": 603.5
+     },
+     "raio_apos": {
+      "type": "number",
+      "format": "float",
+      "example": 29.11
+     },
+     "pressao": {
+      "type": "number",
+      "format": "float",
+      "example": 7.04
+     },
+     "potencia": {
+      "type": "integer",
+      "example": 250
+     },
+     "uniformidade": {
+      "type": "integer",
+      "example": 92
+     },
+     "descricao": {
+      "type": "string",
+      "example": ""
+     },
+     "vazao_gotejador": {
+      "type": "integer",
+      "example": 0
+     },
+     "espac_linhas": {
+      "type": "integer",
+      "example": 0
+     },
+     "espac_emissores": {
+      "type": "integer",
+      "example": 0
+     },
+     "porcentagem_molhada": {
+      "type": "integer",
+      "example": 100
+     },
+     "comprimento_corner": {
+      "type": "integer",
+      "example": 0
+     },
+     "indice_car": {
+      "type": "integer",
+      "example": 100
+     },
+     "fator_potencia": {
+      "type": "integer",
+      "example": 86
+     },
+     "rendimento": {
+      "type": "integer",
+      "example": 91
+     },
+     "consumo_extra": {
+      "type": "integer",
+      "example": 10
+     },
+     "consumo_diesel": {
+      "type": "integer",
+      "example": 0
+     },
+     "consumo_cogeracao": {
+      "type": "integer",
+      "example": 0
+     },
+     "inicio_comp_linear": {
+      "type": "string",
+      "nullable": true,
+      "example": null
+     },
+     "fim_comp_linear": {
+      "type": "string",
+      "nullable": true,
+      "example": null
+     },
+     "inicio_ult_torre_linear": {
+      "type": "string",
+      "nullable": true,
+      "example": null
+     },
+     "observacoes": {
+      "type": "string",
+      "example": ""
+     },
+     "hist_uniformidade": {
+      "type": "integer",
+      "example": 0
+     },
+     "hist_excesso": {
+      "type": "integer",
+      "example": 0
+     },
+     "hist_recem_implantado": {
+      "type": "integer",
+      "example": 0
+     },
+     "diagn_solicitante": {
+      "type": "string",
+      "example": "Santa Maria"
+     },
+     "diagn_safra": {
+      "type": "string",
+      "example": "Inverno 2020"
+     },
+     "diagn_grafico": {
+      "type": "string",
+      "example": "Potencial"
+     },
+     "diagn_data": {
+      "type": "string",
+      "format": "date-time",
+      "example": "2024-05-27 00:00:00"
+     },
+     "diagn_horimetro": {
+      "type": "integer",
+      "example": 0
+     },
+     "diagn_pressao_bomba": {
+      "type": "integer",
+      "example": 0
+     },
+     "diagn_pressao_base": {
+      "type": "integer",
+      "example": 66
+     },
+     "diagn_pressao_final": {
+      "type": "number",
+      "format": "float",
+      "example": 13.9
+     },
+     "diagn_var_percentimetro": {
+      "type": "integer",
+      "example": 0
+     },
+     "diagn_valvulas": {
+      "type": "string",
+      "example": "10PSI (>7.03mca)"
+     },
+     "diagn_status": {
+      "type": "string",
+      "example": "Adequado"
+     },
+     "diagn_obs": {
+      "type": "string",
+      "example": ""
+     },
+     "setorial_inicio": {
+      "type": "integer",
+      "example": 0
+     },
+     "setorial_fim": {
+      "type": "integer",
+      "example": 0
+     }
+    }
+   },
+   "EquipamentoAtivas": {
+    "type": "object",
+    "properties": {
+     "id_do_equipamento": {
+      "type": "integer",
+      "example": 10
+     },
+     "nome_do_equipamento": {
+      "type": "string",
+      "example": "Nome da fazenda"
+     },
+     "parcelas_ativas": {
+      "type": "array",
+      "items": {
+       "$ref": "#/components/schemas/Parcela"
+      }
+     }
+    }
+   },
+   "EquipamentoInativas": {
+    "type": "object",
+    "properties": {
+     "id_do_equipamento": {
+      "type": "integer",
+      "example": 10
+     },
+     "nome_do_equipamento": {
+      "type": "string",
+      "example": "Nome da fazenda"
+     },
+     "parcelas_inativas": {
+      "type": "array",
+      "items": {
+       "$ref": "#/components/schemas/Parcela"
+      }
+     }
+    }
+   },
+   "Parcela": {
+    "type": "object",
+    "properties": {
+     "id_da_parcela": {
+      "type": "integer",
+      "example": 10
+     },
+     "nome_da_parcela": {
+      "type": "string",
+      "example": "Nome da fazenda"
+     },
+     "area_ha": {
+      "type": "string",
+      "example": "500",
+      "description": "Área em ha"
+     },
+     "plantio": {
+      "type": "string",
+      "format": "date",
+      "example": "2023-01-10",
+      "description": "Data de plantio"
+     },
+     "inicio": {
+      "type": "string",
+      "format": "date",
+      "example": "2023-01-15",
+      "description": "Data de inicio do manejo"
+     },
+     "fim": {
+      "type": "string",
+      "format": "date",
+      "example": "2023-05-10",
+      "description": "Data de término do manejo"
+     },
+     "cultura": {
+      "type": "string",
+      "example": "Café - Arara",
+      "description": "Cultura plantada"
+     }
+    }
+   },
+   "Manejo": {
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {
+     "id_do_lancamento": {
+      "type": "integer",
+      "example": 1234344
+     },
+     "id_da_parcela": {
+      "type": "integer",
+      "example": 1544
+     },
+     "data": {
+      "type": "string",
+      "format": "date",
+      "example": "2023-01-10"
+     },
+     "irrigacao_m3": {
+      "type": "string",
+      "example": "1250.00",
+      "description": "Volume irrigado em m3, calculado a partir da irrigação em mm e da área da parcela em hectares"
+     }
+    }
+   },
+   "Recomendacao": {
+    "type": "object",
+    "properties": {
+     "recomendacao_percent": {
+      "type": "string",
+      "example": "70",
+      "description": "Recomendação em %"
+     },
+     "recomendacao_tempo": {
+      "type": "string",
+      "example": "02:30",
+      "description": "Recomendação em tempo (HH:MM)"
+     },
+     "recomendacao_lamina": {
+      "type": "string",
+      "example": "4.55",
+      "description": "Recomendação em mm"
+     },
+     "deficit_previsto": {
+      "type": "number",
+      "example": 5.2,
+      "description": "Déficit previsto"
+     },
+     "lamina_disponivel": {
+      "type": "number",
+      "example": 6.55,
+      "description": "Lâmina disponível (mm)"
+     }
+    }
+   },
+   "ContaEnergia": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "id": {
+      "type": "integer",
+      "example": 10
+     },
+     "created_on": {
+      "type": "string",
+      "format": "date-time",
+      "nullable": true,
+      "example": "2024-11-20 16:03:58"
+     },
+     "last_edit_on": {
+      "type": "string",
+      "format": "date-time",
+      "nullable": true,
+      "example": "2024-11-21 10:15:00"
+     },
+     "identificador": {
+      "type": "string",
+      "example": "123456789"
+     },
+     "nome_concessionaria": {
+      "type": "string",
+      "nullable": true,
+      "example": "Cemig - Companhia Energética de Minas Gerais S.A."
+     },
+     "demanda": {
+      "type": "number",
+      "example": 500
+     },
+     "aniversario": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 12,
+      "example": 4
+     }
+    },
+    "required": [
+     "id",
+     "created_on",
+     "last_edit_on",
+     "identificador",
+     "nome_concessionaria",
+     "demanda",
+     "aniversario"
+    ]
+   },
+   "EnergiaQuantidadeValor": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "quantidade": {
+      "type": "number",
+      "nullable": true
+     },
+     "valor": {
+      "type": "number",
+      "nullable": true
+     }
+    },
+    "required": [
+     "quantidade",
+     "valor"
+    ]
+   },
+   "LancamentoEnergiaResumo": {
+    "type": "object",
+    "properties": {
+     "id": {
+      "type": "integer",
+      "example": 100
+     },
+     "mes": {
+      "type": "string",
+      "format": "date",
+      "example": "2024-10-01"
+     },
+     "criado_por": {
+      "type": "integer",
+      "nullable": true
+     },
+     "criado_em": {
+      "type": "string",
+      "format": "date-time",
+      "nullable": true
+     },
+     "editado_por": {
+      "type": "integer",
+      "nullable": true
+     },
+     "editado_em": {
+      "type": "string",
+      "format": "date-time",
+      "nullable": true
+     },
+     "periodo": {
+      "type": "object",
+      "properties": {
+       "inicio": {
+        "type": "string",
+        "format": "date",
+        "nullable": true
+       },
+       "fim": {
+        "type": "string",
+        "format": "date",
+        "nullable": true
+       }
+      }
+     },
+     "bandeira": {
+      "type": "string",
+      "example": "Verde"
+     },
+     "demanda": {
+      "type": "number",
+      "example": 500
+     },
+     "demanda_ativa": {
+      "$ref": "#/components/schemas/EnergiaQuantidadeValor"
+     },
+     "valor_total": {
+      "type": "number",
+      "format": "float",
+      "example": 537.67
+     }
+    },
+    "required": [
+     "id",
+     "mes",
+     "criado_por",
+     "criado_em",
+     "editado_por",
+     "editado_em",
+     "periodo",
+     "bandeira",
+     "demanda",
+     "demanda_ativa",
+     "valor_total"
+    ]
+   },
+   "LancamentoEnergia": {
+    "allOf": [
+     {
+      "$ref": "#/components/schemas/LancamentoEnergiaResumo"
+     },
+     {
+      "type": "object",
+      "properties": {
+       "consumo": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+         "hfp1": {
+          "$ref": "#/components/schemas/EnergiaQuantidadeValor"
+         },
+         "hp1": {
+          "$ref": "#/components/schemas/EnergiaQuantidadeValor"
+         },
+         "res1": {
+          "$ref": "#/components/schemas/EnergiaQuantidadeValor"
+         },
+         "hfp2": {
+          "$ref": "#/components/schemas/EnergiaQuantidadeValor"
+         },
+         "hp2": {
+          "$ref": "#/components/schemas/EnergiaQuantidadeValor"
+         },
+         "res2": {
+          "$ref": "#/components/schemas/EnergiaQuantidadeValor"
+         },
+         "hfp3": {
+          "$ref": "#/components/schemas/EnergiaQuantidadeValor"
+         },
+         "hp3": {
+          "$ref": "#/components/schemas/EnergiaQuantidadeValor"
+         },
+         "res3": {
+          "$ref": "#/components/schemas/EnergiaQuantidadeValor"
+         }
+        }
+       },
+       "reativo": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+         "demanda": {
+          "$ref": "#/components/schemas/EnergiaQuantidadeValor"
+         },
+         "hfp": {
+          "$ref": "#/components/schemas/EnergiaQuantidadeValor"
+         },
+         "hp": {
+          "$ref": "#/components/schemas/EnergiaQuantidadeValor"
+         },
+         "reservado": {
+          "$ref": "#/components/schemas/EnergiaQuantidadeValor"
+         }
+        }
+       },
+       "ultrapassagem": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+         "demanda": {
+          "$ref": "#/components/schemas/EnergiaQuantidadeValor"
+         },
+         "complementar": {
+          "$ref": "#/components/schemas/EnergiaQuantidadeValor"
+         }
+        }
+       },
+       "bandeiras": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+         "valor1": {
+          "type": "number",
+          "nullable": true
+         },
+         "valor2": {
+          "type": "number",
+          "nullable": true
+         },
+         "valor3": {
+          "type": "number",
+          "nullable": true
+         },
+         "valor4": {
+          "type": "number",
+          "nullable": true
+         }
+        }
+       },
+       "injecao": {
+        "type": "object",
+        "properties": {
+         "quantidade": {
+          "type": "number",
+          "nullable": true
+         },
+         "valor": {
+          "type": "number",
+          "nullable": true
+         },
+         "valor_compensado": {
+          "type": "number",
+          "nullable": true
+         }
+        }
+       },
+       "ajustes": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+         "descontos": {
+          "type": "number",
+          "nullable": true
+         },
+         "descontos_adicionais": {
+          "type": "number",
+          "nullable": true
+         },
+         "outros_descontos": {
+          "type": "number",
+          "nullable": true
+         },
+         "multas": {
+          "type": "number",
+          "nullable": true
+         },
+         "impostos": {
+          "type": "number",
+          "nullable": true
+         },
+         "outros_debitos": {
+          "type": "number",
+          "nullable": true
+         }
+        }
+       },
+       "observacao": {
+        "type": "string",
+        "nullable": true
+       }
+      }
+     }
+    ]
+   },
+   "Erro": {
+    "type": "object",
+    "properties": {
+     "error": {
+      "type": "integer",
+      "example": 1,
+      "description": "Código do erro"
+     },
+     "error_msg": {
+      "type": "string",
+      "example": "Descritivo do erro"
+     },
+     "error_type": {
+      "type": "string",
+      "example": "tipo_do_erro"
+     },
+     "data": {
+      "type": "array",
+      "example": []
+     },
+     "msg": {
+      "type": "string",
+      "example": "Informação adicional"
+     }
+    }
+   }
+  },
+  "requestBodies": {},
+  "securitySchemes": {
+   "Bearer": {
+    "type": "apiKey",
+    "name": "Authorization",
+    "in": "header",
+    "description": "Enter the token with the `Bearer: ` prefix, e.g. \"Bearer abcde12345\"."
+   }
+  }
+ }
+}

@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply bg-slate-50 text-slate-800 antialiased; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+  @media (prefers-color-scheme: dark) { body { @apply bg-slate-900 text-slate-100; } }
+}
+
+@layer base {
+  body {
+    background-image: radial-gradient(1200px 500px at 10% -10%, rgb(8 145 178 / .13), transparent 60%), radial-gradient(900px 400px at 100% 0%, rgb(5 150 105 / .09), transparent 55%),
+      linear-gradient(rgb(100 116 139 / .06) 1px, transparent 1px), linear-gradient(90deg, rgb(100 116 139 / .06) 1px, transparent 1px);
+    background-size: auto, auto, 36px 36px, 36px 36px;
+    background-attachment: fixed;
+  }
+}
+
+@keyframes entrar { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes pulsa { 0%, 100% { fill-opacity: .55; } 50% { fill-opacity: .95; } }
+@keyframes brilho { from { background-position: -200% 0; } to { background-position: 200% 0; } }
+@keyframes batida { 0% { box-shadow: 0 0 0 0 rgb(16 185 129 / .6); } 100% { box-shadow: 0 0 0 10px rgb(16 185 129 / 0); } }
+
+@keyframes onda { from { transform: scale(.55); opacity: .7; } to { transform: scale(1.12); opacity: 0; } }
+.onda { transform-origin: 60px 60px; animation: onda 2.2s ease-out infinite; }
+.animate-entrar { animation: entrar .35s ease both; }
+.pulsa { animation: pulsa 1.5s ease-in-out infinite; }
+.esqueleto { background: linear-gradient(90deg, rgb(148 163 184 / .15) 25%, rgb(148 163 184 / .32) 50%, rgb(148 163 184 / .15) 75%); background-size: 200% 100%; animation: brilho 1.4s linear infinite; }
+/* menu congelado (cabeçalho + abas): fica no topo ao rolar; acima do mapa (Leaflet usa até 1000) e abaixo da foto ampliada (2000) */
+.menu-fixo { position: sticky; top: 0; z-index: 1100; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); background: rgb(248 250 252 / .82); border-bottom: 1px solid rgb(148 163 184 / .25); box-shadow: 0 6px 16px -12px rgb(15 23 42 / .35); }
+@media (prefers-color-scheme: dark) { .menu-fixo { background: rgb(15 23 42 / .82); } }
+/* âncoras e scrollIntoView param logo abaixo do menu (altura medida no App) */
+html { scroll-padding-top: calc(var(--menu-h, 0px) + 12px); }
+@media print { html { scroll-padding-top: 0; } }
+.marca { background: linear-gradient(90deg, #0e7490, #059669); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.ponto-vivo { width: .6rem; height: .6rem; border-radius: 9999px; background: #10b981; animation: batida 1.8s ease-out infinite; }
+@media (prefers-reduced-motion: reduce) { .animate-entrar, .pulsa, .esqueleto, .ponto-vivo, .onda { animation: none; } }
+
+@layer components {
+  .card { @apply rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition-shadow duration-200 hover:shadow-md dark:border-slate-700 dark:bg-slate-800; }
+  .kpi { position: relative; overflow: hidden; }
+  .kpi::before { content: ''; position: absolute; inset: 0 0 auto 0; height: 3px; background: var(--cor, #0891b2); }
+  .btn { @apply inline-flex items-center justify-center rounded-lg bg-agua-600 px-4 py-2 text-sm font-medium text-white hover:bg-agua-700 disabled:opacity-50; }
+  .btn-sec { @apply inline-flex items-center justify-center rounded-lg border border-slate-300 px-3 py-1.5 text-sm hover:bg-slate-100 dark:border-slate-600 dark:hover:bg-slate-700; }
+  .campo { @apply w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm dark:border-slate-600 dark:bg-slate-900; }
+  .rotulo { @apply mb-1 block text-xs font-medium text-slate-500 dark:text-slate-400; }
+  .tabela { @apply w-full text-sm; }
+  .tabela th { @apply whitespace-nowrap border-b border-slate-200 px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-slate-500 dark:border-slate-700 dark:text-slate-400; }
+  .tabela td { @apply whitespace-nowrap border-b border-slate-100 px-3 py-2 dark:border-slate-700/60; }
+  .num { @apply text-right tabular-nums; }
+}
+
+/* rotulo fixo do nome do pivo no mapa */
+.leaflet-tooltip.rotulo-pivo { background: rgb(15 23 42 / .72); border: 0; box-shadow: none; color: #fff; font-weight: 700; font-size: 11px; padding: 1px 6px; border-radius: 6px; }
+.leaflet-tooltip.rotulo-pivo::before { display: none; }
+
+/* ---------- linguagem visual "painel de controle" ---------- */
+@keyframes desenha { from { stroke-dashoffset: var(--len, 1000); } to { stroke-dashoffset: 0; } }
+@keyframes cresce { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes sobe { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@keyframes varre { from { background-position: -150% 0; } to { background-position: 250% 0; } }
+@keyframes surge { from { opacity: 0; transform: translateY(14px) scale(.985); } to { opacity: 1; transform: none; } }
+
+.viz { --s-irr: #2a78d6; --s-chuva: #1baf7a; --s-eto: #eb6834; --ink: #0f172a; --ink-2: #475569; --grade: rgb(100 116 139 / .22); }
+@media (prefers-color-scheme: dark) { .viz { --s-irr: #3987e5; --s-chuva: #199e70; --s-eto: #d95926; --ink: #f1f5f9; --ink-2: #cbd5e1; --grade: rgb(148 163 184 / .2); } }
+
+.linha-desenha { stroke-dasharray: var(--len, 1000); animation: desenha 1.1s cubic-bezier(.2,.7,.2,1) both; }
+.barra-h { transform-origin: left center; animation: cresce .8s cubic-bezier(.2,.7,.2,1) both; }
+.barra-v { transform-origin: center bottom; animation: sobe .7s cubic-bezier(.2,.7,.2,1) both; }
+.surge { animation: surge .55s cubic-bezier(.2,.7,.2,1) both; }
+@media (prefers-reduced-motion: reduce) { .linha-desenha, .barra-h, .barra-v, .surge { animation: none; stroke-dasharray: none; } }
+
+@layer components {
+  .vidro { @apply relative overflow-hidden rounded-2xl border border-slate-200/80 bg-white/75 shadow-sm backdrop-blur-md dark:border-cyan-400/15 dark:bg-slate-900/60; }
+  .vidro::after { content: ''; position: absolute; inset: 0 0 auto 0; height: 1px; background: linear-gradient(90deg, transparent, rgb(34 211 238 / .55), transparent); opacity: .7; pointer-events: none; }
+  .vidro-forte { background-image: linear-gradient(135deg, rgb(8 145 178 / .16), rgb(5 150 105 / .10) 55%, transparent); }
+  .titulo-secao { @apply flex items-center gap-2 text-xs font-semibold uppercase tracking-[.14em] text-slate-500 dark:text-slate-400; }
+  .titulo-secao::before { content: ''; width: 3px; height: 14px; border-radius: 2px; background: linear-gradient(#22d3ee, #10b981); }
+  .chip { @apply inline-flex items-center gap-1.5 rounded-full border border-slate-300/80 px-3 py-1 text-xs font-medium text-slate-600 transition hover:border-cyan-500 hover:text-cyan-700 dark:border-slate-600 dark:text-slate-300 dark:hover:text-cyan-300; }
+  .chip[aria-pressed='true'] { @apply border-cyan-500 bg-cyan-500/15 text-cyan-800 shadow-[0_0_12px_rgb(8_145_178/.30)] dark:text-cyan-200; }
+  .tip { @apply pointer-events-none absolute z-20 rounded-lg border border-slate-200 bg-white/95 px-3 py-2 text-xs shadow-lg backdrop-blur dark:border-slate-600 dark:bg-slate-900/95; }
+  .num-grande { @apply font-semibold tabular-nums tracking-tight; }
+}
+
+/* módulo de campo: peças sem vidro nem brilho, alvos grandes para o dedo, sol e luva */
+@layer components {
+  .c-card { @apply rounded-2xl border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-700 dark:bg-slate-900; }
+  .c-pill { @apply inline-flex items-center gap-1.5 whitespace-nowrap rounded-md px-2 py-0.5 text-[11px] font-semibold; }
+  .c-opt { @apply flex w-full items-center gap-3 rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-left text-sm font-medium text-slate-700 transition dark:border-slate-600 dark:bg-slate-900 dark:text-slate-200; min-height: 46px; }
+  .c-opt[aria-checked='true'], .c-opt[aria-pressed='true'] { @apply border-agua-600 bg-agua-50 text-agua-700 dark:bg-agua-600/20 dark:text-cyan-200; }
+  .c-opt > .c-box { @apply flex h-5 w-5 shrink-0 items-center justify-center rounded border border-slate-400 text-[11px] text-white; }
+  .c-opt[aria-checked='true'] > .c-box, .c-opt[aria-pressed='true'] > .c-box { @apply border-agua-600 bg-agua-600; }
+  .c-seg { @apply grid overflow-hidden rounded-xl border border-slate-300 bg-white dark:border-slate-600 dark:bg-slate-900; }
+  .c-seg > button { @apply px-2 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300; min-height: 44px; }
+  .c-seg > button + button { @apply border-l border-slate-300 dark:border-slate-600; }
+  .c-seg > button[aria-checked='true'] { @apply bg-agua-600 text-white; }
+  .c-ghost { @apply inline-flex items-center justify-center rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-100 disabled:opacity-40 dark:text-slate-300 dark:hover:bg-slate-800; min-height: 40px; }
+  .c-tab { @apply rounded-lg px-3 py-2 text-sm font-medium text-slate-500 transition dark:text-slate-400; min-height: 40px; }
+  .c-tab[aria-current='page'] { @apply bg-white text-slate-900 shadow-sm dark:bg-slate-700 dark:text-white; }
+}

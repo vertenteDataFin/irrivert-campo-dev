@@ -1,0 +1,8416 @@
+{
+ "fonte": "iCrop Vision, opções dos filtros Tipo de Cultura e Cultura do relatório Parcelas Atuais (catálogo global do iCrop, não só da fazenda)",
+ "capturadoEm": "2026-10-23",
+ "tipos": [
+  {
+   "id": "44",
+   "nome": "Abacate"
+  },
+  {
+   "id": "29",
+   "nome": "Abóbora"
+  },
+  {
+   "id": "82",
+   "nome": "Alface"
+  },
+  {
+   "id": "80",
+   "nome": "Alfafa"
+  },
+  {
+   "id": "9",
+   "nome": "Algodão"
+  },
+  {
+   "id": "27",
+   "nome": "Alho"
+  },
+  {
+   "id": "59",
+   "nome": "Amendoim"
+  },
+  {
+   "id": "26",
+   "nome": "Arroz"
+  },
+  {
+   "id": "37",
+   "nome": "Aveia"
+  },
+  {
+   "id": "33",
+   "nome": "Banana"
+  },
+  {
+   "id": "2",
+   "nome": "Batata"
+  },
+  {
+   "id": "49",
+   "nome": "Batata Doce"
+  },
+  {
+   "id": "32",
+   "nome": "Beterraba"
+  },
+  {
+   "id": "53",
+   "nome": "Blueberry"
+  },
+  {
+   "id": "91",
+   "nome": "Brócolis"
+  },
+  {
+   "id": "3",
+   "nome": "Café"
+  },
+  {
+   "id": "11",
+   "nome": "Cana-de-açúcar"
+  },
+  {
+   "id": "39",
+   "nome": "Canola"
+  },
+  {
+   "id": "92",
+   "nome": "Carinata"
+  },
+  {
+   "id": "4",
+   "nome": "Cebola"
+  },
+  {
+   "id": "5",
+   "nome": "Cenoura"
+  },
+  {
+   "id": "70",
+   "nome": "Centeio"
+  },
+  {
+   "id": "20",
+   "nome": "Cevada"
+  },
+  {
+   "id": "30",
+   "nome": "Coco"
+  },
+  {
+   "id": "86",
+   "nome": "Coentro"
+  },
+  {
+   "id": "85",
+   "nome": "Coentro"
+  },
+  {
+   "id": "93",
+   "nome": "Couve Flor"
+  },
+  {
+   "id": "55",
+   "nome": "Crambe"
+  },
+  {
+   "id": "31",
+   "nome": "Crotalária"
+  },
+  {
+   "id": "65",
+   "nome": "Dejetos"
+  },
+  {
+   "id": "28",
+   "nome": "Ervilha"
+  },
+  {
+   "id": "87",
+   "nome": "Estilosantes"
+  },
+  {
+   "id": "47",
+   "nome": "Eucalipto"
+  },
+  {
+   "id": "6",
+   "nome": "Feijão"
+  },
+  {
+   "id": "75",
+   "nome": "Gergelim"
+  },
+  {
+   "id": "12",
+   "nome": "Girassol"
+  },
+  {
+   "id": "81",
+   "nome": "Grama"
+  },
+  {
+   "id": "60",
+   "nome": "Grão de Bico"
+  },
+  {
+   "id": "77",
+   "nome": "Jaborandi"
+  },
+  {
+   "id": "58",
+   "nome": "Laranja"
+  },
+  {
+   "id": "38",
+   "nome": "Lentilha"
+  },
+  {
+   "id": "69",
+   "nome": "Limão"
+  },
+  {
+   "id": "71",
+   "nome": "Maize"
+  },
+  {
+   "id": "35",
+   "nome": "Mamão"
+  },
+  {
+   "id": "88",
+   "nome": "Mamona Comercial"
+  },
+  {
+   "id": "13",
+   "nome": "Mamona Semente"
+  },
+  {
+   "id": "48",
+   "nome": "Mandioca"
+  },
+  {
+   "id": "68",
+   "nome": "Manga"
+  },
+  {
+   "id": "34",
+   "nome": "Melancia"
+  },
+  {
+   "id": "84",
+   "nome": "Mexerica"
+  },
+  {
+   "id": "24",
+   "nome": "Milheto"
+  },
+  {
+   "id": "1",
+   "nome": "Milho Comercial"
+  },
+  {
+   "id": "23",
+   "nome": "Milho Doce"
+  },
+  {
+   "id": "66",
+   "nome": "Milho Pipoca"
+  },
+  {
+   "id": "16",
+   "nome": "Milho Semente"
+  },
+  {
+   "id": "22",
+   "nome": "Milho Silagem"
+  },
+  {
+   "id": "78",
+   "nome": "Mix de sementes"
+  },
+  {
+   "id": "36",
+   "nome": "Mostarda"
+  },
+  {
+   "id": "52",
+   "nome": "Nabo"
+  },
+  {
+   "id": "90",
+   "nome": "Níger"
+  },
+  {
+   "id": "51",
+   "nome": "Painço"
+  },
+  {
+   "id": "40",
+   "nome": "Palmito"
+  },
+  {
+   "id": "25",
+   "nome": "Pastagem"
+  },
+  {
+   "id": "83",
+   "nome": "Pepino"
+  },
+  {
+   "id": "64",
+   "nome": "Pimenta"
+  },
+  {
+   "id": "54",
+   "nome": "Pimentão"
+  },
+  {
+   "id": "42",
+   "nome": "Plantas Medicinais e Aromáticas"
+  },
+  {
+   "id": "72",
+   "nome": "Potato"
+  },
+  {
+   "id": "79",
+   "nome": "Preparo"
+  },
+  {
+   "id": "89",
+   "nome": "Quinoa"
+  },
+  {
+   "id": "74",
+   "nome": "Rabanete"
+  },
+  {
+   "id": "46",
+   "nome": "Repolho"
+  },
+  {
+   "id": "41",
+   "nome": "Seringueira"
+  },
+  {
+   "id": "7",
+   "nome": "Soja"
+  },
+  {
+   "id": "50",
+   "nome": "Soja Semente"
+  },
+  {
+   "id": "10",
+   "nome": "Sorgo"
+  },
+  {
+   "id": "56",
+   "nome": "Sorgo Semente"
+  },
+  {
+   "id": "73",
+   "nome": "Soybean"
+  },
+  {
+   "id": "67",
+   "nome": "Tabaco"
+  },
+  {
+   "id": "14",
+   "nome": "Tomate Indústria"
+  },
+  {
+   "id": "18",
+   "nome": "Tomate Mesa"
+  },
+  {
+   "id": "76",
+   "nome": "Tremoço"
+  },
+  {
+   "id": "8",
+   "nome": "Trigo"
+  },
+  {
+   "id": "57",
+   "nome": "Triticale"
+  },
+  {
+   "id": "61",
+   "nome": "Uva"
+  }
+ ],
+ "culturas": [
+  {
+   "id": "310",
+   "nome": "Abacate - Abacate"
+  },
+  {
+   "id": "176",
+   "nome": "Abóbora - Caboti"
+  },
+  {
+   "id": "1478",
+   "nome": "Abóbora - Caboti"
+  },
+  {
+   "id": "1565",
+   "nome": "Abóbora - Maranhão"
+  },
+  {
+   "id": "1456",
+   "nome": "Abóbora - Paulistinha"
+  },
+  {
+   "id": "1941",
+   "nome": "Abóbora - Takayama"
+  },
+  {
+   "id": "1414",
+   "nome": "Alface - Bs 67"
+  },
+  {
+   "id": "1415",
+   "nome": "Alface - Laurel"
+  },
+  {
+   "id": "2012",
+   "nome": "Alfafa de Inverno - American Stand 4-28"
+  },
+  {
+   "id": "1396",
+   "nome": "Alfafa de Inverno - Barenbrug 7"
+  },
+  {
+   "id": "2013",
+   "nome": "Alfafa de Verão - American Stand 4-28"
+  },
+  {
+   "id": "1911",
+   "nome": "Alfafa de Verão - Barenbrug 7"
+  },
+  {
+   "id": "1928",
+   "nome": "Algodão - BRS 800"
+  },
+  {
+   "id": "1632",
+   "nome": "Algodão - 911 GLTP"
+  },
+  {
+   "id": "328",
+   "nome": "Algodão - DP 1227"
+  },
+  {
+   "id": "326",
+   "nome": "Algodão - DP 1228"
+  },
+  {
+   "id": "327",
+   "nome": "Algodão - DP 1232"
+  },
+  {
+   "id": "325",
+   "nome": "Algodão - DP 1536"
+  },
+  {
+   "id": "1719",
+   "nome": "Algodão - DP 1536"
+  },
+  {
+   "id": "1720",
+   "nome": "Algodão - DP 1536"
+  },
+  {
+   "id": "438",
+   "nome": "Algodão - DP 1552"
+  },
+  {
+   "id": "756",
+   "nome": "Algodão - DP 1742"
+  },
+  {
+   "id": "734",
+   "nome": "Algodão - DP 1746 B2RF TA"
+  },
+  {
+   "id": "1903",
+   "nome": "Algodão - DP 1866 B3RF"
+  },
+  {
+   "id": "1905",
+   "nome": "Algodão - DP 1866 B3RF"
+  },
+  {
+   "id": "1666",
+   "nome": "Algodão - DP 2104 B3 RF"
+  },
+  {
+   "id": "1664",
+   "nome": "Algodão - DP 2111B3RF"
+  },
+  {
+   "id": "1665",
+   "nome": "Algodão - DP 2176 B3 RF"
+  },
+  {
+   "id": "1721",
+   "nome": "Algodão - DP1240"
+  },
+  {
+   "id": "658",
+   "nome": "Algodão - DP1240"
+  },
+  {
+   "id": "18",
+   "nome": "Algodão - DP1240"
+  },
+  {
+   "id": "1430",
+   "nome": "Algodão - DP1949 B3RF"
+  },
+  {
+   "id": "940",
+   "nome": "Algodão - FM 911 GLTP"
+  },
+  {
+   "id": "1173",
+   "nome": "Algodão - FM 912"
+  },
+  {
+   "id": "1934",
+   "nome": "Algodão - FM 933 STP"
+  },
+  {
+   "id": "1071",
+   "nome": "Algodão - FM 942 TLP"
+  },
+  {
+   "id": "333",
+   "nome": "Algodão - FM 944 GL"
+  },
+  {
+   "id": "1663",
+   "nome": "Algodão - FM 945 GLT"
+  },
+  {
+   "id": "335",
+   "nome": "Algodão - FM 951 LL"
+  },
+  {
+   "id": "459",
+   "nome": "Algodão - FM 954"
+  },
+  {
+   "id": "334",
+   "nome": "Algodão - FM 966 LL"
+  },
+  {
+   "id": "1174",
+   "nome": "Algodão - FM 970"
+  },
+  {
+   "id": "941",
+   "nome": "Algodão - FM 974"
+  },
+  {
+   "id": "657",
+   "nome": "Algodão - FM 977"
+  },
+  {
+   "id": "1268",
+   "nome": "Algodão - FM 978 GLTP"
+  },
+  {
+   "id": "836",
+   "nome": "Algodão - FM 983 GLT"
+  },
+  {
+   "id": "700",
+   "nome": "Algodão - FM 985"
+  },
+  {
+   "id": "1206",
+   "nome": "Algodão - FM11"
+  },
+  {
+   "id": "689",
+   "nome": "Algodão - FM906"
+  },
+  {
+   "id": "78",
+   "nome": "Algodão - FM940 GLT"
+  },
+  {
+   "id": "305",
+   "nome": "Algodão - FMX 975WS"
+  },
+  {
+   "id": "1890",
+   "nome": "Algodão - IMA 3764"
+  },
+  {
+   "id": "1907",
+   "nome": "Algodão - IMA 3764 B2RF"
+  },
+  {
+   "id": "674",
+   "nome": "Algodão - IMA 5801"
+  },
+  {
+   "id": "1906",
+   "nome": "Algodão - IMA 5801 B2RF"
+  },
+  {
+   "id": "1914",
+   "nome": "Algodão - IMA 5801 B2RF"
+  },
+  {
+   "id": "1468",
+   "nome": "Algodão - IMA 5901"
+  },
+  {
+   "id": "1904",
+   "nome": "Algodão - IMA 5901 B2RF"
+  },
+  {
+   "id": "824",
+   "nome": "Algodão - IMA 6501B2RF"
+  },
+  {
+   "id": "1913",
+   "nome": "Algodão - IMA 712 B3XF"
+  },
+  {
+   "id": "600",
+   "nome": "Algodão - IMA 7501"
+  },
+  {
+   "id": "755",
+   "nome": "Algodão - IMA 8405"
+  },
+  {
+   "id": "336",
+   "nome": "Algodão - NUOPAL"
+  },
+  {
+   "id": "1901",
+   "nome": "Algodão - Taura"
+  },
+  {
+   "id": "1908",
+   "nome": "Algodão - TAURA 2271 B3XF"
+  },
+  {
+   "id": "1266",
+   "nome": "Algodão - TMG 22 GLTP"
+  },
+  {
+   "id": "1176",
+   "nome": "Algodão - TMG 30"
+  },
+  {
+   "id": "1280",
+   "nome": "Algodão - TMG 31"
+  },
+  {
+   "id": "1642",
+   "nome": "Algodão - TMG 33 B3RF"
+  },
+  {
+   "id": "331",
+   "nome": "Algodão - TMG 42 WS"
+  },
+  {
+   "id": "744",
+   "nome": "Algodão - TMG 44 B2RF"
+  },
+  {
+   "id": "332",
+   "nome": "Algodão - TMG 47 WS"
+  },
+  {
+   "id": "1808",
+   "nome": "Algodão - TMG 66 GL"
+  },
+  {
+   "id": "1193",
+   "nome": "Algodão - TMG 7063"
+  },
+  {
+   "id": "1902",
+   "nome": "Algodão - TMG 81 WS"
+  },
+  {
+   "id": "329",
+   "nome": "Algodão - TMG 81 WS"
+  },
+  {
+   "id": "330",
+   "nome": "Algodão - TMG 82 WS"
+  },
+  {
+   "id": "710",
+   "nome": "Algodão - TMG 906"
+  },
+  {
+   "id": "1420",
+   "nome": "Algodão - TMG 91"
+  },
+  {
+   "id": "1267",
+   "nome": "Algodão - TMG 91 WS3"
+  },
+  {
+   "id": "1431",
+   "nome": "Algodão - TMG51"
+  },
+  {
+   "id": "624",
+   "nome": "Alho - Chonan"
+  },
+  {
+   "id": "1975",
+   "nome": "Alho - Diome"
+  },
+  {
+   "id": "242",
+   "nome": "Alho - Ito"
+  },
+  {
+   "id": "1670",
+   "nome": "Alho - Jonas"
+  },
+  {
+   "id": "626",
+   "nome": "Alho - Pérola"
+  },
+  {
+   "id": "417",
+   "nome": "Alho - Quiteria"
+  },
+  {
+   "id": "422",
+   "nome": "Alho - Ruby"
+  },
+  {
+   "id": "1962",
+   "nome": "Alho - Yuri"
+  },
+  {
+   "id": "1551",
+   "nome": "Amendoim - BRS 421"
+  },
+  {
+   "id": "1866",
+   "nome": "Amendoim - BRS 423 OL"
+  },
+  {
+   "id": "1566",
+   "nome": "Amendoim - EC-214"
+  },
+  {
+   "id": "1616",
+   "nome": "Amendoim - EC-214"
+  },
+  {
+   "id": "1367",
+   "nome": "Amendoim - Granoleico"
+  },
+  {
+   "id": "1386",
+   "nome": "Amendoim - IAC 503"
+  },
+  {
+   "id": "1552",
+   "nome": "Amendoim - IAC 667"
+  },
+  {
+   "id": "1694",
+   "nome": "Amendoim - IAC 677"
+  },
+  {
+   "id": "808",
+   "nome": "Amendoim - IAC OL 3"
+  },
+  {
+   "id": "1472",
+   "nome": "Amendoim - IAC-Tatu-ST - IAC-Tatu-ST"
+  },
+  {
+   "id": "867",
+   "nome": "Arroz - Agronorte - 9005CL"
+  },
+  {
+   "id": "1228",
+   "nome": "Arroz - BRS A502"
+  },
+  {
+   "id": "1858",
+   "nome": "Arroz - BRS A504"
+  },
+  {
+   "id": "373",
+   "nome": "Arroz - Cambara"
+  },
+  {
+   "id": "950",
+   "nome": "Arroz - INIA Merín"
+  },
+  {
+   "id": "304",
+   "nome": "Aveia - BCA FMS 52"
+  },
+  {
+   "id": "1499",
+   "nome": "Aveia - Branca"
+  },
+  {
+   "id": "1985",
+   "nome": "Aveia - Branca - Afrodite"
+  },
+  {
+   "id": "1122",
+   "nome": "Aveia - BRS Taura"
+  },
+  {
+   "id": "1667",
+   "nome": "Aveia - Embrapa - IPR139"
+  },
+  {
+   "id": "638",
+   "nome": "Aveia - Preta"
+  },
+  {
+   "id": "1541",
+   "nome": "Aveia - Ucraniana"
+  },
+  {
+   "id": "1065",
+   "nome": "Banana - Nanica"
+  },
+  {
+   "id": "1313",
+   "nome": "Banana - Prata"
+  },
+  {
+   "id": "1989",
+   "nome": "Barley - Bariera-Agen"
+  },
+  {
+   "id": "2001",
+   "nome": "Barley - Pietroiu-Zanzibar"
+  },
+  {
+   "id": "1999",
+   "nome": "Barley - Zanzibar"
+  },
+  {
+   "id": "2000",
+   "nome": "Barley - Zebra"
+  },
+  {
+   "id": "317",
+   "nome": "Batata - Ágata"
+  },
+  {
+   "id": "773",
+   "nome": "Batata - Ágata - Agrosoczek"
+  },
+  {
+   "id": "1113",
+   "nome": "Batata - Ágata - inativa"
+  },
+  {
+   "id": "8",
+   "nome": "Batata - Ágata - inativa"
+  },
+  {
+   "id": "314",
+   "nome": "Batata - Asterix"
+  },
+  {
+   "id": "318",
+   "nome": "Batata - Atlantic"
+  },
+  {
+   "id": "7",
+   "nome": "Batata - Atlantic - inativa"
+  },
+  {
+   "id": "1114",
+   "nome": "Batata - Camila"
+  },
+  {
+   "id": "1202",
+   "nome": "Batata - Challenger"
+  },
+  {
+   "id": "650",
+   "nome": "Batata - Challenger"
+  },
+  {
+   "id": "86",
+   "nome": "Batata - Cupido"
+  },
+  {
+   "id": "1011",
+   "nome": "Batata - Daisy"
+  },
+  {
+   "id": "1238",
+   "nome": "Batata - FL 1867 *"
+  },
+  {
+   "id": "1010",
+   "nome": "Batata - FL 1879"
+  },
+  {
+   "id": "9",
+   "nome": "Batata - FL 1879"
+  },
+  {
+   "id": "1462",
+   "nome": "Batata - Fl 2221"
+  },
+  {
+   "id": "1259",
+   "nome": "Batata - FL 2312"
+  },
+  {
+   "id": "654",
+   "nome": "Batata - Infinity"
+  },
+  {
+   "id": "319",
+   "nome": "Batata - MARKIES"
+  },
+  {
+   "id": "772",
+   "nome": "Batata - MARKIES - Agrosoczek"
+  },
+  {
+   "id": "59",
+   "nome": "Batata - Mondial"
+  },
+  {
+   "id": "413",
+   "nome": "Batata - Orchestra"
+  },
+  {
+   "id": "1716",
+   "nome": "Batata - Palace"
+  },
+  {
+   "id": "651",
+   "nome": "Batata - Panda"
+  },
+  {
+   "id": "1269",
+   "nome": "Batata - Royal"
+  },
+  {
+   "id": "883",
+   "nome": "Batata - Semente"
+  },
+  {
+   "id": "652",
+   "nome": "Batata - Taurus"
+  },
+  {
+   "id": "1668",
+   "nome": "Batata - Tilbury"
+  },
+  {
+   "id": "649",
+   "nome": "Batata - Verdi"
+  },
+  {
+   "id": "825",
+   "nome": "Batata Doce - Beauregard"
+  },
+  {
+   "id": "419",
+   "nome": "Batata Doce - Canadense"
+  },
+  {
+   "id": "1262",
+   "nome": "Batata Doce - Mineira"
+  },
+  {
+   "id": "1195",
+   "nome": "Bayer Maize - DKC75-65BR"
+  },
+  {
+   "id": "646",
+   "nome": "Beterraba - Betty"
+  },
+  {
+   "id": "69",
+   "nome": "Beterraba - Boro"
+  },
+  {
+   "id": "371",
+   "nome": "Beterraba - Boro - INATIVA"
+  },
+  {
+   "id": "500",
+   "nome": "Beterraba - Boro - INATIVA"
+  },
+  {
+   "id": "603",
+   "nome": "Blueberry - Biloxi"
+  },
+  {
+   "id": "2060",
+   "nome": "Brócolis - Brócolis"
+  },
+  {
+   "id": "1454",
+   "nome": "Brócolis - Brócolis"
+  },
+  {
+   "id": "493",
+   "nome": "Café - Acaia"
+  },
+  {
+   "id": "1900",
+   "nome": "Café - Acauãma"
+  },
+  {
+   "id": "495",
+   "nome": "Café - Arara"
+  },
+  {
+   "id": "159",
+   "nome": "Café - Bourbon"
+  },
+  {
+   "id": "5",
+   "nome": "Café - Catuaí 144"
+  },
+  {
+   "id": "160",
+   "nome": "Café - Catuaí 62"
+  },
+  {
+   "id": "191",
+   "nome": "Café - Catuaí 99"
+  },
+  {
+   "id": "771",
+   "nome": "Café - Catucaí 24/137"
+  },
+  {
+   "id": "490",
+   "nome": "Café - Guara"
+  },
+  {
+   "id": "492",
+   "nome": "Café - IAC 125"
+  },
+  {
+   "id": "489",
+   "nome": "Café - IBC12"
+  },
+  {
+   "id": "161",
+   "nome": "Café - Icatú"
+  },
+  {
+   "id": "728",
+   "nome": "Café - IPR 100"
+  },
+  {
+   "id": "1963",
+   "nome": "Café - IPR 103"
+  },
+  {
+   "id": "494",
+   "nome": "Café - Kyoei"
+  },
+  {
+   "id": "81",
+   "nome": "Café - Mundo Novo"
+  },
+  {
+   "id": "162",
+   "nome": "Café - Obat"
+  },
+  {
+   "id": "491",
+   "nome": "Café - Paraíso"
+  },
+  {
+   "id": "157",
+   "nome": "Café - Rubí"
+  },
+  {
+   "id": "1981",
+   "nome": "Café - Sarchimor MG8840"
+  },
+  {
+   "id": "158",
+   "nome": "Café - Topázio"
+  },
+  {
+   "id": "156",
+   "nome": "Café - Tupi"
+  },
+  {
+   "id": "1700",
+   "nome": "Café Conilon - Conilon"
+  },
+  {
+   "id": "1699",
+   "nome": "Café/Mamão - Conilon"
+  },
+  {
+   "id": "1524",
+   "nome": "Cana de Açúcar - Comum - P.25002 CTC 9001- INV 23 - padrão"
+  },
+  {
+   "id": "1752",
+   "nome": "Cana-de-Açúcar - Comum - 5522"
+  },
+  {
+   "id": "1753",
+   "nome": "Cana-de-Açúcar - Comum - 7825"
+  },
+  {
+   "id": "1754",
+   "nome": "Cana-de-Açúcar - Comum - CT4"
+  },
+  {
+   "id": "1755",
+   "nome": "Cana-de-Açúcar - Comum 8008"
+  },
+  {
+   "id": "857",
+   "nome": "Cana-de-Açúcar - CTC 02"
+  },
+  {
+   "id": "713",
+   "nome": "Cana-de-Açúcar - CTC 04"
+  },
+  {
+   "id": "714",
+   "nome": "Cana-de-Açúcar - CTC 15"
+  },
+  {
+   "id": "859",
+   "nome": "Cana-de-Açúcar - CTC 20BT"
+  },
+  {
+   "id": "1309",
+   "nome": "Cana-de-Açúcar - CTC 22994"
+  },
+  {
+   "id": "712",
+   "nome": "Cana-de-Açúcar - CTC 9001"
+  },
+  {
+   "id": "858",
+   "nome": "Cana-de-Açúcar - CTC 9002"
+  },
+  {
+   "id": "1307",
+   "nome": "Cana-de-Açúcar - CTC 9006"
+  },
+  {
+   "id": "1308",
+   "nome": "Cana-de-Açúcar - CTC 9007"
+  },
+  {
+   "id": "2057",
+   "nome": "Cana-de-Açúcar - CTC 9007"
+  },
+  {
+   "id": "1306",
+   "nome": "Cana-de-Açúcar - IAC SP015503"
+  },
+  {
+   "id": "1315",
+   "nome": "Cana-de-Açúcar - IAC SP95-5094"
+  },
+  {
+   "id": "1771",
+   "nome": "Cana-de-Açúcar - IAC5094 - Canavieiro"
+  },
+  {
+   "id": "1772",
+   "nome": "Cana-de-Açúcar - IAC5094 - Graneleiro"
+  },
+  {
+   "id": "1750",
+   "nome": "Cana-de-Açúcar - IACSP07-7207"
+  },
+  {
+   "id": "717",
+   "nome": "Cana-de-Açúcar - IACSP95-5000"
+  },
+  {
+   "id": "1887",
+   "nome": "Cana-de-Açúcar - RB 075322"
+  },
+  {
+   "id": "1310",
+   "nome": "Cana-de-Açúcar - RB 5014"
+  },
+  {
+   "id": "716",
+   "nome": "Cana-de-Açúcar - RB 720454"
+  },
+  {
+   "id": "224",
+   "nome": "Cana-de-Açúcar - RB 835486"
+  },
+  {
+   "id": "854",
+   "nome": "Cana-de-Açúcar - RB 855156"
+  },
+  {
+   "id": "29",
+   "nome": "Cana-de-Açúcar - RB 867515"
+  },
+  {
+   "id": "1770",
+   "nome": "Cana-de-Açúcar - RB 867515"
+  },
+  {
+   "id": "117",
+   "nome": "Cana-de-Açúcar - RB 92579"
+  },
+  {
+   "id": "1769",
+   "nome": "Cana-de-Açúcar - RB 966928"
+  },
+  {
+   "id": "715",
+   "nome": "Cana-de-Açúcar - RB 966928"
+  },
+  {
+   "id": "1701",
+   "nome": "Cana-de-Açúcar - RB 971702"
+  },
+  {
+   "id": "855",
+   "nome": "Cana-de-Açúcar - RB 975201"
+  },
+  {
+   "id": "2055",
+   "nome": "Cana-de-Açúcar - RB 975201"
+  },
+  {
+   "id": "856",
+   "nome": "Cana-de-Açúcar - RB 975242"
+  },
+  {
+   "id": "1316",
+   "nome": "Cana-de-Açúcar - RB 975952"
+  },
+  {
+   "id": "1131",
+   "nome": "Cana-de-Açúcar - RB 985476"
+  },
+  {
+   "id": "718",
+   "nome": "Cana-de-Açúcar - SP 791011"
+  },
+  {
+   "id": "225",
+   "nome": "Cana-de-Açúcar - SP 801816"
+  },
+  {
+   "id": "222",
+   "nome": "Cana-de-Açúcar - SP 801842"
+  },
+  {
+   "id": "226",
+   "nome": "Cana-de-Açúcar - SP 813250"
+  },
+  {
+   "id": "1514",
+   "nome": "Cana-de-Açúcar - (Comum) - G.SETOR 1 - CTC 9001- INV 23 - padrão"
+  },
+  {
+   "id": "1515",
+   "nome": "Cana-de-Açúcar - (Comum) - G.SETOR 2 - CTC 9001- INV 23 - padrão"
+  },
+  {
+   "id": "1516",
+   "nome": "Cana-de-Açúcar - (Comum) - G.SETOR 3 - CTC 9001- INV 23 - padrão"
+  },
+  {
+   "id": "1517",
+   "nome": "Cana-de-Açúcar - (Comum) - G.SETOR 4 - CTC 9001- INV 23 - padrão"
+  },
+  {
+   "id": "1518",
+   "nome": "Cana-de-Açúcar - (Comum) - G.SETOR 5 - CTC 9001- INV 23 - padrão"
+  },
+  {
+   "id": "1519",
+   "nome": "Cana-de-Açúcar - (Comum) - G.SETOR 6 - CTC 9001- INV 23 - padrão"
+  },
+  {
+   "id": "1520",
+   "nome": "Cana-de-Açúcar - (Comum) - P.25001 CTC 9001 - INV 23"
+  },
+  {
+   "id": "1521",
+   "nome": "Cana-de-Açúcar - (Comum) - P.25001 CTC 9001- INV 23 - padrão"
+  },
+  {
+   "id": "1522",
+   "nome": "Cana-de-Açúcar - (Comum) - P.25002 CTC 9001- INV 23 - ciclo de maturação"
+  },
+  {
+   "id": "1523",
+   "nome": "Cana-de-Açúcar - (Comum) - P.25003 IACSP95-5094- INV 23 - padrão"
+  },
+  {
+   "id": "1525",
+   "nome": "Cana-de-Açúcar - (Comum) - P.25004 RB 92579 - INV 23 - padrão"
+  },
+  {
+   "id": "1526",
+   "nome": "Cana-de-Açúcar - (Comum) - P.25005 IACSP95-5094 - INV 23 - padrão"
+  },
+  {
+   "id": "1527",
+   "nome": "Cana-de-Açúcar - (Comum) - P.25006 RB 855156 - INV 23 - padrão"
+  },
+  {
+   "id": "1528",
+   "nome": "Cana-de-Açúcar - (Comum) - P.25007 CTC 9002 - INV 23 - fase modificada"
+  },
+  {
+   "id": "1529",
+   "nome": "Cana-de-Açúcar - (Comum) - P.25007 CTC 9002 - INV 23 - padrão"
+  },
+  {
+   "id": "1530",
+   "nome": "Cana-de-Açúcar - (Comum) - P.25008 RB 835053 - INV 23 - padrão"
+  },
+  {
+   "id": "1531",
+   "nome": "Cana-de-Açúcar - (Comum) - P.25009 RB 966928 - INV 23 - fase modificada"
+  },
+  {
+   "id": "1532",
+   "nome": "Cana-de-Açúcar - (Comum) - P.25009 RB 966928 - INV 23 - padrão"
+  },
+  {
+   "id": "1961",
+   "nome": "Canola - Advanta"
+  },
+  {
+   "id": "960",
+   "nome": "Canola - Diamond"
+  },
+  {
+   "id": "2004",
+   "nome": "Canola - DK EXPECTATION"
+  },
+  {
+   "id": "961",
+   "nome": "Canola - Hyola 433"
+  },
+  {
+   "id": "962",
+   "nome": "Canola - Nuola 300"
+  },
+  {
+   "id": "2008",
+   "nome": "Carinata - Carinata"
+  },
+  {
+   "id": "256",
+   "nome": "Cebola - Akamaru"
+  },
+  {
+   "id": "706",
+   "nome": "Cebola - Alvara"
+  },
+  {
+   "id": "219",
+   "nome": "Cebola - Andromeda"
+  },
+  {
+   "id": "13",
+   "nome": "Cebola - Andromeda - Uso restrito"
+  },
+  {
+   "id": "1968",
+   "nome": "Cebola - Andromeda - Uso restrito"
+  },
+  {
+   "id": "601",
+   "nome": "Cebola - Annika"
+  },
+  {
+   "id": "306",
+   "nome": "Cebola - Aquarius"
+  },
+  {
+   "id": "424",
+   "nome": "Cebola - Asteca"
+  },
+  {
+   "id": "1958",
+   "nome": "Cebola - Cattena"
+  },
+  {
+   "id": "640",
+   "nome": "Cebola - Crioula"
+  },
+  {
+   "id": "609",
+   "nome": "Cebola - Cristalina"
+  },
+  {
+   "id": "308",
+   "nome": "Cebola - Express"
+  },
+  {
+   "id": "958",
+   "nome": "Cebola - Fernanda"
+  },
+  {
+   "id": "605",
+   "nome": "Cebola - Irati"
+  },
+  {
+   "id": "1104",
+   "nome": "Cebola - Manuela"
+  },
+  {
+   "id": "253",
+   "nome": "Cebola - Mirela"
+  },
+  {
+   "id": "307",
+   "nome": "Cebola - Optima"
+  },
+  {
+   "id": "693",
+   "nome": "Cebola - Patricia"
+  },
+  {
+   "id": "746",
+   "nome": "Cebola - Perfecta"
+  },
+  {
+   "id": "410",
+   "nome": "Cebola - Podium"
+  },
+  {
+   "id": "311",
+   "nome": "Cebola - Predator"
+  },
+  {
+   "id": "1638",
+   "nome": "Cebola - Quartzo"
+  },
+  {
+   "id": "252",
+   "nome": "Cebola - Rebeca"
+  },
+  {
+   "id": "1103",
+   "nome": "Cebola - Rousset"
+  },
+  {
+   "id": "1669",
+   "nome": "Cebola - Samurai"
+  },
+  {
+   "id": "251",
+   "nome": "Cebola - Sirius"
+  },
+  {
+   "id": "309",
+   "nome": "Cebola - Soberana"
+  },
+  {
+   "id": "391",
+   "nome": "Cebola - Taila"
+  },
+  {
+   "id": "1967",
+   "nome": "Cebola - Terena"
+  },
+  {
+   "id": "1491",
+   "nome": "Cebola - Topazio"
+  },
+  {
+   "id": "1073",
+   "nome": "Cebola - Valessul"
+  },
+  {
+   "id": "1086",
+   "nome": "Cenoura - AGR 123 F1"
+  },
+  {
+   "id": "72",
+   "nome": "Cenoura - Baltimore"
+  },
+  {
+   "id": "73",
+   "nome": "Cenoura - Belgrado"
+  },
+  {
+   "id": "665",
+   "nome": "Cenoura - Bermuda"
+  },
+  {
+   "id": "861",
+   "nome": "Cenoura - Erica"
+  },
+  {
+   "id": "476",
+   "nome": "Cenoura - EX 4098"
+  },
+  {
+   "id": "74",
+   "nome": "Cenoura - Hana"
+  },
+  {
+   "id": "6",
+   "nome": "Cenoura - Juliana"
+  },
+  {
+   "id": "862",
+   "nome": "Cenoura - Juliana"
+  },
+  {
+   "id": "622",
+   "nome": "Cenoura - Maestro"
+  },
+  {
+   "id": "1085",
+   "nome": "Cenoura - Maestro"
+  },
+  {
+   "id": "863",
+   "nome": "Cenoura - Melinda"
+  },
+  {
+   "id": "71",
+   "nome": "Cenoura - Nancy"
+  },
+  {
+   "id": "1510",
+   "nome": "Cenoura - Nanda"
+  },
+  {
+   "id": "75",
+   "nome": "Cenoura - Nandri"
+  },
+  {
+   "id": "641",
+   "nome": "Cenoura - Natuna"
+  },
+  {
+   "id": "15",
+   "nome": "Cenoura - Nayarit"
+  },
+  {
+   "id": "425",
+   "nome": "Cenoura - Soprano"
+  },
+  {
+   "id": "656",
+   "nome": "Cenoura - SV1099DT"
+  },
+  {
+   "id": "1087",
+   "nome": "Cenoura - SV7390DT"
+  },
+  {
+   "id": "1084",
+   "nome": "Cenoura - Verano"
+  },
+  {
+   "id": "51",
+   "nome": "Cenoura - Verano"
+  },
+  {
+   "id": "49",
+   "nome": "Cenoura - Inverno - Outra"
+  },
+  {
+   "id": "70",
+   "nome": "Cenoura - Verão - Outra"
+  },
+  {
+   "id": "1506",
+   "nome": "Centeio - BRS Progresso"
+  },
+  {
+   "id": "1128",
+   "nome": "Centeio - BRS Serrano"
+  },
+  {
+   "id": "901",
+   "nome": "Cevada - 2B"
+  },
+  {
+   "id": "633",
+   "nome": "Cevada - BRS Brau"
+  },
+  {
+   "id": "619",
+   "nome": "Cevada - BRS Sampa"
+  },
+  {
+   "id": "898",
+   "nome": "Cevada - BRS Sampa"
+  },
+  {
+   "id": "900",
+   "nome": "Cevada - Danielle"
+  },
+  {
+   "id": "634",
+   "nome": "Cevada - Irina"
+  },
+  {
+   "id": "113",
+   "nome": "Cevada - Itanema"
+  },
+  {
+   "id": "1507",
+   "nome": "Cevada - Juventa"
+  },
+  {
+   "id": "56",
+   "nome": "Cevada - Manduri"
+  },
+  {
+   "id": "887",
+   "nome": "Cevada - Planet"
+  },
+  {
+   "id": "1674",
+   "nome": "Cevada - Princesa"
+  },
+  {
+   "id": "1695",
+   "nome": "Cevada - Sting"
+  },
+  {
+   "id": "1990",
+   "nome": "Cevada - Stupina 1-Melia"
+  },
+  {
+   "id": "1994",
+   "nome": "Cevada - Stupina 2-Jup"
+  },
+  {
+   "id": "768",
+   "nome": "Chia - Chia"
+  },
+  {
+   "id": "2053",
+   "nome": "Coco - Coco"
+  },
+  {
+   "id": "1509",
+   "nome": "Coentro - Coentro"
+  },
+  {
+   "id": "2037",
+   "nome": "Corn - 112-35"
+  },
+  {
+   "id": "2025",
+   "nome": "Corn - 209-70 TRE"
+  },
+  {
+   "id": "2042",
+   "nome": "Corn - 214-22STXRIB"
+  },
+  {
+   "id": "2026",
+   "nome": "Corn - 214-70 TRE"
+  },
+  {
+   "id": "2024",
+   "nome": "Corn - 214-70 TRE"
+  },
+  {
+   "id": "2044",
+   "nome": "Corn - 214-95 SSPRIB"
+  },
+  {
+   "id": "2033",
+   "nome": "Corn - 8221 PCUE"
+  },
+  {
+   "id": "2036",
+   "nome": "Corn - A641-26V"
+  },
+  {
+   "id": "1717",
+   "nome": "Corn - Becks 6414"
+  },
+  {
+   "id": "1726",
+   "nome": "Corn - Channel 213-19VT2"
+  },
+  {
+   "id": "1727",
+   "nome": "Corn - Channel 214-22STXRIB"
+  },
+  {
+   "id": "1691",
+   "nome": "Corn - Corn - Seitec 4824"
+  },
+  {
+   "id": "1484",
+   "nome": "Corn - Corn 6777 - Seitec"
+  },
+  {
+   "id": "1690",
+   "nome": "Corn - Croplan 4188"
+  },
+  {
+   "id": "1715",
+   "nome": "Corn - DKC106-98RIB"
+  },
+  {
+   "id": "2034",
+   "nome": "Corn - DKC112-12RIB"
+  },
+  {
+   "id": "2045",
+   "nome": "Corn - DKC114-43RIB"
+  },
+  {
+   "id": "1708",
+   "nome": "Corn - DKC114-99RIB"
+  },
+  {
+   "id": "1709",
+   "nome": "Corn - DKC114-99RIB"
+  },
+  {
+   "id": "1707",
+   "nome": "Corn - DKC59-82RIB"
+  },
+  {
+   "id": "1729",
+   "nome": "Corn - DKC62-69"
+  },
+  {
+   "id": "2022",
+   "nome": "Corn - G13U29-VZ"
+  },
+  {
+   "id": "1497",
+   "nome": "Corn - Hoegemeyer Corn"
+  },
+  {
+   "id": "2027",
+   "nome": "Corn - P0859 AM"
+  },
+  {
+   "id": "2040",
+   "nome": "Corn - P0924Q"
+  },
+  {
+   "id": "2043",
+   "nome": "Corn - P09944"
+  },
+  {
+   "id": "1732",
+   "nome": "Corn - P1185Q"
+  },
+  {
+   "id": "2039",
+   "nome": "Corn - P12517PCUE"
+  },
+  {
+   "id": "2038",
+   "nome": "Corn - P12517V"
+  },
+  {
+   "id": "1728",
+   "nome": "Corn - P13777"
+  },
+  {
+   "id": "2032",
+   "nome": "Corn - P13777 PCUE"
+  },
+  {
+   "id": "2023",
+   "nome": "Corn - P14364 PCUE"
+  },
+  {
+   "id": "1730",
+   "nome": "Corn - P14830"
+  },
+  {
+   "id": "1731",
+   "nome": "Corn - P14830"
+  },
+  {
+   "id": "1714",
+   "nome": "Corn - P17677V"
+  },
+  {
+   "id": "2041",
+   "nome": "Corn - PR111-60RIB"
+  },
+  {
+   "id": "1710",
+   "nome": "Corn - PR113-60RIB"
+  },
+  {
+   "id": "1725",
+   "nome": "Corn - PR113-60RIB"
+  },
+  {
+   "id": "2035",
+   "nome": "Corn - RC-6273PCE"
+  },
+  {
+   "id": "1327",
+   "nome": "Corn Bayer - 214-78DGVT2PRIB"
+  },
+  {
+   "id": "1326",
+   "nome": "Corn Bayer - DKC61-40"
+  },
+  {
+   "id": "1328",
+   "nome": "Corn Bayer - RV6205TVXZ"
+  },
+  {
+   "id": "1575",
+   "nome": "Corn Popcorn - Weaver W1033"
+  },
+  {
+   "id": "1512",
+   "nome": "Corn Seed - Bayer Romania"
+  },
+  {
+   "id": "1568",
+   "nome": "Corn Seed - Corteva Egypt"
+  },
+  {
+   "id": "1696",
+   "nome": "Corn Seed - Corteva Hungary"
+  },
+  {
+   "id": "1513",
+   "nome": "Corn Seed - Corteva Romania"
+  },
+  {
+   "id": "1697",
+   "nome": "Corn Seed - Corteva Serbia"
+  },
+  {
+   "id": "1722",
+   "nome": "Cotton - DP 2038"
+  },
+  {
+   "id": "2061",
+   "nome": "Couve Flor - Couve Flor"
+  },
+  {
+   "id": "1483",
+   "nome": "Cover Crops - Seed Mix - Cover Crops - Seed Mix"
+  },
+  {
+   "id": "608",
+   "nome": "Crambe - Crambe"
+  },
+  {
+   "id": "2007",
+   "nome": "Crotalária - Breviflora"
+  },
+  {
+   "id": "223",
+   "nome": "Crotalária - Breviflora"
+  },
+  {
+   "id": "502",
+   "nome": "Crotalária - Juncea"
+  },
+  {
+   "id": "501",
+   "nome": "Crotalária - Ochroleuca"
+  },
+  {
+   "id": "405",
+   "nome": "Crotalária - Spectabilis"
+  },
+  {
+   "id": "904",
+   "nome": "Dejetos - Dejetos"
+  },
+  {
+   "id": "1544",
+   "nome": "Ervilha - Forrageira"
+  },
+  {
+   "id": "316",
+   "nome": "Ervilha - Verde"
+  },
+  {
+   "id": "194",
+   "nome": "Estévia - 924"
+  },
+  {
+   "id": "244",
+   "nome": "Estévia - 924 - CR"
+  },
+  {
+   "id": "243",
+   "nome": "Estévia - 924 - Plantio"
+  },
+  {
+   "id": "195",
+   "nome": "Estévia - Taquari"
+  },
+  {
+   "id": "246",
+   "nome": "Estévia - Taquari - CR"
+  },
+  {
+   "id": "245",
+   "nome": "Estévia - Taquari - Plantio"
+  },
+  {
+   "id": "1649",
+   "nome": "Estilosantes - Campo Grande"
+  },
+  {
+   "id": "377",
+   "nome": "Eucalipto - Eucalipto"
+  },
+  {
+   "id": "683",
+   "nome": "Feijão - Agronorte"
+  },
+  {
+   "id": "774",
+   "nome": "Feijão - Agronorte"
+  },
+  {
+   "id": "1500",
+   "nome": "Feijão - Agronorte FC22S2"
+  },
+  {
+   "id": "1476",
+   "nome": "Feijão - BRS 414"
+  },
+  {
+   "id": "732",
+   "nome": "Feijão - BRS FC402"
+  },
+  {
+   "id": "1970",
+   "nome": "Feijão - Brs Guatã (Feijão - Guandu)"
+  },
+  {
+   "id": "1535",
+   "nome": "Feijão - BRS Radiante"
+  },
+  {
+   "id": "776",
+   "nome": "Feijão - BRS Realce"
+  },
+  {
+   "id": "759",
+   "nome": "Feijão - FS104"
+  },
+  {
+   "id": "673",
+   "nome": "Feijão - Imperador"
+  },
+  {
+   "id": "1508",
+   "nome": "Feijão - IPR AGUIA"
+  },
+  {
+   "id": "766",
+   "nome": "Feijão - Mungo"
+  },
+  {
+   "id": "1247",
+   "nome": "Feijão - Novo Matogrosso"
+  },
+  {
+   "id": "337",
+   "nome": "Feijão - Pérola - INATIVO"
+  },
+  {
+   "id": "777",
+   "nome": "Feijão - Sabia"
+  },
+  {
+   "id": "313",
+   "nome": "Feijão - 4 fases - Caupi"
+  },
+  {
+   "id": "645",
+   "nome": "Feijão - Preto - Esteio"
+  },
+  {
+   "id": "1703",
+   "nome": "Feijão - Preto - IPR Urutau"
+  },
+  {
+   "id": "644",
+   "nome": "Feijão - Preto - Uirapuru"
+  },
+  {
+   "id": "1539",
+   "nome": "Feijão 4 Fases - ANFC22"
+  },
+  {
+   "id": "55",
+   "nome": "Feijão 4 Fases - Bola Cheia"
+  },
+  {
+   "id": "1314",
+   "nome": "Feijão 4 fases - BRS 17"
+  },
+  {
+   "id": "1271",
+   "nome": "Feijão 4 fases - BRS Tumucumaque"
+  },
+  {
+   "id": "103",
+   "nome": "Feijão 4 Fases - Campos Gerais"
+  },
+  {
+   "id": "1558",
+   "nome": "Feijão 4 fases - Caupi Fradinho"
+  },
+  {
+   "id": "98",
+   "nome": "Feijão 4 Fases - Dama"
+  },
+  {
+   "id": "99",
+   "nome": "Feijão 4 Fases - Estilo"
+  },
+  {
+   "id": "807",
+   "nome": "Feijão 4 Fases - Estilo"
+  },
+  {
+   "id": "138",
+   "nome": "Feijão 4 Fases - Imperador"
+  },
+  {
+   "id": "139",
+   "nome": "Feijão 4 Fases - Imperador"
+  },
+  {
+   "id": "97",
+   "nome": "Feijão 4 Fases - Madre-Pérola"
+  },
+  {
+   "id": "136",
+   "nome": "Feijão 4 Fases - Milênio"
+  },
+  {
+   "id": "11",
+   "nome": "Feijão 4 Fases - Pérola"
+  },
+  {
+   "id": "408",
+   "nome": "Feijão 4 Fases - Pérola - INATIVO"
+  },
+  {
+   "id": "101",
+   "nome": "Feijão 4 Fases - Rubí"
+  },
+  {
+   "id": "956",
+   "nome": "Feijão 4 Fases - TAA MARHE"
+  },
+  {
+   "id": "102",
+   "nome": "Feijão 4 Fases - Tangar"
+  },
+  {
+   "id": "775",
+   "nome": "Feijão 5 Fases - ANFC 5"
+  },
+  {
+   "id": "421",
+   "nome": "Feijão 5 Fases - ANFC 9"
+  },
+  {
+   "id": "1540",
+   "nome": "Feijão 5 Fases - ANFC22"
+  },
+  {
+   "id": "91",
+   "nome": "Feijão 5 Fases - Bola Cheia"
+  },
+  {
+   "id": "722",
+   "nome": "Feijão 5 Fases - Bolinha"
+  },
+  {
+   "id": "1758",
+   "nome": "Feijão 5 Fases - BRS 415"
+  },
+  {
+   "id": "637",
+   "nome": "Feijão 5 fases - BRS Esteio"
+  },
+  {
+   "id": "94",
+   "nome": "Feijão 5 Fases - Campos Gerais"
+  },
+  {
+   "id": "642",
+   "nome": "Feijão 5 Fases - Caupi"
+  },
+  {
+   "id": "321",
+   "nome": "Feijão 5 Fases - Curió"
+  },
+  {
+   "id": "92",
+   "nome": "Feijão 5 Fases - Dama"
+  },
+  {
+   "id": "1502",
+   "nome": "Feijão 5 Fases - Dark Red"
+  },
+  {
+   "id": "1559",
+   "nome": "Feijão 5 Fases - Embrapa"
+  },
+  {
+   "id": "93",
+   "nome": "Feijão 5 Fases - Estilo"
+  },
+  {
+   "id": "1302",
+   "nome": "Feijão 5 Fases - FC 415"
+  },
+  {
+   "id": "192",
+   "nome": "Feijão 5 Fases - Gol"
+  },
+  {
+   "id": "1014",
+   "nome": "Feijão 5 Fases - IAC 1849"
+  },
+  {
+   "id": "748",
+   "nome": "Feijão 5 Fases - IAC 1850"
+  },
+  {
+   "id": "1039",
+   "nome": "Feijão 5 Fases - IAC 2051"
+  },
+  {
+   "id": "1676",
+   "nome": "Feijão 5 Fases - IAC 2157"
+  },
+  {
+   "id": "1493",
+   "nome": "Feijão 5 Fases - IAC 2521"
+  },
+  {
+   "id": "1748",
+   "nome": "Feijão 5 Fases - IAC NELORE"
+  },
+  {
+   "id": "905",
+   "nome": "Feijão 5 Fases - IPR Sábia"
+  },
+  {
+   "id": "193",
+   "nome": "Feijão 5 Fases - Jalo Rajado"
+  },
+  {
+   "id": "96",
+   "nome": "Feijão 5 Fases - Madre-Pérola"
+  },
+  {
+   "id": "1704",
+   "nome": "Feijão 5 Fases - Marhe"
+  },
+  {
+   "id": "2011",
+   "nome": "Feijão 5 Fases - Marre"
+  },
+  {
+   "id": "137",
+   "nome": "Feijão 5 Fases - Milênio"
+  },
+  {
+   "id": "45",
+   "nome": "Feijão 5 fases - Pérola"
+  },
+  {
+   "id": "1242",
+   "nome": "Feijão 5 Fases - Polaco"
+  },
+  {
+   "id": "1015",
+   "nome": "Feijão 5 Fases - Preto Urutal"
+  },
+  {
+   "id": "723",
+   "nome": "Feijão 5 Fases - RM3"
+  },
+  {
+   "id": "100",
+   "nome": "Feijão 5 Fases - Rubí"
+  },
+  {
+   "id": "426",
+   "nome": "Feijão 5 Fases - Sintonia"
+  },
+  {
+   "id": "889",
+   "nome": "Feijão 5 Fases - TAA MARHE"
+  },
+  {
+   "id": "95",
+   "nome": "Feijão 5 Fases - Tangar"
+  },
+  {
+   "id": "643",
+   "nome": "Feijão 5 Fases - Tuiuiú"
+  },
+  {
+   "id": "1379",
+   "nome": "Feijão 5 Fases - Unamax IAC 2358"
+  },
+  {
+   "id": "2047",
+   "nome": "Feijão 6 Fases - Dama"
+  },
+  {
+   "id": "2048",
+   "nome": "Feijão 6 Fases - Rajado"
+  },
+  {
+   "id": "1912",
+   "nome": "Feijão Branco - PAN 123"
+  },
+  {
+   "id": "625",
+   "nome": "Feijão Preto - BRS Esplendor"
+  },
+  {
+   "id": "1324",
+   "nome": "Feijão Preto - BRS FP 403"
+  },
+  {
+   "id": "1554",
+   "nome": "Feijão Preto - IAC VELOZ"
+  },
+  {
+   "id": "639",
+   "nome": "Feijão Preto - Netuno"
+  },
+  {
+   "id": "436",
+   "nome": "Feijão Preto - Touqui"
+  },
+  {
+   "id": "1270",
+   "nome": "Gergelim - K3"
+  },
+  {
+   "id": "1984",
+   "nome": "Gergelim - MIKA"
+  },
+  {
+   "id": "1983",
+   "nome": "Gergelim - OREN"
+  },
+  {
+   "id": "1656",
+   "nome": "Gergelim - Vitoria"
+  },
+  {
+   "id": "1924",
+   "nome": "Girassol - NUSOL 4145"
+  },
+  {
+   "id": "1702",
+   "nome": "Girassol - SYN 4066"
+  },
+  {
+   "id": "41",
+   "nome": "Girassol Semente - Heliagro"
+  },
+  {
+   "id": "1959",
+   "nome": "Girassol Semente - Helio 251"
+  },
+  {
+   "id": "1463",
+   "nome": "Girassol Semente - Nosol 606"
+  },
+  {
+   "id": "1479",
+   "nome": "Grama - Esmeralda"
+  },
+  {
+   "id": "1936",
+   "nome": "Grama - Esmeralda - Pós corte - 2 Fases"
+  },
+  {
+   "id": "1408",
+   "nome": "Grama - Estrela"
+  },
+  {
+   "id": "847",
+   "nome": "Grão de Bico - BRS Aleppo"
+  },
+  {
+   "id": "1285",
+   "nome": "Jaborandi - Pilocarpus microphyllus"
+  },
+  {
+   "id": "1631",
+   "nome": "Laranja - Hamilin"
+  },
+  {
+   "id": "1490",
+   "nome": "Laranja - Pera Natal"
+  },
+  {
+   "id": "1487",
+   "nome": "Laranja - Pera Rio"
+  },
+  {
+   "id": "1489",
+   "nome": "Laranja - Pera Rio"
+  },
+  {
+   "id": "636",
+   "nome": "Laranja - Pera Rio"
+  },
+  {
+   "id": "778",
+   "nome": "Laranja - Pera Rio"
+  },
+  {
+   "id": "1628",
+   "nome": "Laranja - Rubi"
+  },
+  {
+   "id": "1630",
+   "nome": "Laranja - Valência americana"
+  },
+  {
+   "id": "1629",
+   "nome": "Laranja - Valência comum"
+  },
+  {
+   "id": "1340",
+   "nome": "Laranja - Coopercitrus - JF Citrus"
+  },
+  {
+   "id": "2054",
+   "nome": "Lentilha - Lentilha"
+  },
+  {
+   "id": "1070",
+   "nome": "Limão - Tahiti"
+  },
+  {
+   "id": "1008",
+   "nome": "Maize - AG 3500 RR2"
+  },
+  {
+   "id": "221",
+   "nome": "Mamão - Formosa"
+  },
+  {
+   "id": "2064",
+   "nome": "Mamão - Havaí"
+  },
+  {
+   "id": "1723",
+   "nome": "Mamão - Havaí 1"
+  },
+  {
+   "id": "2065",
+   "nome": "Mamão - Havaí ES"
+  },
+  {
+   "id": "220",
+   "nome": "Mamão - Papaia"
+  },
+  {
+   "id": "1672",
+   "nome": "Mamona Comercial - KS2019"
+  },
+  {
+   "id": "42",
+   "nome": "Mamona Semente - Heliagro"
+  },
+  {
+   "id": "1661",
+   "nome": "Mamona Semente - Kaiima Seeds"
+  },
+  {
+   "id": "1932",
+   "nome": "Mamona Semente - MIA SH4"
+  },
+  {
+   "id": "2016",
+   "nome": "Mandioca - Baianinha"
+  },
+  {
+   "id": "631",
+   "nome": "Mandioca - IAC90"
+  },
+  {
+   "id": "407",
+   "nome": "Mandioca - Mandioquinha Salsa"
+  },
+  {
+   "id": "1505",
+   "nome": "Mandioca - Pretinha"
+  },
+  {
+   "id": "1017",
+   "nome": "Manga - Palmer"
+  },
+  {
+   "id": "177",
+   "nome": "Melancia - Melancia"
+  },
+  {
+   "id": "1488",
+   "nome": "Mexerica Ponkan - Ponkan"
+  },
+  {
+   "id": "1119",
+   "nome": "Milheto - ADR 200"
+  },
+  {
+   "id": "1460",
+   "nome": "Milheto - ADR 300"
+  },
+  {
+   "id": "414",
+   "nome": "Milheto - ADR 300"
+  },
+  {
+   "id": "1938",
+   "nome": "MILHETO - ADR 6010"
+  },
+  {
+   "id": "1012",
+   "nome": "MILHETO - ADR 9060"
+  },
+  {
+   "id": "406",
+   "nome": "Milheto - ADR G9050"
+  },
+  {
+   "id": "1937",
+   "nome": "Milheto - ADR G9050"
+  },
+  {
+   "id": "1312",
+   "nome": "Milheto - ADRG 9070"
+  },
+  {
+   "id": "1252",
+   "nome": "Milheto - ANM 05"
+  },
+  {
+   "id": "1300",
+   "nome": "Milheto - ANm 05"
+  },
+  {
+   "id": "647",
+   "nome": "Milheto - BRS 1501"
+  },
+  {
+   "id": "1650",
+   "nome": "Milheto - BRS A 502"
+  },
+  {
+   "id": "22",
+   "nome": "Milheto - Milheto"
+  },
+  {
+   "id": "1461",
+   "nome": "Milheto - MIX DE COBERTURA"
+  },
+  {
+   "id": "1236",
+   "nome": "Milho - AG 3500 RR2 *"
+  },
+  {
+   "id": "1006",
+   "nome": "Milho - AG 3700 RR2"
+  },
+  {
+   "id": "1007",
+   "nome": "Milho - AG 3700 RR2"
+  },
+  {
+   "id": "676",
+   "nome": "Milho - AG 3700 RR2"
+  },
+  {
+   "id": "1190",
+   "nome": "Milho - AG 3707"
+  },
+  {
+   "id": "1455",
+   "nome": "Milho - AG 8606 Agroceres"
+  },
+  {
+   "id": "1768",
+   "nome": "Milho - AG 8707 PRO4"
+  },
+  {
+   "id": "1419",
+   "nome": "Milho - AG8701PRO4"
+  },
+  {
+   "id": "1101",
+   "nome": "Milho - Agroceres AG8065"
+  },
+  {
+   "id": "437",
+   "nome": "Milho - AS 1581 PRO"
+  },
+  {
+   "id": "615",
+   "nome": "Milho - AS 1581 PRO"
+  },
+  {
+   "id": "1749",
+   "nome": "Milho - Brevant 16K30"
+  },
+  {
+   "id": "1889",
+   "nome": "Milho - Brevant 2811 PWU"
+  },
+  {
+   "id": "779",
+   "nome": "Milho - Brevant 2B401 PWU"
+  },
+  {
+   "id": "1813",
+   "nome": "Milho - BRS Gorutuba"
+  },
+  {
+   "id": "1092",
+   "nome": "Milho - DKB 3800 RR"
+  },
+  {
+   "id": "1095",
+   "nome": "Milho - DKB 3800 RR"
+  },
+  {
+   "id": "1433",
+   "nome": "Milho - DKB 3510 RR2"
+  },
+  {
+   "id": "753",
+   "nome": "Milho - Dow 2B48"
+  },
+  {
+   "id": "997",
+   "nome": "Milho - K8774 PRO 3"
+  },
+  {
+   "id": "998",
+   "nome": "Milho - LG 36790"
+  },
+  {
+   "id": "1424",
+   "nome": "Milho - NS 0071"
+  },
+  {
+   "id": "1250",
+   "nome": "Milho - NS 73"
+  },
+  {
+   "id": "1223",
+   "nome": "Milho - NS 75 VIP3"
+  },
+  {
+   "id": "1441",
+   "nome": "Milho - NS44"
+  },
+  {
+   "id": "1436",
+   "nome": "Milho - NS80 VIP3"
+  },
+  {
+   "id": "303",
+   "nome": "Milho - Pesquisa (Uso Restrito)"
+  },
+  {
+   "id": "324",
+   "nome": "Milho - Pesquisa UBS UDI"
+  },
+  {
+   "id": "238",
+   "nome": "Milho - Pioneer 30F35"
+  },
+  {
+   "id": "1746",
+   "nome": "Milho - Pioneer P1306"
+  },
+  {
+   "id": "1745",
+   "nome": "Milho - Pioneer P1408"
+  },
+  {
+   "id": "1083",
+   "nome": "Milho - RIBER K7510 VIP3"
+  },
+  {
+   "id": "1651",
+   "nome": "Milho - SHU 6211"
+  },
+  {
+   "id": "1561",
+   "nome": "Milho - Waxy"
+  },
+  {
+   "id": "202",
+   "nome": "Milho - Agroceres - AG 7088 RR2 - INATIVO"
+  },
+  {
+   "id": "283",
+   "nome": "Milho - Agroceres - AG 7088 RR2 - INATIVO"
+  },
+  {
+   "id": "412",
+   "nome": "Milho - Agroceres - AG 8088 PRO2 - INATIVO"
+  },
+  {
+   "id": "197",
+   "nome": "Milho - Agroceres - AG 9030 - INATIVO"
+  },
+  {
+   "id": "281",
+   "nome": "Milho - Agroceres - AG 9030 - INATIVO"
+  },
+  {
+   "id": "237",
+   "nome": "Milho - Agroceres - 4 fases - AG 7088 RR2"
+  },
+  {
+   "id": "503",
+   "nome": "Milho - Agroceres - 4 fases - AG 8070 PRO3"
+  },
+  {
+   "id": "215",
+   "nome": "Milho - Agroceres - 4 fases - AG 8088 PRO"
+  },
+  {
+   "id": "515",
+   "nome": "Milho - Agroceres - 4 fases - AG 8088 PRO2"
+  },
+  {
+   "id": "516",
+   "nome": "Milho - Agroceres - 4 fases - AG 8088 PRO2"
+  },
+  {
+   "id": "522",
+   "nome": "Milho - Agroceres - 4 fases - AG 9010 Convencional"
+  },
+  {
+   "id": "521",
+   "nome": "Milho - Agroceres - 4 fases - AG 9010 PRO"
+  },
+  {
+   "id": "519",
+   "nome": "Milho - Agroceres - 4 fases - AG 9030 PRO"
+  },
+  {
+   "id": "201",
+   "nome": "Milho - Agroceres - 4 fases - AG 9030 PRO2"
+  },
+  {
+   "id": "517",
+   "nome": "Milho - Agroceres - 4 fases - AG 9030 RR2"
+  },
+  {
+   "id": "526",
+   "nome": "Milho - Agroceres - 4 fases - AG 9050 PRO3"
+  },
+  {
+   "id": "523",
+   "nome": "Milho - Agroceres - 5 fases - AG 9010 PRO"
+  },
+  {
+   "id": "530",
+   "nome": "Milho - Agroeste - 4 fases - AS 1551 PRO2"
+  },
+  {
+   "id": "532",
+   "nome": "Milho - Agroeste - 4 fases - AS 1555 PRO3"
+  },
+  {
+   "id": "534",
+   "nome": "Milho - Agroeste - 4 fases - AS 1575 PRO3"
+  },
+  {
+   "id": "538",
+   "nome": "Milho - Agroeste - 4 fases - AS 1590 PRO"
+  },
+  {
+   "id": "544",
+   "nome": "Milho - Agroeste - 4 fases - AS 1596 PRO3"
+  },
+  {
+   "id": "540",
+   "nome": "Milho - Agroeste - 4 fases - AS 1598 PRO"
+  },
+  {
+   "id": "214",
+   "nome": "Milho - Agroeste - 4 fases - AS 1633 PRO3"
+  },
+  {
+   "id": "546",
+   "nome": "Milho - Agroeste - 4 fases - AS 1666 PRO3"
+  },
+  {
+   "id": "548",
+   "nome": "Milho - Agroeste - 4 fases - AS 1666 RR2"
+  },
+  {
+   "id": "543",
+   "nome": "Milho - Agroeste - 4 fases - AS 1677 PRO3"
+  },
+  {
+   "id": "551",
+   "nome": "Milho - Agroeste - 4 fases - AS 1735 PRO3"
+  },
+  {
+   "id": "553",
+   "nome": "Milho - Agroeste - 4 fases - AS 1757 PRO3"
+  },
+  {
+   "id": "1855",
+   "nome": "Milho - Agroeste - 4 fases - AS 1757 PRO4"
+  },
+  {
+   "id": "529",
+   "nome": "Milho - Agroeste - 4 fases - AS 1777 PRO2"
+  },
+  {
+   "id": "558",
+   "nome": "Milho - BioGene - 4 fases - BG 7037H"
+  },
+  {
+   "id": "556",
+   "nome": "Milho - BioGene - 4 fases - BG 7037VYH"
+  },
+  {
+   "id": "560",
+   "nome": "Milho - BioGene - 4 fases - BG 7046"
+  },
+  {
+   "id": "562",
+   "nome": "Milho - BioGene - 4 fases - BG 7046H"
+  },
+  {
+   "id": "564",
+   "nome": "Milho - BioGene - 4 fases - BG 7046VYH"
+  },
+  {
+   "id": "566",
+   "nome": "Milho - BioGene - 4 fases - BG 7049"
+  },
+  {
+   "id": "568",
+   "nome": "Milho - BioGene - 4 fases - BG 7060HR"
+  },
+  {
+   "id": "570",
+   "nome": "Milho - BioGene - 4 fases - BG 7060YH"
+  },
+  {
+   "id": "572",
+   "nome": "Milho - BioGene - 4 fases - BG 7061H"
+  },
+  {
+   "id": "574",
+   "nome": "Milho - BioGene - 4 fases - BG 7061YHR"
+  },
+  {
+   "id": "817",
+   "nome": "Milho - BioGene - 4 fases - BG 7318 YH"
+  },
+  {
+   "id": "554",
+   "nome": "Milho - BioGene - 4 fases - BG 7542H"
+  },
+  {
+   "id": "393",
+   "nome": "Milho - Coodetec - 5 fases - Cd 3692"
+  },
+  {
+   "id": "575",
+   "nome": "Milho - Dekalb - 4 fases - DKB 175 PRO"
+  },
+  {
+   "id": "576",
+   "nome": "Milho - Dekalb - 4 fases - DKB 175 PRO2"
+  },
+  {
+   "id": "577",
+   "nome": "Milho - Dekalb - 4 fases - DKB 175 RR2"
+  },
+  {
+   "id": "584",
+   "nome": "Milho - Dekalb - 4 fases - DKB 177 PRO3"
+  },
+  {
+   "id": "583",
+   "nome": "Milho - Dekalb - 4 fases - DKB 230 PRO3"
+  },
+  {
+   "id": "582",
+   "nome": "Milho - Dekalb - 4 fases - DKB 240 PRO2"
+  },
+  {
+   "id": "581",
+   "nome": "Milho - Dekalb - 4 fases - DKB 240 PRO3"
+  },
+  {
+   "id": "250",
+   "nome": "Milho - Dekalb - 4 fases - DKB 310 PRO2"
+  },
+  {
+   "id": "590",
+   "nome": "Milho - Dekalb - 4 fases - DKB 340 PRO2"
+  },
+  {
+   "id": "587",
+   "nome": "Milho - Dekalb - 4 fases - DKB 390 PRO2"
+  },
+  {
+   "id": "586",
+   "nome": "Milho - Dekalb - 4 fases - DKB 390 PRO3"
+  },
+  {
+   "id": "589",
+   "nome": "Milho - Dekalb - 4 fases - DKB 390 RR2"
+  },
+  {
+   "id": "233",
+   "nome": "Milho - Dow - 2A401 PW"
+  },
+  {
+   "id": "200",
+   "nome": "Milho - Dow - 2B433 Hx"
+  },
+  {
+   "id": "234",
+   "nome": "Milho - Dow - 2B633 PW"
+  },
+  {
+   "id": "232",
+   "nome": "Milho - Dow - 2B688 PW"
+  },
+  {
+   "id": "230",
+   "nome": "Milho - Dow - 2B707 Hx"
+  },
+  {
+   "id": "229",
+   "nome": "Milho - Dow - 2B710 PW"
+  },
+  {
+   "id": "270",
+   "nome": "Milho - Dow - 2B810 PW"
+  },
+  {
+   "id": "387",
+   "nome": "Milho - DuPont Pioneer - 30S31VYH"
+  },
+  {
+   "id": "389",
+   "nome": "Milho - DuPont Pioneer - P3630H"
+  },
+  {
+   "id": "199",
+   "nome": "Milho - KWS - 9110 YG"
+  },
+  {
+   "id": "217",
+   "nome": "Milho - KWS - RB 9004"
+  },
+  {
+   "id": "1477",
+   "nome": "Milho - KWS - RB 9004"
+  },
+  {
+   "id": "218",
+   "nome": "Milho - KWS - RB 9005"
+  },
+  {
+   "id": "239",
+   "nome": "Milho - KWS - RB 9110 YG"
+  },
+  {
+   "id": "457",
+   "nome": "Milho - Monsanto - RefugioMax"
+  },
+  {
+   "id": "210",
+   "nome": "Milho - Morgan - MG 652 PRO2"
+  },
+  {
+   "id": "155",
+   "nome": "Milho - Morgan - MG580 PW"
+  },
+  {
+   "id": "249",
+   "nome": "Milho - Nidera - AS 90"
+  },
+  {
+   "id": "203",
+   "nome": "Milho - Pioneer - 30F35"
+  },
+  {
+   "id": "260",
+   "nome": "Milho - Pioneer - 30F53H"
+  },
+  {
+   "id": "209",
+   "nome": "Milho - Pioneer - P3646"
+  },
+  {
+   "id": "392",
+   "nome": "Milho - Syngenta - Impacto"
+  },
+  {
+   "id": "1645",
+   "nome": "Milho comercial - AG 8606 PRO 4"
+  },
+  {
+   "id": "1646",
+   "nome": "Milho Comercial - AS 1991 PRO 4"
+  },
+  {
+   "id": "1641",
+   "nome": "Milho Comercial - 2M 88 PRO3 Agromen"
+  },
+  {
+   "id": "1265",
+   "nome": "Milho Comercial - 8701"
+  },
+  {
+   "id": "892",
+   "nome": "Milho comercial - AG 1051"
+  },
+  {
+   "id": "893",
+   "nome": "Milho Comercial - AG 1051"
+  },
+  {
+   "id": "1844",
+   "nome": "Milho Comercial - AG 2200"
+  },
+  {
+   "id": "1256",
+   "nome": "Milho Comercial - AG 70801"
+  },
+  {
+   "id": "1450",
+   "nome": "Milho Comercial - AG 8600 PRO4"
+  },
+  {
+   "id": "1615",
+   "nome": "Milho Comercial - AG 8701 PRO 04"
+  },
+  {
+   "id": "1170",
+   "nome": "Milho Comercial - AG 8701 PRO3"
+  },
+  {
+   "id": "1546",
+   "nome": "Milho Comercial - AG 9070 PRO4"
+  },
+  {
+   "id": "1917",
+   "nome": "Milho Comercial - AGN 2M30"
+  },
+  {
+   "id": "1465",
+   "nome": "Milho Comercial - AGN 2M40 PRO4"
+  },
+  {
+   "id": "1279",
+   "nome": "Milho Comercial - Agroceres 8701"
+  },
+  {
+   "id": "1325",
+   "nome": "Milho Comercial - AGROCERES 8701 PRO4"
+  },
+  {
+   "id": "512",
+   "nome": "Milho Comercial - Agroceres AG 7088 Convencional"
+  },
+  {
+   "id": "510",
+   "nome": "Milho Comercial - Agroceres AG 7088 PRO2"
+  },
+  {
+   "id": "1232",
+   "nome": "Milho Comercial - Agroceres AG 7088 PRO2 *"
+  },
+  {
+   "id": "511",
+   "nome": "Milho Comercial - Agroceres AG 7088 PRO3"
+  },
+  {
+   "id": "275",
+   "nome": "Milho Comercial - Agroceres AG 7088 RR2"
+  },
+  {
+   "id": "276",
+   "nome": "Milho Comercial - Agroceres AG 7098 PRO"
+  },
+  {
+   "id": "509",
+   "nome": "Milho Comercial - Agroceres AG 7098 PRO"
+  },
+  {
+   "id": "150",
+   "nome": "Milho comercial - Agroceres AG 7098 PRO - 4 fases"
+  },
+  {
+   "id": "1790",
+   "nome": "Milho Comercial - Agroceres AG 7098 TRE TSI"
+  },
+  {
+   "id": "513",
+   "nome": "Milho Comercial - Agroceres AG 8061 PRO"
+  },
+  {
+   "id": "514",
+   "nome": "Milho Comercial - Agroceres AG 8061 PRO2"
+  },
+  {
+   "id": "473",
+   "nome": "Milho Comercial - Agroceres AG 8070 PRO3"
+  },
+  {
+   "id": "277",
+   "nome": "Milho Comercial - Agroceres AG 8088 PRO"
+  },
+  {
+   "id": "745",
+   "nome": "Milho Comercial - Agroceres AG 8480"
+  },
+  {
+   "id": "507",
+   "nome": "Milho Comercial - Agroceres AG 8677 PRO2"
+  },
+  {
+   "id": "987",
+   "nome": "Milho Comercial - Agroceres AG 8700 PRO3"
+  },
+  {
+   "id": "278",
+   "nome": "Milho Comercial - Agroceres AG 8780 PRO"
+  },
+  {
+   "id": "154",
+   "nome": "Milho comercial - Agroceres AG 8780 PRO - 4 fases"
+  },
+  {
+   "id": "499",
+   "nome": "Milho Comercial - Agroceres AG 9000 PRO3"
+  },
+  {
+   "id": "524",
+   "nome": "Milho Comercial - Agroceres AG 9010 Convencional"
+  },
+  {
+   "id": "527",
+   "nome": "Milho Comercial - Agroceres AG 9010 PRO"
+  },
+  {
+   "id": "1319",
+   "nome": "Milho Comercial - Agroceres AG 9021"
+  },
+  {
+   "id": "279",
+   "nome": "Milho Comercial - Agroceres AG 9025 PRO2"
+  },
+  {
+   "id": "147",
+   "nome": "Milho comercial - Agroceres AG 9025 PRO2 - 4 fases"
+  },
+  {
+   "id": "280",
+   "nome": "Milho Comercial - Agroceres AG 9025 PRO3"
+  },
+  {
+   "id": "148",
+   "nome": "Milho comercial - Agroceres AG 9025 PRO3 - 4 fases"
+  },
+  {
+   "id": "520",
+   "nome": "Milho Comercial - Agroceres AG 9030 PRO"
+  },
+  {
+   "id": "282",
+   "nome": "Milho Comercial - Agroceres AG 9030 PRO2"
+  },
+  {
+   "id": "518",
+   "nome": "Milho Comercial - Agroceres AG 9030 RR2"
+  },
+  {
+   "id": "528",
+   "nome": "Milho Comercial - Agroceres AG 9050 PRO3"
+  },
+  {
+   "id": "729",
+   "nome": "Milho Comercial - Agroeste 1844"
+  },
+  {
+   "id": "485",
+   "nome": "Milho Comercial - Agroeste AG 8700 PRO3"
+  },
+  {
+   "id": "531",
+   "nome": "Milho Comercial - Agroeste AS 1551 PRO2"
+  },
+  {
+   "id": "533",
+   "nome": "Milho Comercial - Agroeste AS 1555 PRO3"
+  },
+  {
+   "id": "535",
+   "nome": "Milho Comercial - Agroeste AS 1575 PRO3"
+  },
+  {
+   "id": "733",
+   "nome": "Milho Comercial - Agroeste AS 1581"
+  },
+  {
+   "id": "539",
+   "nome": "Milho Comercial - Agroeste AS 1590 PRO"
+  },
+  {
+   "id": "545",
+   "nome": "Milho Comercial - Agroeste AS 1596 PRO3"
+  },
+  {
+   "id": "541",
+   "nome": "Milho Comercial - Agroeste AS 1598 PRO"
+  },
+  {
+   "id": "285",
+   "nome": "Milho Comercial - Agroeste AS 1633 PRO3"
+  },
+  {
+   "id": "286",
+   "nome": "Milho Comercial - Agroeste AS 1656 IPRO"
+  },
+  {
+   "id": "149",
+   "nome": "Milho comercial - Agroeste AS 1656 IPRO - 4 fases"
+  },
+  {
+   "id": "1848",
+   "nome": "Milho comercial - Agroeste AS 1656 IPRO - 4 fases"
+  },
+  {
+   "id": "1321",
+   "nome": "Milho Comercial - Agroeste AS 1665 PRO"
+  },
+  {
+   "id": "547",
+   "nome": "Milho Comercial - Agroeste AS 1666 PRO3"
+  },
+  {
+   "id": "549",
+   "nome": "Milho Comercial - Agroeste AS 1666 RR2"
+  },
+  {
+   "id": "542",
+   "nome": "Milho Comercial - Agroeste AS 1677 PRO3"
+  },
+  {
+   "id": "550",
+   "nome": "Milho Comercial - Agroeste AS 1735 PRO3"
+  },
+  {
+   "id": "552",
+   "nome": "Milho Comercial - Agroeste AS 1757 PRO3"
+  },
+  {
+   "id": "1856",
+   "nome": "Milho Comercial - Agroeste AS 1757 PRO4"
+  },
+  {
+   "id": "411",
+   "nome": "Milho Comercial - Agroeste AS 1777 PRO2"
+  },
+  {
+   "id": "865",
+   "nome": "Milho Comercial - Agroeste AS 1820 PRO3"
+  },
+  {
+   "id": "875",
+   "nome": "Milho Comercial - Agroeste AS 1850 PRO3"
+  },
+  {
+   "id": "1437",
+   "nome": "Milho Comercial - Agroeste AS 1850 PRO4 PCH"
+  },
+  {
+   "id": "921",
+   "nome": "Milho Comercial - Agroeste AS 1868 PRO3"
+  },
+  {
+   "id": "1894",
+   "nome": "Milho Comercial - Agroeste AS 1868 PRO4"
+  },
+  {
+   "id": "1926",
+   "nome": "Milho Comercial - Agroeste AS 1877"
+  },
+  {
+   "id": "2062",
+   "nome": "Milho Comercial - Agroeste AS 1901 PRO4"
+  },
+  {
+   "id": "1323",
+   "nome": "Milho Comercial - Agroeste AS 1955 PRO3"
+  },
+  {
+   "id": "1853",
+   "nome": "Milho Comercial - Agroeste AS 1955 PRO4"
+  },
+  {
+   "id": "1639",
+   "nome": "Milho Comercial - Agroeste AS1988 PRO4"
+  },
+  {
+   "id": "1935",
+   "nome": "Milho Comercial - ANQA 1208 PRO2"
+  },
+  {
+   "id": "1474",
+   "nome": "Milho Comercial - ANQA 2102 PRO2"
+  },
+  {
+   "id": "1240",
+   "nome": "Milho Comercial - AS 1800 PRO 3"
+  },
+  {
+   "id": "1442",
+   "nome": "Milho Comercial - AS 1822 PRO4"
+  },
+  {
+   "id": "1440",
+   "nome": "Milho Comercial - As 1850"
+  },
+  {
+   "id": "1096",
+   "nome": "Milho Comercial - B2688 Brevant"
+  },
+  {
+   "id": "1257",
+   "nome": "Milho Comercial - B2801"
+  },
+  {
+   "id": "1291",
+   "nome": "Milho Comercial - B2810"
+  },
+  {
+   "id": "937",
+   "nome": "Milho Comercial - BG 7640 VYH"
+  },
+  {
+   "id": "475",
+   "nome": "Milho Comercial - Bio Gene BG 7542H"
+  },
+  {
+   "id": "557",
+   "nome": "Milho Comercial - Biogene BG 7037H"
+  },
+  {
+   "id": "555",
+   "nome": "Milho Comercial - Biogene BG 7037VYH"
+  },
+  {
+   "id": "559",
+   "nome": "Milho Comercial - Biogene BG 7046"
+  },
+  {
+   "id": "561",
+   "nome": "Milho Comercial - Biogene BG 7046H"
+  },
+  {
+   "id": "563",
+   "nome": "Milho Comercial - Biogene BG 7046VYH"
+  },
+  {
+   "id": "565",
+   "nome": "Milho Comercial - Biogene BG 7049"
+  },
+  {
+   "id": "567",
+   "nome": "Milho Comercial - Biogene BG 7060HR"
+  },
+  {
+   "id": "569",
+   "nome": "Milho Comercial - Biogene BG 7060YH"
+  },
+  {
+   "id": "571",
+   "nome": "Milho Comercial - Biogene BG 7061H"
+  },
+  {
+   "id": "573",
+   "nome": "Milho Comercial - Biogene BG 7061YHR"
+  },
+  {
+   "id": "618",
+   "nome": "Milho Comercial - Biogene BG 7640 VYH"
+  },
+  {
+   "id": "1954",
+   "nome": "Milho Comercial - Biomatrix 880 vip 3"
+  },
+  {
+   "id": "1693",
+   "nome": "Milho Comercial - Biomatrix BM 163"
+  },
+  {
+   "id": "1956",
+   "nome": "Milho Comercial - Biomatrix BM 3063"
+  },
+  {
+   "id": "751",
+   "nome": "Milho Comercial - Biomatrix BM 709"
+  },
+  {
+   "id": "1633",
+   "nome": "Milho Comercial - BM 3069"
+  },
+  {
+   "id": "1320",
+   "nome": "Milho Comercial - Brevant 2315"
+  },
+  {
+   "id": "906",
+   "nome": "Milho Comercial - Brevant 2418 VYHR"
+  },
+  {
+   "id": "1940",
+   "nome": "Milho Comercial - Brevant 2818"
+  },
+  {
+   "id": "1939",
+   "nome": "Milho Comercial - Brevant 2A401PW"
+  },
+  {
+   "id": "762",
+   "nome": "Milho Comercial - Brevant 2A401PW"
+  },
+  {
+   "id": "896",
+   "nome": "Milho Comercial - Brevant 2A401PW"
+  },
+  {
+   "id": "1671",
+   "nome": "Milho Comercial - Brevant 3332"
+  },
+  {
+   "id": "910",
+   "nome": "Milho Comercial - Brevant 7318 R"
+  },
+  {
+   "id": "911",
+   "nome": "Milho Comercial - Brevant 7318 VYH"
+  },
+  {
+   "id": "909",
+   "nome": "Milho Comercial - Brevant 7318 YH"
+  },
+  {
+   "id": "913",
+   "nome": "Milho Comercial - Brevant B2401PWU"
+  },
+  {
+   "id": "942",
+   "nome": "Milho Comercial - Brevant B2401PWU"
+  },
+  {
+   "id": "1111",
+   "nome": "Milho Comercial - Brevant B2433 PWU"
+  },
+  {
+   "id": "989",
+   "nome": "Milho Comercial - Brevant B2620 PWU"
+  },
+  {
+   "id": "2052",
+   "nome": "Milho Comercial - Brevant B2701 PWU"
+  },
+  {
+   "id": "1226",
+   "nome": "Milho Comercial - Brevant B2702 VYHR"
+  },
+  {
+   "id": "1426",
+   "nome": "Milho Comercial - Brevant B2702 VYHR"
+  },
+  {
+   "id": "1432",
+   "nome": "Milho Comercial - Brevant B2702 VYHR"
+  },
+  {
+   "id": "990",
+   "nome": "Milho Comercial - Brevant B2782 PW"
+  },
+  {
+   "id": "1925",
+   "nome": "Milho Comercial - Brevant B2817 PWU"
+  },
+  {
+   "id": "945",
+   "nome": "Milho Comercial - Brevant B2828"
+  },
+  {
+   "id": "991",
+   "nome": "Milho Comercial - Brevant BG 7640 VYH"
+  },
+  {
+   "id": "1675",
+   "nome": "Milho Comercial - Brevant P2701"
+  },
+  {
+   "id": "2051",
+   "nome": "Milho Comercial - Brevant P2701"
+  },
+  {
+   "id": "1759",
+   "nome": "Milho comercial - Campo Cooperbatata"
+  },
+  {
+   "id": "726",
+   "nome": "Milho Comercial - CD 3612PW"
+  },
+  {
+   "id": "730",
+   "nome": "Milho Comercial - Coodetec 3612"
+  },
+  {
+   "id": "1660",
+   "nome": "Milho Comercial - CRIVUS CVR 2874"
+  },
+  {
+   "id": "720",
+   "nome": "Milho Comercial - CRIVUS CVR 3042"
+  },
+  {
+   "id": "1757",
+   "nome": "Milho Comercial - Dekalb 242 pro 4"
+  },
+  {
+   "id": "288",
+   "nome": "Milho Comercial - Dekalb DKB 175"
+  },
+  {
+   "id": "26",
+   "nome": "Milho comercial - Dekalb DKB 175 - 4 fases"
+  },
+  {
+   "id": "578",
+   "nome": "Milho Comercial - Dekalb DKB 175 PRO"
+  },
+  {
+   "id": "579",
+   "nome": "Milho Comercial - Dekalb DKB 175 PRO2"
+  },
+  {
+   "id": "580",
+   "nome": "Milho Comercial - Dekalb DKB 175 RR2"
+  },
+  {
+   "id": "585",
+   "nome": "Milho Comercial - Dekalb DKB 177 PRO3"
+  },
+  {
+   "id": "289",
+   "nome": "Milho Comercial - Dekalb DKB 177 RR2"
+  },
+  {
+   "id": "123",
+   "nome": "Milho comercial - Dekalb DKB 177 RR2 - 4 fases"
+  },
+  {
+   "id": "128",
+   "nome": "Milho Comercial - Dekalb DKB 230 PRO3"
+  },
+  {
+   "id": "1322",
+   "nome": "Milho Comercial - Dekalb DKB 230 PRO4"
+  },
+  {
+   "id": "1548",
+   "nome": "Milho Comercial - Dekalb DKB 235 PRO3"
+  },
+  {
+   "id": "127",
+   "nome": "Milho Comercial - Dekalb DKB 240 PRO2"
+  },
+  {
+   "id": "58",
+   "nome": "Milho Comercial - Dekalb DKB 240 PRO3"
+  },
+  {
+   "id": "740",
+   "nome": "Milho Comercial - Dekalb DKB 255 PRO3"
+  },
+  {
+   "id": "1765",
+   "nome": "Milho Comercial - Dekalb DKB 260 PRO4"
+  },
+  {
+   "id": "594",
+   "nome": "Milho Comercial - Dekalb DKB 265 PRO3"
+  },
+  {
+   "id": "591",
+   "nome": "Milho Comercial - Dekalb DKB 285 PRO"
+  },
+  {
+   "id": "254",
+   "nome": "Milho Comercial - Dekalb DKB 285 PRO2"
+  },
+  {
+   "id": "290",
+   "nome": "Milho Comercial - Dekalb DKB 290"
+  },
+  {
+   "id": "119",
+   "nome": "Milho comercial - Dekalb DKB 290 - 4 fases"
+  },
+  {
+   "id": "291",
+   "nome": "Milho Comercial - Dekalb DKB 290 PRO2"
+  },
+  {
+   "id": "130",
+   "nome": "Milho comercial - Dekalb DKB 290 PRO2 - 4 fases"
+  },
+  {
+   "id": "292",
+   "nome": "Milho Comercial - Dekalb DKB 290 PRO3"
+  },
+  {
+   "id": "131",
+   "nome": "Milho comercial - Dekalb DKB 290 PRO3 - 4 fases"
+  },
+  {
+   "id": "287",
+   "nome": "Milho Comercial - Dekalb DKB 310 PRO2"
+  },
+  {
+   "id": "255",
+   "nome": "Milho Comercial - Dekalb DKB 315 Convencional"
+  },
+  {
+   "id": "593",
+   "nome": "Milho Comercial - Dekalb DKB 330 PRO2"
+  },
+  {
+   "id": "403",
+   "nome": "Milho Comercial - Dekalb DKB 330 PRO3"
+  },
+  {
+   "id": "592",
+   "nome": "Milho Comercial - Dekalb DKB 330 RR2"
+  },
+  {
+   "id": "739",
+   "nome": "Milho Comercial - Dekalb DKB 335 PRO3"
+  },
+  {
+   "id": "198",
+   "nome": "Milho Comercial - Dekalb DKB 340 PRO2"
+  },
+  {
+   "id": "741",
+   "nome": "Milho Comercial - Dekalb DKB 345 PRO3"
+  },
+  {
+   "id": "872",
+   "nome": "Milho Comercial - Dekalb DKB 345 PRO3"
+  },
+  {
+   "id": "864",
+   "nome": "Milho Comercial - Dekalb DKB 360 PRO3"
+  },
+  {
+   "id": "709",
+   "nome": "Milho Comercial - Dekalb DKB 363"
+  },
+  {
+   "id": "469",
+   "nome": "Milho Comercial - Dekalb DKB 370"
+  },
+  {
+   "id": "173",
+   "nome": "Milho Comercial - Dekalb DKB 390 PRO2"
+  },
+  {
+   "id": "451",
+   "nome": "Milho Comercial - Dekalb DKB 390 PRO3"
+  },
+  {
+   "id": "588",
+   "nome": "Milho Comercial - Dekalb DKB 390 RR2"
+  },
+  {
+   "id": "1547",
+   "nome": "Milho Comercial - DKB 242 PRO4"
+  },
+  {
+   "id": "719",
+   "nome": "Milho Comercial - DKB 255 PRO"
+  },
+  {
+   "id": "1438",
+   "nome": "Milho Comercial - DKB 260"
+  },
+  {
+   "id": "1399",
+   "nome": "Milho Comercial - DKB 356"
+  },
+  {
+   "id": "1644",
+   "nome": "Milho comercial - DKB 358 PRO 4"
+  },
+  {
+   "id": "1094",
+   "nome": "Milho Comercial - DKB 3800 RR"
+  },
+  {
+   "id": "1106",
+   "nome": "Milho Comercial - DKB 3900 RR"
+  },
+  {
+   "id": "261",
+   "nome": "Milho Comercial - Dow 2A401 PW"
+  },
+  {
+   "id": "711",
+   "nome": "Milho Comercial - Dow 2A521"
+  },
+  {
+   "id": "617",
+   "nome": "Milho Comercial - Dow 2A620PW (Comercial)"
+  },
+  {
+   "id": "262",
+   "nome": "Milho Comercial - Dow 2B433 Hx"
+  },
+  {
+   "id": "754",
+   "nome": "Milho Comercial - Dow 2B481"
+  },
+  {
+   "id": "747",
+   "nome": "Milho Comercial - Dow 2B512"
+  },
+  {
+   "id": "263",
+   "nome": "Milho Comercial - Dow 2B587 PW"
+  },
+  {
+   "id": "264",
+   "nome": "Milho Comercial - Dow 2B610 PW"
+  },
+  {
+   "id": "265",
+   "nome": "Milho Comercial - Dow 2B633 PW"
+  },
+  {
+   "id": "266",
+   "nome": "Milho Comercial - Dow 2B688 PW"
+  },
+  {
+   "id": "267",
+   "nome": "Milho Comercial - Dow 2B707 Hx"
+  },
+  {
+   "id": "268",
+   "nome": "Milho Comercial - Dow 2B710 PW"
+  },
+  {
+   "id": "269",
+   "nome": "Milho Comercial - Dow 2B810 PW"
+  },
+  {
+   "id": "118",
+   "nome": "Milho comercial - Dow 2B810 PW - 4 fases"
+  },
+  {
+   "id": "1125",
+   "nome": "Milho Comercial - Feroz Viptera 3"
+  },
+  {
+   "id": "1555",
+   "nome": "Milho Comercial - Forseed 395"
+  },
+  {
+   "id": "848",
+   "nome": "Milho Comercial - FS 403 PWU"
+  },
+  {
+   "id": "1648",
+   "nome": "Milho Comercial - FS 470 PWU"
+  },
+  {
+   "id": "837",
+   "nome": "Milho Comercial - FS 505 PWU"
+  },
+  {
+   "id": "1929",
+   "nome": "Milho Comercial - FS 533 PWU"
+  },
+  {
+   "id": "1643",
+   "nome": "Milho Comercial - FS 552 PWU"
+  },
+  {
+   "id": "1417",
+   "nome": "Milho Comercial - FS 575"
+  },
+  {
+   "id": "849",
+   "nome": "Milho Comercial - FS 575 PWU"
+  },
+  {
+   "id": "1418",
+   "nome": "Milho Comercial - FS 615 PWU"
+  },
+  {
+   "id": "1788",
+   "nome": "Milho Comercial - FS 695 PWU"
+  },
+  {
+   "id": "1032",
+   "nome": "Milho Comercial - FS 700 PWU"
+  },
+  {
+   "id": "1093",
+   "nome": "Milho Comercial - FS 710 PWU"
+  },
+  {
+   "id": "895",
+   "nome": "Milho Comercial - FS 715 PWU"
+  },
+  {
+   "id": "1218",
+   "nome": "Milho Comercial - FS575"
+  },
+  {
+   "id": "409",
+   "nome": "Milho Comercial - Gênesis 9505"
+  },
+  {
+   "id": "1253",
+   "nome": "Milho Comercial - Geneze GNZ 7710 Vip 2"
+  },
+  {
+   "id": "1110",
+   "nome": "Milho Comercial - Geneze GNZ 7740"
+  },
+  {
+   "id": "1888",
+   "nome": "Milho Comercial - Genezes 7720 VIP 3"
+  },
+  {
+   "id": "1293",
+   "nome": "Milho Comercial - Genezes 7788 VIP 3"
+  },
+  {
+   "id": "1677",
+   "nome": "Milho Comercial - GSS027"
+  },
+  {
+   "id": "1942",
+   "nome": "Milho Comercial - K7500 VIP3"
+  },
+  {
+   "id": "1272",
+   "nome": "Milho Comercial - KWS 7510"
+  },
+  {
+   "id": "1231",
+   "nome": "Milho Comercial - KWS 7510 VIP3"
+  },
+  {
+   "id": "880",
+   "nome": "Milho Comercial - KWS 9555"
+  },
+  {
+   "id": "984",
+   "nome": "Milho Comercial - KWS 9606 VIP3"
+  },
+  {
+   "id": "1657",
+   "nome": "Milho Comercial - KWS K7510 VIP3"
+  },
+  {
+   "id": "1662",
+   "nome": "Milho Comercial - KWS K8575 PRO4"
+  },
+  {
+   "id": "1457",
+   "nome": "Milho Comercial - Land 229 Plus2"
+  },
+  {
+   "id": "1453",
+   "nome": "Milho Comercial - LG 36750"
+  },
+  {
+   "id": "919",
+   "nome": "Milho Comercial - LG 36790"
+  },
+  {
+   "id": "598",
+   "nome": "Milho comercial - Limagrain LG 3055 - 5 fases"
+  },
+  {
+   "id": "376",
+   "nome": "Milho Comercial - Limagrain LG 6030 PRO2"
+  },
+  {
+   "id": "402",
+   "nome": "Milho Comercial - Limagrain LG 6030 PRO2"
+  },
+  {
+   "id": "293",
+   "nome": "Milho Comercial - Limagrain LG 6033 PRO"
+  },
+  {
+   "id": "151",
+   "nome": "Milho comercial - Limagrain LG 6033 PRO - 2018"
+  },
+  {
+   "id": "30",
+   "nome": "Milho comercial - LP 2B587PW - 4 fases"
+  },
+  {
+   "id": "132",
+   "nome": "Milho comercial - LP 2B610 PW - 4 fases"
+  },
+  {
+   "id": "153",
+   "nome": "Milho comercial - LP 2B810 PW - 4 fases"
+  },
+  {
+   "id": "725",
+   "nome": "Milho Comercial - LP FS450 PW"
+  },
+  {
+   "id": "1445",
+   "nome": "Milho Comercial - MG 540"
+  },
+  {
+   "id": "1444",
+   "nome": "Milho Comercial - MG 593"
+  },
+  {
+   "id": "2063",
+   "nome": "Milho Comercial - MG 615"
+  },
+  {
+   "id": "1464",
+   "nome": "Milho Comercial - MG 635"
+  },
+  {
+   "id": "1229",
+   "nome": "Milho Comercial - MG593"
+  },
+  {
+   "id": "1158",
+   "nome": "Milho comercial - MG618"
+  },
+  {
+   "id": "1774",
+   "nome": "Milho Comercial - Milho Comercial Kws 8575"
+  },
+  {
+   "id": "1471",
+   "nome": "Milho Comercial - Milho VA 19A VIP3"
+  },
+  {
+   "id": "749",
+   "nome": "Milho Comercial - Morgan 20A78"
+  },
+  {
+   "id": "1585",
+   "nome": "Milho Comercial - Morgan 300 PWU"
+  },
+  {
+   "id": "271",
+   "nome": "Milho Comercial - Morgan 30A37"
+  },
+  {
+   "id": "146",
+   "nome": "Milho comercial - Morgan 30A37 - 4 fases"
+  },
+  {
+   "id": "375",
+   "nome": "Milho Comercial - Morgan 30A91"
+  },
+  {
+   "id": "1766",
+   "nome": "Milho Comercial - Morgan 357"
+  },
+  {
+   "id": "1278",
+   "nome": "Milho Comercial - Morgan 540"
+  },
+  {
+   "id": "660",
+   "nome": "Milho Comercial - Morgan 545"
+  },
+  {
+   "id": "607",
+   "nome": "Milho Comercial - Morgan 711PW"
+  },
+  {
+   "id": "959",
+   "nome": "Milho Comercial - Morgan MG 408"
+  },
+  {
+   "id": "860",
+   "nome": "Milho Comercial - Morgan MG 515"
+  },
+  {
+   "id": "1955",
+   "nome": "Milho Comercial - Morgan MG 586 vip3"
+  },
+  {
+   "id": "970",
+   "nome": "Milho Comercial - Morgan MG 593 PWU"
+  },
+  {
+   "id": "1470",
+   "nome": "Milho Comercial - Morgan MG 593 PWU"
+  },
+  {
+   "id": "988",
+   "nome": "Milho Comercial - Morgan MG 607"
+  },
+  {
+   "id": "1397",
+   "nome": "Milho Comercial - Morgan MG 616 PWU"
+  },
+  {
+   "id": "972",
+   "nome": "Milho Comercial - Morgan MG 652 PRO2"
+  },
+  {
+   "id": "294",
+   "nome": "Milho Comercial - Morgan MG 652 PRO2"
+  },
+  {
+   "id": "876",
+   "nome": "Milho Comercial - Morgan MG 744"
+  },
+  {
+   "id": "973",
+   "nome": "Milho Comercial - Morgan MG580 PW"
+  },
+  {
+   "id": "295",
+   "nome": "Milho Comercial - Morgan MG580 PW"
+  },
+  {
+   "id": "395",
+   "nome": "Milho Comercial - Morgan MG600"
+  },
+  {
+   "id": "604",
+   "nome": "Milho comercial - Morgan MG699"
+  },
+  {
+   "id": "1910",
+   "nome": "Milho Comercial - Nidera NS 44"
+  },
+  {
+   "id": "1652",
+   "nome": "Milho Comercial - Nidera NS 71"
+  },
+  {
+   "id": "964",
+   "nome": "Milho Comercial - Nidera NS 73"
+  },
+  {
+   "id": "1452",
+   "nome": "Milho Comercial - Nidera NS 75"
+  },
+  {
+   "id": "761",
+   "nome": "Milho Comercial - Nidera NS 77 PRO 2"
+  },
+  {
+   "id": "296",
+   "nome": "Milho Comercial - Nidera NS 90"
+  },
+  {
+   "id": "986",
+   "nome": "Milho Comercial - Nidera NS 93"
+  },
+  {
+   "id": "690",
+   "nome": "Milho Comercial - Nidera NS90"
+  },
+  {
+   "id": "284",
+   "nome": "Milho Comercial - Nidera NS90"
+  },
+  {
+   "id": "36",
+   "nome": "Milho comercial - Nidera NS90 - 4 fases"
+  },
+  {
+   "id": "691",
+   "nome": "Milho Comercial - Nidera NS92"
+  },
+  {
+   "id": "1136",
+   "nome": "Milho Comercial - NK 505"
+  },
+  {
+   "id": "1850",
+   "nome": "Milho comercial - NK 509 VIP 3"
+  },
+  {
+   "id": "1423",
+   "nome": "Milho Comercial - NK501 VIP3"
+  },
+  {
+   "id": "1655",
+   "nome": "Milho Comercial - P 3322"
+  },
+  {
+   "id": "1448",
+   "nome": "Milho Comercial - P3223VYH"
+  },
+  {
+   "id": "1157",
+   "nome": "Milho comercial - P3551"
+  },
+  {
+   "id": "1260",
+   "nome": "Milho Comercial - P3845 VYHR"
+  },
+  {
+   "id": "1852",
+   "nome": "Milho Comercial - P39209PWU"
+  },
+  {
+   "id": "1612",
+   "nome": "Milho Comercial - P40537"
+  },
+  {
+   "id": "663",
+   "nome": "Milho Comercial - P96Y90RR"
+  },
+  {
+   "id": "907",
+   "nome": "Milho Comercial - Pioneer 1225 VYHR"
+  },
+  {
+   "id": "1543",
+   "nome": "Milho Comercial - Pioneer 1972 VYHR"
+  },
+  {
+   "id": "1785",
+   "nome": "Milho Comercial - Pioneer 25300 PWU"
+  },
+  {
+   "id": "1569",
+   "nome": "Milho Comercial - Pioneer 2719 VYH"
+  },
+  {
+   "id": "908",
+   "nome": "Milho Comercial - Pioneer 3016 VYHR"
+  },
+  {
+   "id": "272",
+   "nome": "Milho Comercial - Pioneer 30F35"
+  },
+  {
+   "id": "354",
+   "nome": "Milho Comercial - Pioneer 30F53H"
+  },
+  {
+   "id": "10",
+   "nome": "Milho comercial - Pioneer 30F53H - 4 fases"
+  },
+  {
+   "id": "386",
+   "nome": "Milho Comercial - Pioneer 30S31VYH"
+  },
+  {
+   "id": "1653",
+   "nome": "Milho Comercial - Pioneer 3310"
+  },
+  {
+   "id": "1466",
+   "nome": "Milho Comercial - pioneer 3601"
+  },
+  {
+   "id": "1230",
+   "nome": "Milho Comercial - Pioneer 3808"
+  },
+  {
+   "id": "1933",
+   "nome": "Milho Comercial - Pioneer 3808 VYH"
+  },
+  {
+   "id": "2050",
+   "nome": "Milho Comercial - Pioneer 3808 VYHR"
+  },
+  {
+   "id": "397",
+   "nome": "Milho Comercial - Pioneer P1630H"
+  },
+  {
+   "id": "963",
+   "nome": "Milho Comercial - Pioneer P3282 VYH"
+  },
+  {
+   "id": "488",
+   "nome": "Milho Comercial - Pioneer P3380HR"
+  },
+  {
+   "id": "879",
+   "nome": "Milho Comercial - Pioneer P3397PWU"
+  },
+  {
+   "id": "1258",
+   "nome": "Milho Comercial - Pioneer P3440"
+  },
+  {
+   "id": "297",
+   "nome": "Milho Comercial - Pioneer P3456"
+  },
+  {
+   "id": "35",
+   "nome": "Milho comercial - Pioneer P3456 - 4 fases"
+  },
+  {
+   "id": "298",
+   "nome": "Milho Comercial - Pioneer P3456 HX"
+  },
+  {
+   "id": "129",
+   "nome": "Milho comercial - Pioneer P3456 HX - 4 fases"
+  },
+  {
+   "id": "388",
+   "nome": "Milho Comercial - Pioneer P3630H"
+  },
+  {
+   "id": "299",
+   "nome": "Milho Comercial - Pioneer P3646"
+  },
+  {
+   "id": "677",
+   "nome": "Milho Comercial - Pioneer P3707 VYH"
+  },
+  {
+   "id": "1296",
+   "nome": "Milho Comercial - Pioneer P3707 VYH - 6 fases"
+  },
+  {
+   "id": "806",
+   "nome": "Milho Comercial - Pioneer P3754PWU"
+  },
+  {
+   "id": "976",
+   "nome": "Milho Comercial - Pioneer P3858 PWU"
+  },
+  {
+   "id": "355",
+   "nome": "Milho Comercial - Pioneer P3862H"
+  },
+  {
+   "id": "678",
+   "nome": "Milho Comercial - Pioneer P3880 HR"
+  },
+  {
+   "id": "1276",
+   "nome": "Milho Comercial - Pioneer P3889R"
+  },
+  {
+   "id": "474",
+   "nome": "Milho Comercial - Pioneer P3898"
+  },
+  {
+   "id": "1613",
+   "nome": "Milho Comercial - Pioneer P40537 PWU"
+  },
+  {
+   "id": "396",
+   "nome": "Milho Comercial - Pioneer P4285"
+  },
+  {
+   "id": "429",
+   "nome": "Milho Comercial - Pionner"
+  },
+  {
+   "id": "300",
+   "nome": "Milho Comercial - Riber RB 9004"
+  },
+  {
+   "id": "301",
+   "nome": "Milho Comercial - Riber RB 9005"
+  },
+  {
+   "id": "302",
+   "nome": "Milho Comercial - Riber RB 9110 YG"
+  },
+  {
+   "id": "616",
+   "nome": "Milho Comercial - Riber RB9006"
+  },
+  {
+   "id": "486",
+   "nome": "Milho Comercial - Riber RK 6813"
+  },
+  {
+   "id": "274",
+   "nome": "Milho Comercial - Riber/KWS 9110 YG"
+  },
+  {
+   "id": "648",
+   "nome": "Milho Comercial - Riber/KWS K9960 VIP3"
+  },
+  {
+   "id": "1105",
+   "nome": "Milho Comercial - Riber/KWS K9960 VIP3"
+  },
+  {
+   "id": "850",
+   "nome": "Milho Comercial - SEEDCORP GALO VIP 3"
+  },
+  {
+   "id": "1501",
+   "nome": "Milho Comercial - Sempre 20A38"
+  },
+  {
+   "id": "1775",
+   "nome": "Milho Comercial - SHS 7010"
+  },
+  {
+   "id": "873",
+   "nome": "Milho Comercial - SHS 7939 PRO2"
+  },
+  {
+   "id": "1654",
+   "nome": "Milho Comercial - Shull SHU 5717 VIP3"
+  },
+  {
+   "id": "1960",
+   "nome": "Milho Comercial - SS 2120"
+  },
+  {
+   "id": "1849",
+   "nome": "Milho Comercial - Stine 9808 VTPRO4"
+  },
+  {
+   "id": "2066",
+   "nome": "Milho Comercial - Supra 9020 VIP3"
+  },
+  {
+   "id": "1922",
+   "nome": "Milho Comercial - Supra 9200"
+  },
+  {
+   "id": "1163",
+   "nome": "Milho Comercial - SVSN1143"
+  },
+  {
+   "id": "852",
+   "nome": "Milho Comercial - SYN 555 VIP 3"
+  },
+  {
+   "id": "404",
+   "nome": "Milho Comercial - Syngenta - Defender Viptera"
+  },
+  {
+   "id": "1109",
+   "nome": "Milho Comercial - Syngenta - NK 401 VIP3"
+  },
+  {
+   "id": "920",
+   "nome": "Milho Comercial - Syngenta - Supremo Viptera 3"
+  },
+  {
+   "id": "369",
+   "nome": "Milho Comercial - SYNGENTA - SYN Supremo Viptera3"
+  },
+  {
+   "id": "1118",
+   "nome": "Milho Comercial - Syngenta 7205"
+  },
+  {
+   "id": "724",
+   "nome": "Milho Comercial - Syngenta Formula"
+  },
+  {
+   "id": "1773",
+   "nome": "Milho Comercial - Syngenta NK 467 VIP3"
+  },
+  {
+   "id": "174",
+   "nome": "Milho Comercial - Syngenta Status VIP3"
+  },
+  {
+   "id": "390",
+   "nome": "Milho Comercial - Syngenta SX 7331 VIP"
+  },
+  {
+   "id": "1920",
+   "nome": "Milho comercial - T-1508 PWU"
+  },
+  {
+   "id": "1921",
+   "nome": "Milho Comercial - Tevo 1508 PWU"
+  },
+  {
+   "id": "1443",
+   "nome": "Milho Comercial - VA 22"
+  },
+  {
+   "id": "965",
+   "nome": "Milho Doce - 2577"
+  },
+  {
+   "id": "966",
+   "nome": "Milho Doce - 9631"
+  },
+  {
+   "id": "1427",
+   "nome": "Milho Doce - Bonduelle"
+  },
+  {
+   "id": "938",
+   "nome": "Milho Doce - Seminis 9298"
+  },
+  {
+   "id": "1185",
+   "nome": "Milho Doce - Syngenta"
+  },
+  {
+   "id": "27",
+   "nome": "Milho Doce - Syngenta"
+  },
+  {
+   "id": "967",
+   "nome": "Milho Doce - Thunder"
+  },
+  {
+   "id": "923",
+   "nome": "Milho Pipoca - IAC 125"
+  },
+  {
+   "id": "924",
+   "nome": "Milho Pipoca - QUIMARPOP 164"
+  },
+  {
+   "id": "259",
+   "nome": "Milho Semente - Agromen Jmen - 4 fases"
+  },
+  {
+   "id": "1421",
+   "nome": "Milho semente - Syngenta - NK501 VIP3 (SYN501 VIP3)"
+  },
+  {
+   "id": "1000",
+   "nome": "Milho semente - Syngenta - NK505 VIP3 (SYN505 VIP3)"
+  },
+  {
+   "id": "1976",
+   "nome": "Milho Semente - 6016"
+  },
+  {
+   "id": "629",
+   "nome": "Milho Semente - Advanta"
+  },
+  {
+   "id": "338",
+   "nome": "Milho Semente - Advanta - 4 fases"
+  },
+  {
+   "id": "1492",
+   "nome": "Milho Semente - ANQA 2118 PRO2"
+  },
+  {
+   "id": "668",
+   "nome": "Milho Semente - Bayer"
+  },
+  {
+   "id": "1881",
+   "nome": "Milho Semente - Bayer - Semente Básica"
+  },
+  {
+   "id": "982",
+   "nome": "Milho Semente - Bayer - Semente Básica"
+  },
+  {
+   "id": "1299",
+   "nome": "Milho Semente - Bayer 7 fases"
+  },
+  {
+   "id": "1318",
+   "nome": "Milho Semente - Bayer ZA"
+  },
+  {
+   "id": "2072",
+   "nome": "Milho Semente - Bayer- B2C"
+  },
+  {
+   "id": "1931",
+   "nome": "Milho Semente - Bestway"
+  },
+  {
+   "id": "599",
+   "nome": "Milho Semente - Biomatrix"
+  },
+  {
+   "id": "120",
+   "nome": "Milho Semente - Coodetec - 4 fases"
+  },
+  {
+   "id": "1882",
+   "nome": "Milho Semente - Damac"
+  },
+  {
+   "id": "1100",
+   "nome": "Milho Semente - Dois Marco"
+  },
+  {
+   "id": "1102",
+   "nome": "Milho Semente - Dois Marco"
+  },
+  {
+   "id": "323",
+   "nome": "Milho Semente - DowDupont"
+  },
+  {
+   "id": "44",
+   "nome": "Milho Semente - DowDupont - 4 fases"
+  },
+  {
+   "id": "257",
+   "nome": "Milho Semente - GDM"
+  },
+  {
+   "id": "1449",
+   "nome": "Milho Semente - GDM"
+  },
+  {
+   "id": "1756",
+   "nome": "Milho Semente - GDM B2C"
+  },
+  {
+   "id": "595",
+   "nome": "Milho Semente - Geneze"
+  },
+  {
+   "id": "415",
+   "nome": "Milho Semente - Geneze - 4 fases"
+  },
+  {
+   "id": "1246",
+   "nome": "Milho Semente - Helix"
+  },
+  {
+   "id": "1428",
+   "nome": "Milho Semente - Inova"
+  },
+  {
+   "id": "727",
+   "nome": "Milho Semente - Jmen"
+  },
+  {
+   "id": "1877",
+   "nome": "Milho Semente - Jmen Agromen"
+  },
+  {
+   "id": "784",
+   "nome": "Milho Semente - KWS - Semente Básica"
+  },
+  {
+   "id": "1277",
+   "nome": "Milho Semente - Latina"
+  },
+  {
+   "id": "466",
+   "nome": "Milho Semente - Limagrain"
+  },
+  {
+   "id": "912",
+   "nome": "Milho Semente - Limagrain - Verão/Segurança"
+  },
+  {
+   "id": "596",
+   "nome": "Milho Semente - LongPing High-Tech"
+  },
+  {
+   "id": "703",
+   "nome": "Milho Semente - LP - Semente Básica"
+  },
+  {
+   "id": "597",
+   "nome": "Milho Semente - LP sementes - 4 fases"
+  },
+  {
+   "id": "247",
+   "nome": "Milho Semente - Monsanto"
+  },
+  {
+   "id": "4",
+   "nome": "Milho Semente - Monsanto [INATIVO]"
+  },
+  {
+   "id": "834",
+   "nome": "Milho Semente - Monsanto [INATIVO]"
+  },
+  {
+   "id": "999",
+   "nome": "Milho Semente - Monsanto [INATIVO]"
+  },
+  {
+   "id": "1458",
+   "nome": "Milho Semente - Monsanto [INATIVO]"
+  },
+  {
+   "id": "1459",
+   "nome": "Milho Semente - Monsanto [INATIVO]"
+  },
+  {
+   "id": "1930",
+   "nome": "Milho Semente - Monsanto [INATIVO]"
+  },
+  {
+   "id": "628",
+   "nome": "Milho Semente - Nidera"
+  },
+  {
+   "id": "439",
+   "nome": "Milho Semente - Nidera - 4 fases"
+  },
+  {
+   "id": "1944",
+   "nome": "Milho Semente - NuSeeds"
+  },
+  {
+   "id": "1919",
+   "nome": "Milho Semente - Pigasol"
+  },
+  {
+   "id": "47",
+   "nome": "Milho Semente - Pioneer - 4 fases"
+  },
+  {
+   "id": "383",
+   "nome": "Milho Semente - Pioneer - 5 fases"
+  },
+  {
+   "id": "627",
+   "nome": "Milho Semente - Pioneer/Corteva"
+  },
+  {
+   "id": "1875",
+   "nome": "Milho Semente - Pioneer/Corteva"
+  },
+  {
+   "id": "1876",
+   "nome": "Milho Semente - Pioneer/Corteva"
+  },
+  {
+   "id": "702",
+   "nome": "Milho Semente - Pioneer/Corteva - Semente Básica"
+  },
+  {
+   "id": "781",
+   "nome": "Milho Semente - Satus Ager"
+  },
+  {
+   "id": "760",
+   "nome": "Milho Semente - Semente Sempre"
+  },
+  {
+   "id": "1248",
+   "nome": "Milho Semente - SX8332 TLTG Viptera"
+  },
+  {
+   "id": "470",
+   "nome": "Milho Semente - Syngenta"
+  },
+  {
+   "id": "630",
+   "nome": "Milho Semente - Syngenta"
+  },
+  {
+   "id": "85",
+   "nome": "Milho Semente - Syngenta - 4 fases"
+  },
+  {
+   "id": "1117",
+   "nome": "Milho Semente - Syngenta Feroz VIP - 5 fases"
+  },
+  {
+   "id": "487",
+   "nome": "Milho Semente - Syngenta Feroz VIP - 5 fases"
+  },
+  {
+   "id": "1977",
+   "nome": "Milho Semente - XB6444 Pro4"
+  },
+  {
+   "id": "1538",
+   "nome": "Milho Semente - XB6444 Pro4"
+  },
+  {
+   "id": "398",
+   "nome": "Milho Semente Inverno - Monsanto - 4 fases"
+  },
+  {
+   "id": "48",
+   "nome": "Milho Semente Verão - Monsanto - 4 fases"
+  },
+  {
+   "id": "506",
+   "nome": "Milho Silagem - Agroceres AG 1051"
+  },
+  {
+   "id": "508",
+   "nome": "Milho Silagem - Agroceres AG 5055 PRO"
+  },
+  {
+   "id": "525",
+   "nome": "Milho Silagem - Agroceres AG 5055 PRO"
+  },
+  {
+   "id": "536",
+   "nome": "Milho Silagem - Agroeste AS 1581 PRO"
+  },
+  {
+   "id": "537",
+   "nome": "Milho Silagem - Agroeste AS 1581 PRO"
+  },
+  {
+   "id": "384",
+   "nome": "Milho Silagem - Dow 2A620PW"
+  },
+  {
+   "id": "385",
+   "nome": "Milho Silagem - Dow 2A620PW"
+  },
+  {
+   "id": "20",
+   "nome": "Milho Silagem - Nidera NS90 PRO"
+  },
+  {
+   "id": "1129",
+   "nome": "Milho Silagem - Nidera NS90 PRO"
+  },
+  {
+   "id": "1219",
+   "nome": "Milho Silagem - Pioneer - P4285VYHR"
+  },
+  {
+   "id": "1130",
+   "nome": "Milho Silagem - SS183 VIP3"
+  },
+  {
+   "id": "2059",
+   "nome": "Mix de semente - Mix de Coberturas"
+  },
+  {
+   "id": "1972",
+   "nome": "Mix de semente - Mix de Coberturas"
+  },
+  {
+   "id": "1066",
+   "nome": "Mix de semente - Adubação Verde - Mix de semente - Adubação Verde"
+  },
+  {
+   "id": "1482",
+   "nome": "Mix de semente - Adubação Verde - Mix de semente - Adubação Verde"
+  },
+  {
+   "id": "1542",
+   "nome": "Mostarda - Amarela"
+  },
+  {
+   "id": "498",
+   "nome": "Nabo - AL1000"
+  },
+  {
+   "id": "1743",
+   "nome": "Níger - (Guizotia Abyssinica)"
+  },
+  {
+   "id": "1891",
+   "nome": "Oat - Magnifico Oats"
+  },
+  {
+   "id": "497",
+   "nome": "Painço - Português"
+  },
+  {
+   "id": "2056",
+   "nome": "Palmito - Palmito"
+  },
+  {
+   "id": "322",
+   "nome": "Pastagem - Brachiara Reformada"
+  },
+  {
+   "id": "114",
+   "nome": "Pastagem - Brachiaria"
+  },
+  {
+   "id": "1451",
+   "nome": "Pastagem - brachiaria Marandu"
+  },
+  {
+   "id": "1224",
+   "nome": "Pastagem - Brachiaria MG5"
+  },
+  {
+   "id": "1116",
+   "nome": "Pastagem - Brachiaria Piat"
+  },
+  {
+   "id": "742",
+   "nome": "Pastagem - Brachiaria Ruziziensis"
+  },
+  {
+   "id": "1115",
+   "nome": "Pastagem - Brachiaria Xaraes"
+  },
+  {
+   "id": "1475",
+   "nome": "Pastagem - Capiaçu"
+  },
+  {
+   "id": "752",
+   "nome": "Pastagem - Capim Brachiaria"
+  },
+  {
+   "id": "684",
+   "nome": "Pastagem - Capim Dictyoneura"
+  },
+  {
+   "id": "1292",
+   "nome": "Pastagem - Capim Miyagi"
+  },
+  {
+   "id": "1776",
+   "nome": "Pastagem - Capim Miyagi"
+  },
+  {
+   "id": "1763",
+   "nome": "Pastagem - Capim Miyagi - Pastejo"
+  },
+  {
+   "id": "1298",
+   "nome": "Pastagem - Capim Tamani"
+  },
+  {
+   "id": "1225",
+   "nome": "Pastagem - Capim Zuri"
+  },
+  {
+   "id": "1762",
+   "nome": "Pastagem - Capim Zuri - Pastejo"
+  },
+  {
+   "id": "701",
+   "nome": "Pastagem - Capim Zuri Encrustado"
+  },
+  {
+   "id": "505",
+   "nome": "Pastagem - Coast Cross"
+  },
+  {
+   "id": "1824",
+   "nome": "Pastagem - humidicola"
+  },
+  {
+   "id": "769",
+   "nome": "Pastagem - MG12 Paredão"
+  },
+  {
+   "id": "1332",
+   "nome": "Pastagem - Mix Dairy"
+  },
+  {
+   "id": "116",
+   "nome": "Pastagem - Mombaça"
+  },
+  {
+   "id": "1068",
+   "nome": "Pastagem - Mombaça 2"
+  },
+  {
+   "id": "1107",
+   "nome": "Pastagem - Mombaça 2"
+  },
+  {
+   "id": "1108",
+   "nome": "Pastagem - Mombaça 3"
+  },
+  {
+   "id": "320",
+   "nome": "Pastagem - Nativa"
+  },
+  {
+   "id": "175",
+   "nome": "Pastagem - Tanzânia"
+  },
+  {
+   "id": "115",
+   "nome": "Pastagem - Tifton"
+  },
+  {
+   "id": "874",
+   "nome": "Pastagem - Tifton - 85 c/ ciclo"
+  },
+  {
+   "id": "418",
+   "nome": "Pastagem - Tifton 85"
+  },
+  {
+   "id": "504",
+   "nome": "Pastagem - Tifton Sem Corte"
+  },
+  {
+   "id": "881",
+   "nome": "Pastagem - Tifton teste voltar ciclo - Clone"
+  },
+  {
+   "id": "623",
+   "nome": "Pastagem - Vaquero"
+  },
+  {
+   "id": "1178",
+   "nome": "Pastagem - Zuri"
+  },
+  {
+   "id": "1760",
+   "nome": "Pastagem - Zuri"
+  },
+  {
+   "id": "1617",
+   "nome": "Peanuts - Akwa +"
+  },
+  {
+   "id": "1621",
+   "nome": "Peanuts - ARC 474"
+  },
+  {
+   "id": "1619",
+   "nome": "Peanuts - ARC K6"
+  },
+  {
+   "id": "1618",
+   "nome": "Peanuts - ARC OLEIC"
+  },
+  {
+   "id": "1624",
+   "nome": "Peanuts - R0016"
+  },
+  {
+   "id": "1623",
+   "nome": "Peanuts - Schubert"
+  },
+  {
+   "id": "1622",
+   "nome": "Peanuts - Seuie"
+  },
+  {
+   "id": "1480",
+   "nome": "Pepino - Rasteiro"
+  },
+  {
+   "id": "2019",
+   "nome": "Pimenta - Dedo de Moça"
+  },
+  {
+   "id": "1422",
+   "nome": "Pimenta - Due"
+  },
+  {
+   "id": "2018",
+   "nome": "Pimenta - Habanero"
+  },
+  {
+   "id": "882",
+   "nome": "Pimenta - Jalapeño"
+  },
+  {
+   "id": "1767",
+   "nome": "Pimenta do Reino - Bragantina"
+  },
+  {
+   "id": "606",
+   "nome": "Pimentão - Pimentão"
+  },
+  {
+   "id": "1196",
+   "nome": "Pionner Maize - P2432BR"
+  },
+  {
+   "id": "1197",
+   "nome": "Pionner Maize - P2850BR"
+  },
+  {
+   "id": "1198",
+   "nome": "Pionner Soya - P62T16R"
+  },
+  {
+   "id": "1160",
+   "nome": "PopCorn - Zangger - N1H262"
+  },
+  {
+   "id": "1737",
+   "nome": "Potato - Actrice"
+  },
+  {
+   "id": "1741",
+   "nome": "Potato - Colomba"
+  },
+  {
+   "id": "1738",
+   "nome": "Potato - Electra"
+  },
+  {
+   "id": "763",
+   "nome": "Potato - FL 1867"
+  },
+  {
+   "id": "1739",
+   "nome": "Potato - FL 1867 - USA"
+  },
+  {
+   "id": "1735",
+   "nome": "Potato - FL 2137"
+  },
+  {
+   "id": "1742",
+   "nome": "Potato - FL 2312"
+  },
+  {
+   "id": "1736",
+   "nome": "Potato - FL 2505"
+  },
+  {
+   "id": "1005",
+   "nome": "Potato - Innovator"
+  },
+  {
+   "id": "1740",
+   "nome": "Potato - Lamoka"
+  },
+  {
+   "id": "1733",
+   "nome": "Potato - Mackinaw"
+  },
+  {
+   "id": "1734",
+   "nome": "Potato - Snowden"
+  },
+  {
+   "id": "1658",
+   "nome": "Potato FL2108 - FL2108"
+  },
+  {
+   "id": "1200",
+   "nome": "Potatoes - Dakota"
+  },
+  {
+   "id": "1199",
+   "nome": "Potatoes - Innovator"
+  },
+  {
+   "id": "1211",
+   "nome": "Potatoes - King R"
+  },
+  {
+   "id": "1201",
+   "nome": "Potatoes - Royal"
+  },
+  {
+   "id": "1305",
+   "nome": "Preparo - Preparo do solo"
+  },
+  {
+   "id": "1698",
+   "nome": "Quinoa - CPAC 6"
+  },
+  {
+   "id": "1274",
+   "nome": "Rabanete - Radish"
+  },
+  {
+   "id": "1317",
+   "nome": "Rabanete - Radish c/ fase pos corte"
+  },
+  {
+   "id": "1705",
+   "nome": "Regular Corn - P1366AML"
+  },
+  {
+   "id": "372",
+   "nome": "Repolho - Astrus"
+  },
+  {
+   "id": "894",
+   "nome": "Repolho - CEROX"
+  },
+  {
+   "id": "2058",
+   "nome": "Seringueira - Seringueira"
+  },
+  {
+   "id": "1724",
+   "nome": "Short Corn - PR113"
+  },
+  {
+   "id": "1706",
+   "nome": "Short Corn - PR113-61RIB"
+  },
+  {
+   "id": "1112",
+   "nome": "Soja - Coodetec CD 2827 IPRO (Intacta)"
+  },
+  {
+   "id": "826",
+   "nome": "Soja - NS 6828 IPRO"
+  },
+  {
+   "id": "957",
+   "nome": "Soja - NS 8383 RR"
+  },
+  {
+   "id": "1069",
+   "nome": "Soja - Pioneer 2898"
+  },
+  {
+   "id": "1600",
+   "nome": "Soja - 22ix 65"
+  },
+  {
+   "id": "1215",
+   "nome": "Soja - 54IX57"
+  },
+  {
+   "id": "1398",
+   "nome": "Soja - 55i57"
+  },
+  {
+   "id": "1400",
+   "nome": "Soja - 56I58RSF I2X"
+  },
+  {
+   "id": "1214",
+   "nome": "Soja - 56I59"
+  },
+  {
+   "id": "1634",
+   "nome": "Soja - 570 I2X"
+  },
+  {
+   "id": "1213",
+   "nome": "Soja - 60IX64"
+  },
+  {
+   "id": "1604",
+   "nome": "Soja - 64161RSF"
+  },
+  {
+   "id": "1364",
+   "nome": "Soja - 64i61FIBRA IPRO"
+  },
+  {
+   "id": "1603",
+   "nome": "Soja - 64I66RSF"
+  },
+  {
+   "id": "1186",
+   "nome": "Soja - 65i65 ROOS"
+  },
+  {
+   "id": "2068",
+   "nome": "Soja - 65IX25 i2X"
+  },
+  {
+   "id": "1401",
+   "nome": "Soja - 65K58CE FURIA"
+  },
+  {
+   "id": "1583",
+   "nome": "Soja - 65k67 FURIA"
+  },
+  {
+   "id": "1590",
+   "nome": "Soja - 67i68"
+  },
+  {
+   "id": "1029",
+   "nome": "Soja - 690 X-TEND"
+  },
+  {
+   "id": "1338",
+   "nome": "Soja - 7621 I2X"
+  },
+  {
+   "id": "1570",
+   "nome": "Soja - 78IX80 I2X"
+  },
+  {
+   "id": "1337",
+   "nome": "Soja - 7921 IPRO"
+  },
+  {
+   "id": "1380",
+   "nome": "Soja - 800i2x"
+  },
+  {
+   "id": "1783",
+   "nome": "Soja - 80I82RSF IPRO OLIMPO"
+  },
+  {
+   "id": "1064",
+   "nome": "Soja - 81I81RSF IPRO"
+  },
+  {
+   "id": "1056",
+   "nome": "Soja - 8220 IX2 Extrema"
+  },
+  {
+   "id": "1392",
+   "nome": "Soja - 8321 ce"
+  },
+  {
+   "id": "1892",
+   "nome": "Soja - 83E"
+  },
+  {
+   "id": "1062",
+   "nome": "Soja - 8451 IPRO"
+  },
+  {
+   "id": "1045",
+   "nome": "Soja - 84I85 RSF IPRO"
+  },
+  {
+   "id": "1237",
+   "nome": "Soja - 84I85 RSF IPRO *"
+  },
+  {
+   "id": "1390",
+   "nome": "Soja - 8i21 ipro"
+  },
+  {
+   "id": "2083",
+   "nome": "Soja - 95Y95 IPRO"
+  },
+  {
+   "id": "228",
+   "nome": "Soja - 98Y30"
+  },
+  {
+   "id": "1579",
+   "nome": "Soja - ADV 4621"
+  },
+  {
+   "id": "1054",
+   "nome": "Soja - ADV 4681"
+  },
+  {
+   "id": "936",
+   "nome": "Soja - AGN8019 IPRO"
+  },
+  {
+   "id": "866",
+   "nome": "Soja - Agroeste - AS3797 IPRO"
+  },
+  {
+   "id": "366",
+   "nome": "Soja - Agroeste - AS3797 IPRO"
+  },
+  {
+   "id": "1873",
+   "nome": "Soja - Agroeste 3577"
+  },
+  {
+   "id": "452",
+   "nome": "Soja - Agroeste 3590 IPRO"
+  },
+  {
+   "id": "839",
+   "nome": "Soja - Agroeste 3680"
+  },
+  {
+   "id": "353",
+   "nome": "Soja - Agroeste 3680"
+  },
+  {
+   "id": "667",
+   "nome": "Soja - Agroeste 3680 IPRO"
+  },
+  {
+   "id": "1041",
+   "nome": "Soja - Agroeste 3700 IRPO"
+  },
+  {
+   "id": "1042",
+   "nome": "Soja - Agroeste 3707 IPRO"
+  },
+  {
+   "id": "1192",
+   "nome": "Soja - Agroeste AS 1820"
+  },
+  {
+   "id": "145",
+   "nome": "Soja - Agroeste AS 3610 IPRO (Invicta)"
+  },
+  {
+   "id": "2086",
+   "nome": "Soja - Agroeste AS 3610 IPRO (Invicta)"
+  },
+  {
+   "id": "2087",
+   "nome": "Soja - Agroeste AS 3630 XTD"
+  },
+  {
+   "id": "171",
+   "nome": "Soja - Agroeste AS 3730 IPRO"
+  },
+  {
+   "id": "1614",
+   "nome": "Soja - Agroeste AS 3790 12X"
+  },
+  {
+   "id": "1557",
+   "nome": "Soja - Agroeste AS 3840 IPRO"
+  },
+  {
+   "id": "803",
+   "nome": "Soja - Agroeste AS 3850 IPRO"
+  },
+  {
+   "id": "227",
+   "nome": "Soja - Agroeste AS3730IPRO"
+  },
+  {
+   "id": "1605",
+   "nome": "Soja - Amambay"
+  },
+  {
+   "id": "831",
+   "nome": "Soja - AN83 022sc"
+  },
+  {
+   "id": "1155",
+   "nome": "Soja - ANsc 80111 Agro Norte"
+  },
+  {
+   "id": "1563",
+   "nome": "Soja - AS 3595 I2X"
+  },
+  {
+   "id": "1880",
+   "nome": "Soja - As 3720i2x"
+  },
+  {
+   "id": "1391",
+   "nome": "Soja - As 3800 i2x"
+  },
+  {
+   "id": "1333",
+   "nome": "Soja - AS3595"
+  },
+  {
+   "id": "1576",
+   "nome": "Soja - AS3715i2x"
+  },
+  {
+   "id": "2085",
+   "nome": "Soja - Avra 2478"
+  },
+  {
+   "id": "1354",
+   "nome": "Soja - BASF 36B96"
+  },
+  {
+   "id": "1355",
+   "nome": "Soja - BASF 37B39"
+  },
+  {
+   "id": "1799",
+   "nome": "Soja - Basf 616"
+  },
+  {
+   "id": "1353",
+   "nome": "Soja - BASF CZ58B2 IPRO"
+  },
+  {
+   "id": "1046",
+   "nome": "Soja - BASF CZ58B2 IPRO"
+  },
+  {
+   "id": "698",
+   "nome": "Soja - Baup BA6400"
+  },
+  {
+   "id": "926",
+   "nome": "Soja - BAYER 2706"
+  },
+  {
+   "id": "661",
+   "nome": "Soja - BAYER BS 2606 IPRO"
+  },
+  {
+   "id": "482",
+   "nome": "Soja - Bayer CZ 26B42 IPRO"
+  },
+  {
+   "id": "925",
+   "nome": "Soja - Bayer CZ 26B42 IPRO"
+  },
+  {
+   "id": "481",
+   "nome": "Soja - Bayer CZ 48B32 IPRO"
+  },
+  {
+   "id": "461",
+   "nome": "Soja - Bayer R8B32"
+  },
+  {
+   "id": "480",
+   "nome": "Soja - Bayer ST 729 LL"
+  },
+  {
+   "id": "477",
+   "nome": "Soja - Bayer TEC 7022 IPRO"
+  },
+  {
+   "id": "1747",
+   "nome": "Soja - Beck's 2550"
+  },
+  {
+   "id": "1893",
+   "nome": "Soja - BMX - Batalha"
+  },
+  {
+   "id": "143",
+   "nome": "Soja - BMX - Elite IPRO (Invicta)"
+  },
+  {
+   "id": "935",
+   "nome": "Soja - BMX - Extrema IPRO"
+  },
+  {
+   "id": "922",
+   "nome": "Soja - BMX - Fibra"
+  },
+  {
+   "id": "2076",
+   "nome": "Soja - BMX - Fibra"
+  },
+  {
+   "id": "2075",
+   "nome": "Soja - BMX - Garra"
+  },
+  {
+   "id": "458",
+   "nome": "Soja - BMX - Garra"
+  },
+  {
+   "id": "1574",
+   "nome": "Soja - BMX - Titanium"
+  },
+  {
+   "id": "1800",
+   "nome": "Soja - BMX - Titanium"
+  },
+  {
+   "id": "1335",
+   "nome": "Soja - BMX 61i63"
+  },
+  {
+   "id": "1334",
+   "nome": "Soja - BMX 61i66"
+  },
+  {
+   "id": "1336",
+   "nome": "Soja - BMX 64i63"
+  },
+  {
+   "id": "1187",
+   "nome": "Soja - BMX Ataque I2X"
+  },
+  {
+   "id": "2069",
+   "nome": "Soja - BMX Cártago"
+  },
+  {
+   "id": "1383",
+   "nome": "Soja - Bmx Coliseu"
+  },
+  {
+   "id": "1874",
+   "nome": "Soja - Bmx Coliseu i2x"
+  },
+  {
+   "id": "2078",
+   "nome": "Soja - BMX Cruzada"
+  },
+  {
+   "id": "1382",
+   "nome": "Soja - Bmx Exata"
+  },
+  {
+   "id": "1024",
+   "nome": "Soja - BMX ICONE IPRO"
+  },
+  {
+   "id": "1038",
+   "nome": "Soja - BMX Lotus IPRO"
+  },
+  {
+   "id": "1149",
+   "nome": "Soja - BMX NEXUS I2X"
+  },
+  {
+   "id": "2079",
+   "nome": "Soja - BMX ORION 55IX56"
+  },
+  {
+   "id": "2006",
+   "nome": "Soja - Bmx Orion i2x"
+  },
+  {
+   "id": "1801",
+   "nome": "Soja - BMX Tormenta"
+  },
+  {
+   "id": "1818",
+   "nome": "Soja - BMX Tormenta"
+  },
+  {
+   "id": "1387",
+   "nome": "Soja - bolinha"
+  },
+  {
+   "id": "666",
+   "nome": "Soja - Brasmax 66I68 RR2"
+  },
+  {
+   "id": "1180",
+   "nome": "Soja - Brasmax 70i71"
+  },
+  {
+   "id": "344",
+   "nome": "Soja - Brasmax Alvo"
+  },
+  {
+   "id": "2082",
+   "nome": "Soja - Brasmax Apice"
+  },
+  {
+   "id": "104",
+   "nome": "Soja - Brasmax Apolo"
+  },
+  {
+   "id": "1051",
+   "nome": "Soja - Brasmax Apolo"
+  },
+  {
+   "id": "1139",
+   "nome": "Soja - Brasmax AS3707 i2X"
+  },
+  {
+   "id": "24",
+   "nome": "Soja - Brasmax BMX - Potência"
+  },
+  {
+   "id": "2077",
+   "nome": "Soja - Brasmax BMX - Potência"
+  },
+  {
+   "id": "1845",
+   "nome": "Soja - Brasmax BMX - Potência"
+  },
+  {
+   "id": "928",
+   "nome": "Soja - Brasmax BMX - Potência"
+  },
+  {
+   "id": "757",
+   "nome": "Soja - Brasmax Bônus"
+  },
+  {
+   "id": "797",
+   "nome": "Soja - Brasmax Bônus"
+  },
+  {
+   "id": "829",
+   "nome": "Soja - Brasmax Compacta IPRO"
+  },
+  {
+   "id": "1779",
+   "nome": "Soja - Brasmax Cruzada CE"
+  },
+  {
+   "id": "782",
+   "nome": "Soja - Brasmax Delta"
+  },
+  {
+   "id": "121",
+   "nome": "Soja - Brasmax Desafio"
+  },
+  {
+   "id": "342",
+   "nome": "Soja - Brasmax Desafio 8417"
+  },
+  {
+   "id": "1140",
+   "nome": "Soja - Brasmax EXATA i2X"
+  },
+  {
+   "id": "758",
+   "nome": "Soja - Brasmax Extra"
+  },
+  {
+   "id": "1191",
+   "nome": "Soja - BRASMAX FIBRA IPRO"
+  },
+  {
+   "id": "343",
+   "nome": "Soja - Brasmax Flexa 6266"
+  },
+  {
+   "id": "206",
+   "nome": "Soja - Brasmax Flexa IPRO (Invicta)"
+  },
+  {
+   "id": "655",
+   "nome": "Soja - Brasmax Foco"
+  },
+  {
+   "id": "1063",
+   "nome": "Soja - Brasmax Fortaleza IPRO"
+  },
+  {
+   "id": "1865",
+   "nome": "Soja - Brasmax Grafeno TF"
+  },
+  {
+   "id": "1820",
+   "nome": "Soja - Brasmax Guepardo"
+  },
+  {
+   "id": "1821",
+   "nome": "Soja - Brasmax Guepardo"
+  },
+  {
+   "id": "1034",
+   "nome": "Soja - Brasmax Guepardo"
+  },
+  {
+   "id": "1044",
+   "nome": "Soja - Brasmax IPRO 80I82RSF Olimpo"
+  },
+  {
+   "id": "1802",
+   "nome": "Soja - Brasmax IPRO 80I82RSF Olimpo"
+  },
+  {
+   "id": "360",
+   "nome": "Soja - Brasmax Lança"
+  },
+  {
+   "id": "1052",
+   "nome": "Soja - Brasmax Lendária"
+  },
+  {
+   "id": "1825",
+   "nome": "Soja - Brasmax mítica Ce"
+  },
+  {
+   "id": "1803",
+   "nome": "Soja - BRASMAX OLIMPO IPRO"
+  },
+  {
+   "id": "1043",
+   "nome": "Soja - Brasmax Ponta IPRO (Invicta)"
+  },
+  {
+   "id": "168",
+   "nome": "Soja - Brasmax Ponta IPRO (Invicta)"
+  },
+  {
+   "id": "681",
+   "nome": "Soja - Brasmax Power"
+  },
+  {
+   "id": "818",
+   "nome": "Soja - Brasmax Raio IPRO"
+  },
+  {
+   "id": "1550",
+   "nome": "Soja - Brasmax Sparta"
+  },
+  {
+   "id": "1350",
+   "nome": "Soja - Brasmax Supera I2X"
+  },
+  {
+   "id": "1146",
+   "nome": "Soja - Brasmax Tanque"
+  },
+  {
+   "id": "1053",
+   "nome": "Soja - Brasmax Tormenta"
+  },
+  {
+   "id": "1584",
+   "nome": "Soja - Brasmax Torpedo I2X"
+  },
+  {
+   "id": "1374",
+   "nome": "Soja - Brasmax Torque"
+  },
+  {
+   "id": "669",
+   "nome": "Soja - Brasmax Ultra"
+  },
+  {
+   "id": "842",
+   "nome": "Soja - Brasmax Única IPRO"
+  },
+  {
+   "id": "125",
+   "nome": "Soja - Brasmax Vanguarda IPRO (Intacta)"
+  },
+  {
+   "id": "1184",
+   "nome": "Soja - Brasmax Vênus CE"
+  },
+  {
+   "id": "828",
+   "nome": "Soja - Brasmax Voraz IPRO"
+  },
+  {
+   "id": "783",
+   "nome": "Soja - Brasmax Zeus"
+  },
+  {
+   "id": "1869",
+   "nome": "Soja - Braúna"
+  },
+  {
+   "id": "1040",
+   "nome": "Soja - Brevant 4781"
+  },
+  {
+   "id": "897",
+   "nome": "Soja - Brevant 5G8015 IPRO"
+  },
+  {
+   "id": "1165",
+   "nome": "Soja - Brevant B5710CE"
+  },
+  {
+   "id": "1263",
+   "nome": "Soja - Brevant B5830CE"
+  },
+  {
+   "id": "1021",
+   "nome": "Soja - Brevant CD2728 IPRO"
+  },
+  {
+   "id": "1797",
+   "nome": "Soja - BRS 1064"
+  },
+  {
+   "id": "1058",
+   "nome": "Soja - BRS 284"
+  },
+  {
+   "id": "1593",
+   "nome": "Soja - BRS 423 OL"
+  },
+  {
+   "id": "1059",
+   "nome": "Soja - BRS 519"
+  },
+  {
+   "id": "819",
+   "nome": "Soja - BRS 5601RR"
+  },
+  {
+   "id": "813",
+   "nome": "Soja - BRS 5980 IPRO"
+  },
+  {
+   "id": "379",
+   "nome": "Soja - BRS 729 IPRO"
+  },
+  {
+   "id": "820",
+   "nome": "Soja - BRS 7780 IPRO"
+  },
+  {
+   "id": "1580",
+   "nome": "Soja - BRS 7881 - IPRO"
+  },
+  {
+   "id": "382",
+   "nome": "Soja - BRS 7980"
+  },
+  {
+   "id": "1152",
+   "nome": "Soja - BRS 8381"
+  },
+  {
+   "id": "455",
+   "nome": "Soja - BRS7380 RR"
+  },
+  {
+   "id": "692",
+   "nome": "Soja - BRSEEDS BRS284"
+  },
+  {
+   "id": "1363",
+   "nome": "Soja - BRSMG 534"
+  },
+  {
+   "id": "380",
+   "nome": "Soja - BRSMG 724 C RR"
+  },
+  {
+   "id": "943",
+   "nome": "Soja - BS 2606 IPRO"
+  },
+  {
+   "id": "743",
+   "nome": "Soja - BS IRGA 1642 IPRO"
+  },
+  {
+   "id": "955",
+   "nome": "Soja - C2531E"
+  },
+  {
+   "id": "953",
+   "nome": "Soja - C2570 RR"
+  },
+  {
+   "id": "1819",
+   "nome": "Soja - Cobre"
+  },
+  {
+   "id": "1839",
+   "nome": "Soja - Combate"
+  },
+  {
+   "id": "1831",
+   "nome": "Soja - Combate IPRO 7400"
+  },
+  {
+   "id": "1342",
+   "nome": "Soja - Combate IPRO 7400"
+  },
+  {
+   "id": "122",
+   "nome": "Soja - Coodetec"
+  },
+  {
+   "id": "183",
+   "nome": "Soja - Coodetec 2720"
+  },
+  {
+   "id": "182",
+   "nome": "Soja - Coodetec 2728"
+  },
+  {
+   "id": "435",
+   "nome": "Soja - Coodetec 2737"
+  },
+  {
+   "id": "939",
+   "nome": "Soja - COODETEC 2818 IPRO"
+  },
+  {
+   "id": "172",
+   "nome": "Soja - Coodetec CD 2728 IPRO (Intacta)"
+  },
+  {
+   "id": "190",
+   "nome": "Soja - Coodetec CD 2730 IPRO (Intacta)"
+  },
+  {
+   "id": "835",
+   "nome": "Soja - Coodetec DS 7417 IPRO (Intacta)"
+  },
+  {
+   "id": "1864",
+   "nome": "Soja - Cordius 2550 E"
+  },
+  {
+   "id": "1842",
+   "nome": "Soja - Cordius C2615CE"
+  },
+  {
+   "id": "1141",
+   "nome": "Soja - Credenz CZ 37B43 IPRO"
+  },
+  {
+   "id": "1377",
+   "nome": "Soja - Credenz CZ 37B60"
+  },
+  {
+   "id": "1385",
+   "nome": "Soja - Credenz CZ 37B66"
+  },
+  {
+   "id": "1161",
+   "nome": "Soja - Credenz CZ 58B28 IPRO"
+  },
+  {
+   "id": "671",
+   "nome": "Soja - Credenz CZ48B32 IPRO"
+  },
+  {
+   "id": "944",
+   "nome": "Soja - CZ 26B10 IPRO"
+  },
+  {
+   "id": "934",
+   "nome": "Soja - CZ 26B77 IPRO"
+  },
+  {
+   "id": "1823",
+   "nome": "Soja - CZ 34B39"
+  },
+  {
+   "id": "1358",
+   "nome": "Soja - CZ 37B60 IPRO"
+  },
+  {
+   "id": "1829",
+   "nome": "Soja - CZ 48B27"
+  },
+  {
+   "id": "1791",
+   "nome": "Soja - CZ37B07"
+  },
+  {
+   "id": "1793",
+   "nome": "Soja - CZ37B39"
+  },
+  {
+   "id": "1351",
+   "nome": "Soja - CZ37B392X"
+  },
+  {
+   "id": "1573",
+   "nome": "Soja - CZ37B39I2X"
+  },
+  {
+   "id": "843",
+   "nome": "Soja - CZ37B43 IPRO"
+  },
+  {
+   "id": "1588",
+   "nome": "Soja - CZ37B66I2X"
+  },
+  {
+   "id": "1828",
+   "nome": "Soja - CZ47B91 I2X"
+  },
+  {
+   "id": "1598",
+   "nome": "Soja - CZ48B08I2X"
+  },
+  {
+   "id": "1830",
+   "nome": "Soja - CZ48B18"
+  },
+  {
+   "id": "1393",
+   "nome": "Soja - CZ48B28 Ipro"
+  },
+  {
+   "id": "1822",
+   "nome": "Soja - Dagma 6822"
+  },
+  {
+   "id": "381",
+   "nome": "Soja - Desafio RR - 8473RSF"
+  },
+  {
+   "id": "1602",
+   "nome": "Soja - DM 52157"
+  },
+  {
+   "id": "1896",
+   "nome": "Soja - DM 55ix56"
+  },
+  {
+   "id": "2088",
+   "nome": "Soja - DM 56iX59"
+  },
+  {
+   "id": "1815",
+   "nome": "Soja - DM 56iX69"
+  },
+  {
+   "id": "1601",
+   "nome": "Soja - DM 59ix61"
+  },
+  {
+   "id": "1404",
+   "nome": "Soja - DM 60ix64"
+  },
+  {
+   "id": "1777",
+   "nome": "Soja - DM 64i68 IPRO"
+  },
+  {
+   "id": "1895",
+   "nome": "Soja - DM 64k67"
+  },
+  {
+   "id": "2067",
+   "nome": "Soja - DM 65iX67"
+  },
+  {
+   "id": "1562",
+   "nome": "Soja - DM 65iX67"
+  },
+  {
+   "id": "1857",
+   "nome": "Soja - DM 65iX68RSF i2X"
+  },
+  {
+   "id": "1217",
+   "nome": "Soja - DM 6668"
+  },
+  {
+   "id": "1182",
+   "nome": "Soja - DM 66I68 IPRO"
+  },
+  {
+   "id": "1356",
+   "nome": "Soja - DM 68i69"
+  },
+  {
+   "id": "1357",
+   "nome": "Soja - DM 69i2X69"
+  },
+  {
+   "id": "1181",
+   "nome": "Soja - DM 70I71 IPRO"
+  },
+  {
+   "id": "2084",
+   "nome": "Soja - DM 70ix70 i2x"
+  },
+  {
+   "id": "1203",
+   "nome": "Soja - DM 73i75"
+  },
+  {
+   "id": "1549",
+   "nome": "Soja - DM 74K75 RSF CE"
+  },
+  {
+   "id": "1204",
+   "nome": "Soja - DM 75i74"
+  },
+  {
+   "id": "1352",
+   "nome": "Soja - DM 75I74 IPRO"
+  },
+  {
+   "id": "705",
+   "nome": "Soja - DM 75i76"
+  },
+  {
+   "id": "1608",
+   "nome": "Soja - DM 76ix77"
+  },
+  {
+   "id": "1287",
+   "nome": "Soja - DM 79i81"
+  },
+  {
+   "id": "1860",
+   "nome": "Soja - DM 79K80 RSF"
+  },
+  {
+   "id": "1581",
+   "nome": "Soja - DM 80i85"
+  },
+  {
+   "id": "1171",
+   "nome": "Soja - DM5958"
+  },
+  {
+   "id": "454",
+   "nome": "Soja - DMARIO 6200"
+  },
+  {
+   "id": "738",
+   "nome": "Soja - Dom Mario - DM66I68 RSF IPRO"
+  },
+  {
+   "id": "1020",
+   "nome": "Soja - Dom Mario 64I63 IPRO"
+  },
+  {
+   "id": "1405",
+   "nome": "Soja - Dom Mário 668i68"
+  },
+  {
+   "id": "688",
+   "nome": "Soja - Dom Mario 66I68 IPRO"
+  },
+  {
+   "id": "1413",
+   "nome": "Soja - Dom Mario 75I74 IPRO"
+  },
+  {
+   "id": "1057",
+   "nome": "Soja - Domínio"
+  },
+  {
+   "id": "340",
+   "nome": "Soja - Don Mario 6159"
+  },
+  {
+   "id": "1027",
+   "nome": "Soja - Don Mario 82i78"
+  },
+  {
+   "id": "76",
+   "nome": "Soja - Don Mario DM6458 PRO"
+  },
+  {
+   "id": "931",
+   "nome": "Soja - Don Mario K6221"
+  },
+  {
+   "id": "126",
+   "nome": "Soja - Don MarioDM6458 IPRO (Intacta)"
+  },
+  {
+   "id": "144",
+   "nome": "Soja - Don marioDM6563 IPRO (Intacta)"
+  },
+  {
+   "id": "471",
+   "nome": "Soja - Dow 5916 IPRO"
+  },
+  {
+   "id": "838",
+   "nome": "Soja - DS 5916"
+  },
+  {
+   "id": "816",
+   "nome": "Soja - DS 6217 IPRO"
+  },
+  {
+   "id": "1556",
+   "nome": "Soja - ELLAS ELISA IPRO"
+  },
+  {
+   "id": "1359",
+   "nome": "Soja - ELLAS SUZY IPRO"
+  },
+  {
+   "id": "347",
+   "nome": "Soja - Embrapa - BRS 1001 Ipro"
+  },
+  {
+   "id": "348",
+   "nome": "Soja - Embrapa - BRS 1001 Ipro"
+  },
+  {
+   "id": "361",
+   "nome": "Soja - Embrapa BRS 232"
+  },
+  {
+   "id": "1175",
+   "nome": "Soja - Embrapa BRS 284"
+  },
+  {
+   "id": "460",
+   "nome": "Soja - Embrapa BRS 399"
+  },
+  {
+   "id": "1577",
+   "nome": "Soja - Embrapa BRS 511"
+  },
+  {
+   "id": "446",
+   "nome": "Soja - Embrapa BRS 7380RR"
+  },
+  {
+   "id": "672",
+   "nome": "Soja - Embrapa BRS 7460 RR"
+  },
+  {
+   "id": "189",
+   "nome": "Soja - Embrapa BRS 8560"
+  },
+  {
+   "id": "187",
+   "nome": "Soja - Embrapa BRS Valiosa"
+  },
+  {
+   "id": "188",
+   "nome": "Soja - Engopa 313"
+  },
+  {
+   "id": "2070",
+   "nome": "Soja - Era"
+  },
+  {
+   "id": "1610",
+   "nome": "Soja - Europa"
+  },
+  {
+   "id": "983",
+   "nome": "Soja - Europa"
+  },
+  {
+   "id": "2073",
+   "nome": "Soja - EVOLUI"
+  },
+  {
+   "id": "1151",
+   "nome": "Soja - Extrema Boa Safra"
+  },
+  {
+   "id": "805",
+   "nome": "Soja - FPS 1867 IPRO"
+  },
+  {
+   "id": "1589",
+   "nome": "Soja - FPS 1867 IPRO"
+  },
+  {
+   "id": "142",
+   "nome": "Soja - FPS Júpiter RR"
+  },
+  {
+   "id": "363",
+   "nome": "Soja - FT 1157 RR"
+  },
+  {
+   "id": "1138",
+   "nome": "Soja - FT 3179 IPRO"
+  },
+  {
+   "id": "948",
+   "nome": "Soja - FT 3868 IPRO"
+  },
+  {
+   "id": "1033",
+   "nome": "Soja - FTR 2557 RR"
+  },
+  {
+   "id": "456",
+   "nome": "Soja - FTR 4160 - IPRO"
+  },
+  {
+   "id": "809",
+   "nome": "Soja - FTR 4280 IPRO"
+  },
+  {
+   "id": "462",
+   "nome": "Soja - Genética Bayer"
+  },
+  {
+   "id": "1591",
+   "nome": "Soja - GH 1686"
+  },
+  {
+   "id": "1370",
+   "nome": "Soja - GH 2478 IPRO"
+  },
+  {
+   "id": "1812",
+   "nome": "Soja - GH 2483 IPRO"
+  },
+  {
+   "id": "1867",
+   "nome": "Soja - Gh 2581"
+  },
+  {
+   "id": "2081",
+   "nome": "Soja - GH 5933 IPRO"
+  },
+  {
+   "id": "1878",
+   "nome": "Soja - GH2463 I2X"
+  },
+  {
+   "id": "1369",
+   "nome": "Soja - GH2478"
+  },
+  {
+   "id": "1409",
+   "nome": "Soja - GH6433 I2X"
+  },
+  {
+   "id": "2074",
+   "nome": "Soja - GNS 7400 IPRO"
+  },
+  {
+   "id": "1816",
+   "nome": "Soja - GNS 7901 IPRO"
+  },
+  {
+   "id": "1810",
+   "nome": "Soja - HO - Cascavel i2x"
+  },
+  {
+   "id": "810",
+   "nome": "Soja - HO APORÉ IPRO"
+  },
+  {
+   "id": "1188",
+   "nome": "Soja - HO Caipó Ipro"
+  },
+  {
+   "id": "1189",
+   "nome": "Soja - HO Coari"
+  },
+  {
+   "id": "1048",
+   "nome": "Soja - Ho Corumbá IPRO"
+  },
+  {
+   "id": "1778",
+   "nome": "Soja - HO Garças"
+  },
+  {
+   "id": "1360",
+   "nome": "Soja - HO GUAPÓ 12X"
+  },
+  {
+   "id": "1362",
+   "nome": "Soja - HO Guapó i2x (77HO111)"
+  },
+  {
+   "id": "830",
+   "nome": "Soja - HO IGUAÇU IPRO"
+  },
+  {
+   "id": "827",
+   "nome": "Soja - HO JACUTINGA IPRO"
+  },
+  {
+   "id": "821",
+   "nome": "Soja - HO JAURU RR"
+  },
+  {
+   "id": "804",
+   "nome": "Soja - HO JURUENA IPRO"
+  },
+  {
+   "id": "1194",
+   "nome": "Soja - HO MAMORÉ"
+  },
+  {
+   "id": "1031",
+   "nome": "Soja - HO MAMORÉ IPRO 8.0"
+  },
+  {
+   "id": "833",
+   "nome": "Soja - HO MARACAÍ IPRO (77HO110)"
+  },
+  {
+   "id": "1843",
+   "nome": "Soja - HO Mutum i2x"
+  },
+  {
+   "id": "1792",
+   "nome": "Soja - HO NOBRES"
+  },
+  {
+   "id": "1150",
+   "nome": "Soja - HO PARAGUAÇU 64HO130"
+  },
+  {
+   "id": "670",
+   "nome": "Soja - HO PARANAIBA IPRO"
+  },
+  {
+   "id": "680",
+   "nome": "Soja - HO PIRAPÓ 64HO114 IPRO"
+  },
+  {
+   "id": "1210",
+   "nome": "Soja - HO PIRAPÓ IPRO"
+  },
+  {
+   "id": "679",
+   "nome": "Soja - HO TERERÊ 66HO116 IPRO"
+  },
+  {
+   "id": "1597",
+   "nome": "Soja - HOPRATAI2X"
+  },
+  {
+   "id": "1607",
+   "nome": "Soja - Imune TF"
+  },
+  {
+   "id": "1407",
+   "nome": "Soja - Inova"
+  },
+  {
+   "id": "1205",
+   "nome": "Soja - Jurema"
+  },
+  {
+   "id": "704",
+   "nome": "Soja - Juruena"
+  },
+  {
+   "id": "1144",
+   "nome": "Soja - K 6221"
+  },
+  {
+   "id": "1159",
+   "nome": "Soja - KWS K6022 IPRO"
+  },
+  {
+   "id": "1028",
+   "nome": "Soja - KWS RK6719 IPRO"
+  },
+  {
+   "id": "1294",
+   "nome": "Soja - Lat. 090183"
+  },
+  {
+   "id": "1953",
+   "nome": "Soja - Latitude 7301"
+  },
+  {
+   "id": "1952",
+   "nome": "Soja - Latitude 7601"
+  },
+  {
+   "id": "1846",
+   "nome": "Soja - Lenda 8411 IPRO"
+  },
+  {
+   "id": "1134",
+   "nome": "Soja - LG 10162"
+  },
+  {
+   "id": "927",
+   "nome": "Soja - LG 60162 IPRO"
+  },
+  {
+   "id": "472",
+   "nome": "Soja - LG 60163 IPRO"
+  },
+  {
+   "id": "1625",
+   "nome": "Soja - LG 60174 IPRO"
+  },
+  {
+   "id": "685",
+   "nome": "Soja - LG 60177 IPRO"
+  },
+  {
+   "id": "1133",
+   "nome": "Soja - LG 6030"
+  },
+  {
+   "id": "362",
+   "nome": "Soja - LG 6030"
+  },
+  {
+   "id": "1425",
+   "nome": "Soja - LG 6101"
+  },
+  {
+   "id": "1553",
+   "nome": "Soja - M 6100 XTD"
+  },
+  {
+   "id": "1859",
+   "nome": "Soja - M 6330 I2X"
+  },
+  {
+   "id": "814",
+   "nome": "Soja - M 8349 IPRO"
+  },
+  {
+   "id": "1344",
+   "nome": "Soja - M 8808 IPRO"
+  },
+  {
+   "id": "1403",
+   "nome": "Soja - M5710"
+  },
+  {
+   "id": "1411",
+   "nome": "Soja - M5710 I2X"
+  },
+  {
+   "id": "1635",
+   "nome": "Soja - M5921"
+  },
+  {
+   "id": "1361",
+   "nome": "Soja - M6100XTD"
+  },
+  {
+   "id": "1384",
+   "nome": "Soja - M6620"
+  },
+  {
+   "id": "105",
+   "nome": "Soja - Monsanto M 5947 IPRO (Intacta)"
+  },
+  {
+   "id": "82",
+   "nome": "Soja - Monsanto M 6210"
+  },
+  {
+   "id": "463",
+   "nome": "Soja - Monsanto M 6210"
+  },
+  {
+   "id": "106",
+   "nome": "Soja - Monsanto M 6410 IPRO (Intacta)"
+  },
+  {
+   "id": "180",
+   "nome": "Soja - Monsanto M 7110"
+  },
+  {
+   "id": "28",
+   "nome": "Soja - Monsanto M 7739"
+  },
+  {
+   "id": "184",
+   "nome": "Soja - Monsanto M 8210"
+  },
+  {
+   "id": "185",
+   "nome": "Soja - Monsanto M 9056"
+  },
+  {
+   "id": "186",
+   "nome": "Soja - Monsanto M 9144"
+  },
+  {
+   "id": "141",
+   "nome": "Soja - MonsantoM 5917 IPRO (Invicta)"
+  },
+  {
+   "id": "368",
+   "nome": "Soja - Monsoy - M2210 IPRO"
+  },
+  {
+   "id": "248",
+   "nome": "Soja - Monsoy 5106"
+  },
+  {
+   "id": "350",
+   "nome": "Soja - Monsoy 5917"
+  },
+  {
+   "id": "1637",
+   "nome": "Soja - MONSOY 6130 I2X"
+  },
+  {
+   "id": "464",
+   "nome": "Soja - Monsoy 6906"
+  },
+  {
+   "id": "1827",
+   "nome": "Soja - Monsoy 7222 i2x"
+  },
+  {
+   "id": "468",
+   "nome": "Soja - Monsoy 8372 IPRO"
+  },
+  {
+   "id": "1164",
+   "nome": "Soja - Monsoy M 6110"
+  },
+  {
+   "id": "1789",
+   "nome": "Soja - Monsoy M 6202 I2X"
+  },
+  {
+   "id": "357",
+   "nome": "Soja - Monsoy M 6210 IPRO"
+  },
+  {
+   "id": "358",
+   "nome": "Soja - Monsoy M 6972 IPRO"
+  },
+  {
+   "id": "659",
+   "nome": "Soja - Monsoy M 8372"
+  },
+  {
+   "id": "686",
+   "nome": "Soja - Monsoy M5838 IPRO"
+  },
+  {
+   "id": "1851",
+   "nome": "Soja - Monsoy M8434 i2x"
+  },
+  {
+   "id": "1284",
+   "nome": "Soja - Monsoy M8606 I2X"
+  },
+  {
+   "id": "846",
+   "nome": "Soja - NEO 530 IPRO"
+  },
+  {
+   "id": "1627",
+   "nome": "Soja - NEO 531 i2X"
+  },
+  {
+   "id": "1564",
+   "nome": "Soja - NEO 560"
+  },
+  {
+   "id": "952",
+   "nome": "Soja - NEO 580 IPRO"
+  },
+  {
+   "id": "1626",
+   "nome": "Soja - NEO 581 E"
+  },
+  {
+   "id": "2071",
+   "nome": "Soja - NEO 589"
+  },
+  {
+   "id": "1072",
+   "nome": "Soja - NEO 590 IPRO"
+  },
+  {
+   "id": "1798",
+   "nome": "Soja - Neo 600"
+  },
+  {
+   "id": "1023",
+   "nome": "Soja - NEO 610 IPRO"
+  },
+  {
+   "id": "1168",
+   "nome": "Soja - NEO 619"
+  },
+  {
+   "id": "1809",
+   "nome": "Soja - NEO 620"
+  },
+  {
+   "id": "1606",
+   "nome": "Soja - NEO 622"
+  },
+  {
+   "id": "1786",
+   "nome": "Soja - NEO 630"
+  },
+  {
+   "id": "1836",
+   "nome": "Soja - Neo 640 i2x"
+  },
+  {
+   "id": "845",
+   "nome": "Soja - NEO 660 IPRO"
+  },
+  {
+   "id": "869",
+   "nome": "Soja - NEO 680 IPRO"
+  },
+  {
+   "id": "1179",
+   "nome": "Soja - NEO 680 IPRO"
+  },
+  {
+   "id": "1806",
+   "nome": "Soja - NEO 690 i2x"
+  },
+  {
+   "id": "1578",
+   "nome": "Soja - NEO 690 IPRO"
+  },
+  {
+   "id": "1389",
+   "nome": "Soja - neo 700"
+  },
+  {
+   "id": "1835",
+   "nome": "Soja - Neo 700 i2x"
+  },
+  {
+   "id": "870",
+   "nome": "Soja - NEO 710 IPRO"
+  },
+  {
+   "id": "1148",
+   "nome": "Soja - NEO 720 I2X"
+  },
+  {
+   "id": "1560",
+   "nome": "Soja - NEO 730"
+  },
+  {
+   "id": "1061",
+   "nome": "Soja - NEO 740"
+  },
+  {
+   "id": "1067",
+   "nome": "Soja - Neo 750"
+  },
+  {
+   "id": "1571",
+   "nome": "Soja - NEO 760"
+  },
+  {
+   "id": "1572",
+   "nome": "Soja - NEO 761"
+  },
+  {
+   "id": "1587",
+   "nome": "Soja - NEO 770"
+  },
+  {
+   "id": "1847",
+   "nome": "Soja - NEO 771"
+  },
+  {
+   "id": "1898",
+   "nome": "Soja - NEO 780 IPRO"
+  },
+  {
+   "id": "985",
+   "nome": "Soja - NEO 790 IPRO"
+  },
+  {
+   "id": "1782",
+   "nome": "Soja - NEO 791 CE"
+  },
+  {
+   "id": "1837",
+   "nome": "Soja - Neo 800"
+  },
+  {
+   "id": "1794",
+   "nome": "Soja - NEO 800 i2x"
+  },
+  {
+   "id": "1599",
+   "nome": "Soja - NEO 801I2X"
+  },
+  {
+   "id": "1868",
+   "nome": "Soja - Neo 802"
+  },
+  {
+   "id": "1804",
+   "nome": "Soja - NEO 802 12x"
+  },
+  {
+   "id": "1781",
+   "nome": "Soja - Neo 802 i2x"
+  },
+  {
+   "id": "1162",
+   "nome": "Soja - NEO 810 i2x"
+  },
+  {
+   "id": "1055",
+   "nome": "Soja - NEO 810 IPRO"
+  },
+  {
+   "id": "1871",
+   "nome": "Soja - Neo 811"
+  },
+  {
+   "id": "1838",
+   "nome": "Soja - Neo 820"
+  },
+  {
+   "id": "1221",
+   "nome": "Soja - NEO 820 13 sementes"
+  },
+  {
+   "id": "871",
+   "nome": "Soja - NEO 820 IPRO"
+  },
+  {
+   "id": "1872",
+   "nome": "Soja - Neo 821"
+  },
+  {
+   "id": "1343",
+   "nome": "Soja - NEO 840 IPRO"
+  },
+  {
+   "id": "1156",
+   "nome": "Soja - NEO 840 IPRO"
+  },
+  {
+   "id": "1153",
+   "nome": "Soja - NEO 850 CE"
+  },
+  {
+   "id": "1841",
+   "nome": "Soja - Neo Gem 661"
+  },
+  {
+   "id": "1022",
+   "nome": "Soja - Neogen NEO 610"
+  },
+  {
+   "id": "844",
+   "nome": "Soja - Neogen NEO 610"
+  },
+  {
+   "id": "687",
+   "nome": "Soja - Nideira NS7505"
+  },
+  {
+   "id": "1435",
+   "nome": "Soja - Nideira NS7505"
+  },
+  {
+   "id": "367",
+   "nome": "Soja - Nidera - NS7007 IPRO"
+  },
+  {
+   "id": "1368",
+   "nome": "Soja - Nidera 6010 IPRO"
+  },
+  {
+   "id": "465",
+   "nome": "Soja - Nidera 7670RR"
+  },
+  {
+   "id": "1375",
+   "nome": "Soja - Nidera 7676"
+  },
+  {
+   "id": "1036",
+   "nome": "Soja - Nidera 8590 IPRO"
+  },
+  {
+   "id": "1037",
+   "nome": "Soja - Nidera 8595 IPRO"
+  },
+  {
+   "id": "1950",
+   "nome": "Soja - Nidera NA 5909 RG"
+  },
+  {
+   "id": "980",
+   "nome": "Soja - Nidera NA 5909 RG"
+  },
+  {
+   "id": "12",
+   "nome": "Soja - Nidera NA 5909 RG"
+  },
+  {
+   "id": "124",
+   "nome": "Soja - Nidera NA 5909 RR"
+  },
+  {
+   "id": "50",
+   "nome": "Soja - Nidera NA 7225"
+  },
+  {
+   "id": "166",
+   "nome": "Soja - Nidera NA 7337 RR"
+  },
+  {
+   "id": "675",
+   "nome": "Soja - NIDERA NA 8015 RR"
+  },
+  {
+   "id": "443",
+   "nome": "Soja - Nidera NS 5959"
+  },
+  {
+   "id": "170",
+   "nome": "Soja - Nidera NS 6700 IPRO (Intacta)"
+  },
+  {
+   "id": "917",
+   "nome": "Soja - Nidera NS 6828 IPRO"
+  },
+  {
+   "id": "916",
+   "nome": "Soja - Nidera NS 6906 IPRO"
+  },
+  {
+   "id": "351",
+   "nome": "Soja - Nidera NS 6906 IPRO"
+  },
+  {
+   "id": "978",
+   "nome": "Soja - Nidera NS 6990"
+  },
+  {
+   "id": "979",
+   "nome": "Soja - Nidera NS 6990"
+  },
+  {
+   "id": "181",
+   "nome": "Soja - Nidera NS 7000"
+  },
+  {
+   "id": "694",
+   "nome": "Soja - Nidera NS 7007 IPRO"
+  },
+  {
+   "id": "163",
+   "nome": "Soja - Nidera NS 7011 PRO"
+  },
+  {
+   "id": "394",
+   "nome": "Soja - Nidera NS 7110"
+  },
+  {
+   "id": "352",
+   "nome": "Soja - Nidera NS 7200"
+  },
+  {
+   "id": "167",
+   "nome": "Soja - Nidera NS 7202 IPRO (Intacta)"
+  },
+  {
+   "id": "165",
+   "nome": "Soja - Nidera NS 7209 IPRO (Intacta)"
+  },
+  {
+   "id": "164",
+   "nome": "Soja - Nidera NS 7227 RR"
+  },
+  {
+   "id": "179",
+   "nome": "Soja - Nidera NS 7338 IPRO"
+  },
+  {
+   "id": "447",
+   "nome": "Soja - Nidera NS 7447 IPRO"
+  },
+  {
+   "id": "695",
+   "nome": "Soja - Nidera NS 7667"
+  },
+  {
+   "id": "736",
+   "nome": "Soja - Nidera NS 7709"
+  },
+  {
+   "id": "696",
+   "nome": "Soja - Nidera NS 8338"
+  },
+  {
+   "id": "1378",
+   "nome": "Soja - NK 6356"
+  },
+  {
+   "id": "1035",
+   "nome": "Soja - NK 7201 IPRO"
+  },
+  {
+   "id": "1388",
+   "nome": "Soja - NS 5933 IPRO"
+  },
+  {
+   "id": "1169",
+   "nome": "Soja - NS 6220 IPRO"
+  },
+  {
+   "id": "1154",
+   "nome": "Soja - NS 6299 IPRO"
+  },
+  {
+   "id": "1372",
+   "nome": "Soja - NS 6446 i2x"
+  },
+  {
+   "id": "697",
+   "nome": "Soja - NS 6601 IPRO"
+  },
+  {
+   "id": "370",
+   "nome": "Soja - NS 7300"
+  },
+  {
+   "id": "1030",
+   "nome": "Soja - NS 7709 IPRO"
+  },
+  {
+   "id": "346",
+   "nome": "Soja - NS 7709 IPRO"
+  },
+  {
+   "id": "1365",
+   "nome": "Soja - NS 7790 IPRO"
+  },
+  {
+   "id": "345",
+   "nome": "Soja - NS 7901 RR"
+  },
+  {
+   "id": "1341",
+   "nome": "Soja - NS 8080"
+  },
+  {
+   "id": "1345",
+   "nome": "Soja - NS 8080 IPRO"
+  },
+  {
+   "id": "2080",
+   "nome": "Soja - Oiti"
+  },
+  {
+   "id": "1047",
+   "nome": "Soja - Olímpio O790 IPRO"
+  },
+  {
+   "id": "1840",
+   "nome": "Soja - Olimpo"
+  },
+  {
+   "id": "1290",
+   "nome": "Soja - Olimpo 80i79"
+  },
+  {
+   "id": "1339",
+   "nome": "Soja - Origem"
+  },
+  {
+   "id": "205",
+   "nome": "Soja - Ouro Verde PP 7500"
+  },
+  {
+   "id": "207",
+   "nome": "Soja - Ouro Verde PP 8201 IPRO"
+  },
+  {
+   "id": "241",
+   "nome": "Soja - Ouro Verde PP7500"
+  },
+  {
+   "id": "812",
+   "nome": "Soja - P95R95 IPRO"
+  },
+  {
+   "id": "445",
+   "nome": "Soja - Pioneer P96Y90RR"
+  },
+  {
+   "id": "31",
+   "nome": "Soja - Pioneer 95R21"
+  },
+  {
+   "id": "1132",
+   "nome": "Soja - Pioneer 95R21"
+  },
+  {
+   "id": "1951",
+   "nome": "Soja - Pioneer 95R21"
+  },
+  {
+   "id": "840",
+   "nome": "Soja - Pioneer 95R90"
+  },
+  {
+   "id": "1025",
+   "nome": "Soja - Pioneer 96R10 IPRO"
+  },
+  {
+   "id": "918",
+   "nome": "Soja - PIONEER 96R29"
+  },
+  {
+   "id": "933",
+   "nome": "Soja - Pioneer 96R29"
+  },
+  {
+   "id": "662",
+   "nome": "Soja - PIONEER 96Y90"
+  },
+  {
+   "id": "339",
+   "nome": "Soja - Pioneer 97R21"
+  },
+  {
+   "id": "841",
+   "nome": "Soja - Pioneer 97R50"
+  },
+  {
+   "id": "444",
+   "nome": "Soja - Pioneer 97Y90"
+  },
+  {
+   "id": "951",
+   "nome": "Soja - PIONEER 97Y91"
+  },
+  {
+   "id": "1376",
+   "nome": "Soja - PIONEER 97y97"
+  },
+  {
+   "id": "1594",
+   "nome": "Soja - PIONEER 98R30CE"
+  },
+  {
+   "id": "1137",
+   "nome": "Soja - Pioneer 98Y21IPRO"
+  },
+  {
+   "id": "204",
+   "nome": "Soja - Pioneer 98Y51"
+  },
+  {
+   "id": "240",
+   "nome": "Soja - Pioneer 98Y51"
+  },
+  {
+   "id": "930",
+   "nome": "Soja - Pioneer P90R10"
+  },
+  {
+   "id": "929",
+   "nome": "Soja - Pioneer P96R70"
+  },
+  {
+   "id": "735",
+   "nome": "Soja - Pioneer P96Y90"
+  },
+  {
+   "id": "737",
+   "nome": "Soja - Pioneer P97R22"
+  },
+  {
+   "id": "37",
+   "nome": "Soja - Pioneer P98Y30"
+  },
+  {
+   "id": "1918",
+   "nome": "Soja - PP 6205 RR"
+  },
+  {
+   "id": "364",
+   "nome": "Soja - Produza"
+  },
+  {
+   "id": "1817",
+   "nome": "Soja - Raptor"
+  },
+  {
+   "id": "349",
+   "nome": "Soja - Riber - RK 6813"
+  },
+  {
+   "id": "947",
+   "nome": "Soja - Riber 5813"
+  },
+  {
+   "id": "178",
+   "nome": "Soja - Riber 7814"
+  },
+  {
+   "id": "84",
+   "nome": "Soja - Riber M 6210"
+  },
+  {
+   "id": "39",
+   "nome": "Soja - Riber RBL 8307"
+  },
+  {
+   "id": "1049",
+   "nome": "Soja - Riber RBL 8307"
+  },
+  {
+   "id": "1050",
+   "nome": "Soja - Riber RK 5519"
+  },
+  {
+   "id": "83",
+   "nome": "Soja - Riber RK 5813"
+  },
+  {
+   "id": "434",
+   "nome": "Soja - Riber RK 6316 IPRO"
+  },
+  {
+   "id": "1002",
+   "nome": "Soja - Riber RK 7214 IPRO"
+  },
+  {
+   "id": "432",
+   "nome": "Soja - Riber RK 7814 IPRO"
+  },
+  {
+   "id": "431",
+   "nome": "Soja - Riber RK 8115 IPRO"
+  },
+  {
+   "id": "811",
+   "nome": "Soja - RK 8317 IPRO"
+  },
+  {
+   "id": "682",
+   "nome": "Soja - RK7518"
+  },
+  {
+   "id": "1897",
+   "nome": "Soja - S8225 i2X"
+  },
+  {
+   "id": "1001",
+   "nome": "Soja - Satus Ager"
+  },
+  {
+   "id": "1003",
+   "nome": "Soja - Satus Ager"
+  },
+  {
+   "id": "483",
+   "nome": "Soja - SeedcorpHO CRISTALINO IPRO"
+  },
+  {
+   "id": "1863",
+   "nome": "Soja - Semeali 6102"
+  },
+  {
+   "id": "1861",
+   "nome": "Soja - Soberana i2x"
+  },
+  {
+   "id": "1832",
+   "nome": "Soja - Soy Combate Ipro"
+  },
+  {
+   "id": "1833",
+   "nome": "Soja - Soy Completa Ipro"
+  },
+  {
+   "id": "1620",
+   "nome": "Soja - SoyTech 541"
+  },
+  {
+   "id": "1135",
+   "nome": "Soja - SoyTech 580"
+  },
+  {
+   "id": "1212",
+   "nome": "Soja - SoyTech 700"
+  },
+  {
+   "id": "1586",
+   "nome": "Soja - SoyTech 711"
+  },
+  {
+   "id": "2009",
+   "nome": "Soja - SoyTech 828"
+  },
+  {
+   "id": "1834",
+   "nome": "Soja - Sparta i2x"
+  },
+  {
+   "id": "1177",
+   "nome": "Soja - ST 580"
+  },
+  {
+   "id": "1410",
+   "nome": "Soja - ST 616 I2X"
+  },
+  {
+   "id": "1142",
+   "nome": "Soja - ST 622"
+  },
+  {
+   "id": "1381",
+   "nome": "Soja - St 631"
+  },
+  {
+   "id": "1394",
+   "nome": "Soja - ST 700"
+  },
+  {
+   "id": "1814",
+   "nome": "Soja - ST 711 I2X"
+  },
+  {
+   "id": "1366",
+   "nome": "Soja - ST 752I2X"
+  },
+  {
+   "id": "868",
+   "nome": "Soja - ST 777 IPRO"
+  },
+  {
+   "id": "1082",
+   "nome": "Soja - ST 794 IPRO"
+  },
+  {
+   "id": "1373",
+   "nome": "Soja - ST 797"
+  },
+  {
+   "id": "1611",
+   "nome": "Soja - ST570"
+  },
+  {
+   "id": "954",
+   "nome": "Soja - ST620 IPRO"
+  },
+  {
+   "id": "1395",
+   "nome": "Soja - ST641"
+  },
+  {
+   "id": "1879",
+   "nome": "Soja - ST670 I2X"
+  },
+  {
+   "id": "1596",
+   "nome": "Soja - ST752I2X"
+  },
+  {
+   "id": "1147",
+   "nome": "Soja - Stine - 77EA40 Enlist E3"
+  },
+  {
+   "id": "1348",
+   "nome": "Soja - STINE 76EA72"
+  },
+  {
+   "id": "1795",
+   "nome": "Soja - Stine 76KA72"
+  },
+  {
+   "id": "1349",
+   "nome": "Soja - STINE 77EA40"
+  },
+  {
+   "id": "1347",
+   "nome": "Soja - STINE 78KA42"
+  },
+  {
+   "id": "1796",
+   "nome": "Soja - Stine 80ka72"
+  },
+  {
+   "id": "1780",
+   "nome": "Soja - Stine 84KA92 CE"
+  },
+  {
+   "id": "815",
+   "nome": "Soja - SYN 15640 IPRO"
+  },
+  {
+   "id": "1060",
+   "nome": "Soja - SYN 2282 IPRO"
+  },
+  {
+   "id": "1371",
+   "nome": "Soja - SYN 2478 IPRO"
+  },
+  {
+   "id": "356",
+   "nome": "Soja - Syngenta SYN 1366C IPRO"
+  },
+  {
+   "id": "365",
+   "nome": "Soja - Syngenta - SYN 13610 IPRO"
+  },
+  {
+   "id": "664",
+   "nome": "Soja - Syngenta 1080"
+  },
+  {
+   "id": "359",
+   "nome": "Soja - Syngenta SYN 13561 IPRO"
+  },
+  {
+   "id": "216",
+   "nome": "Soja - Syngenta Syn 1378C IPRO"
+  },
+  {
+   "id": "449",
+   "nome": "Soja - Syngenta SYN 1683"
+  },
+  {
+   "id": "450",
+   "nome": "Soja - Syngenta SYN 1687"
+  },
+  {
+   "id": "886",
+   "nome": "Soja - TEC 7548 IPRO"
+  },
+  {
+   "id": "1811",
+   "nome": "Soja - TMG - Jacareuba"
+  },
+  {
+   "id": "442",
+   "nome": "Soja - TMG 1157"
+  },
+  {
+   "id": "378",
+   "nome": "Soja - TMG 1179 RR"
+  },
+  {
+   "id": "932",
+   "nome": "Soja - TMG 1288"
+  },
+  {
+   "id": "914",
+   "nome": "Soja - TMG 2165 IPRO"
+  },
+  {
+   "id": "1346",
+   "nome": "Soja - TMG 2285 IPRO"
+  },
+  {
+   "id": "1582",
+   "nome": "Soja - TMG 22X77 12X"
+  },
+  {
+   "id": "1805",
+   "nome": "Soja - TMG 23270 IPRO"
+  },
+  {
+   "id": "1807",
+   "nome": "Soja - TMG 2370"
+  },
+  {
+   "id": "1172",
+   "nome": "Soja - TMG 2374 IPRO"
+  },
+  {
+   "id": "1145",
+   "nome": "Soja - TMG 2379"
+  },
+  {
+   "id": "798",
+   "nome": "Soja - TMG 2381 IPRO"
+  },
+  {
+   "id": "915",
+   "nome": "Soja - TMG 2383 IPRO"
+  },
+  {
+   "id": "699",
+   "nome": "Soja - TMG 7061"
+  },
+  {
+   "id": "946",
+   "nome": "Soja - TMG 7062 IPRO (Invicta)"
+  },
+  {
+   "id": "140",
+   "nome": "Soja - TMG 7062 IPRO (Invicta)"
+  },
+  {
+   "id": "949",
+   "nome": "Soja - TMG 7063 IPRO (Invicta)"
+  },
+  {
+   "id": "453",
+   "nome": "Soja - TMG 7063 IPRO (Invicta)"
+  },
+  {
+   "id": "399",
+   "nome": "Soja - TMG 7067 IPRO"
+  },
+  {
+   "id": "1220",
+   "nome": "Soja - TMG 7067 IPRO"
+  },
+  {
+   "id": "1026",
+   "nome": "Soja - TMG 7067 IPRO (Invicta)"
+  },
+  {
+   "id": "2014",
+   "nome": "Soja - TMG Castanheira i2x"
+  },
+  {
+   "id": "1883",
+   "nome": "Soja - TMG GUANANDI"
+  },
+  {
+   "id": "1886",
+   "nome": "Soja - TMG Imbuia i2X"
+  },
+  {
+   "id": "1862",
+   "nome": "Soja - TMG Itaúba i2x"
+  },
+  {
+   "id": "1402",
+   "nome": "Soja - TMG7362 IPRO"
+  },
+  {
+   "id": "1080",
+   "nome": "Soja - VA 78A"
+  },
+  {
+   "id": "1081",
+   "nome": "Soja - VA 79A"
+  },
+  {
+   "id": "1074",
+   "nome": "Soja - VA 79A IPRO"
+  },
+  {
+   "id": "341",
+   "nome": "Soja - Vanguarda 6160 IPRO"
+  },
+  {
+   "id": "1143",
+   "nome": "Soja - Venuz"
+  },
+  {
+   "id": "1076",
+   "nome": "Soja - WS 026"
+  },
+  {
+   "id": "1075",
+   "nome": "Soja - WS 027"
+  },
+  {
+   "id": "1077",
+   "nome": "Soja - WS 028"
+  },
+  {
+   "id": "1078",
+   "nome": "Soja - WS 029"
+  },
+  {
+   "id": "1079",
+   "nome": "Soja - WS 84A"
+  },
+  {
+   "id": "1207",
+   "nome": "Soja - XTEND580"
+  },
+  {
+   "id": "433",
+   "nome": "Soja - Satus Ager - Satus Ager"
+  },
+  {
+   "id": "1330",
+   "nome": "Soja Bayer - 20XF49"
+  },
+  {
+   "id": "1331",
+   "nome": "Soja Bayer - 2721RXF"
+  },
+  {
+   "id": "1439",
+   "nome": "Soja Semente - 6803 IPRO"
+  },
+  {
+   "id": "1636",
+   "nome": "Soja Semente - GDM Braveza B72C22"
+  },
+  {
+   "id": "467",
+   "nome": "Soja Semente - Nidera 6909"
+  },
+  {
+   "id": "1222",
+   "nome": "Soja Semente - Semeali 6803IPRO"
+  },
+  {
+   "id": "448",
+   "nome": "Soja Semente - Syngenta - Syngenta"
+  },
+  {
+   "id": "832",
+   "nome": "Soja Semente - TEC 7849 IPRO"
+  },
+  {
+   "id": "1947",
+   "nome": "Sorgo - AA326"
+  },
+  {
+   "id": "707",
+   "nome": "Sorgo - 1G233"
+  },
+  {
+   "id": "1640",
+   "nome": "Sorgo - 227"
+  },
+  {
+   "id": "1946",
+   "nome": "Sorgo - AA227"
+  },
+  {
+   "id": "1948",
+   "nome": "Sorgo - AA327"
+  },
+  {
+   "id": "1434",
+   "nome": "Sorgo - ADV1151"
+  },
+  {
+   "id": "1446",
+   "nome": "Sorgo - ADV1151"
+  },
+  {
+   "id": "213",
+   "nome": "Sorgo - Advanta ADV 123"
+  },
+  {
+   "id": "1243",
+   "nome": "Sorgo - AG1070"
+  },
+  {
+   "id": "1244",
+   "nome": "Sorgo - AG4640"
+  },
+  {
+   "id": "1473",
+   "nome": "Sorgo - AGRI 002E"
+  },
+  {
+   "id": "79",
+   "nome": "Sorgo - Agroceres AG1080"
+  },
+  {
+   "id": "1964",
+   "nome": "Sorgo - Agroceres AG1080"
+  },
+  {
+   "id": "853",
+   "nome": "Sorgo - Agroceres AG1085"
+  },
+  {
+   "id": "212",
+   "nome": "Sorgo - Agroceres AG1090"
+  },
+  {
+   "id": "974",
+   "nome": "Sorgo - Agroeste AS 4650"
+  },
+  {
+   "id": "1416",
+   "nome": "Sorgo - b211"
+  },
+  {
+   "id": "708",
+   "nome": "Sorgo - Biomatrix BM 737"
+  },
+  {
+   "id": "2010",
+   "nome": "Sorgo - Biomatrix BM Podium"
+  },
+  {
+   "id": "1971",
+   "nome": "Sorgo - BM 767"
+  },
+  {
+   "id": "1088",
+   "nome": "Sorgo - Boliviano Gigante"
+  },
+  {
+   "id": "1235",
+   "nome": "Sorgo - Brevant 1G100"
+  },
+  {
+   "id": "1241",
+   "nome": "Sorgo - Brevant 1G211"
+  },
+  {
+   "id": "1969",
+   "nome": "Sorgo - Brevant 1G211"
+  },
+  {
+   "id": "731",
+   "nome": "Sorgo - Brevant 1G245"
+  },
+  {
+   "id": "969",
+   "nome": "Sorgo - Brevant B1G255"
+  },
+  {
+   "id": "968",
+   "nome": "Sorgo - BRS 310"
+  },
+  {
+   "id": "1098",
+   "nome": "Sorgo - BRS 373"
+  },
+  {
+   "id": "1233",
+   "nome": "Sorgo - BRS Ponta Negra"
+  },
+  {
+   "id": "1647",
+   "nome": "Sorgo - CRV-9004"
+  },
+  {
+   "id": "133",
+   "nome": "Sorgo - Dekalb DKB 540"
+  },
+  {
+   "id": "80",
+   "nome": "Sorgo - Dekalb DKB 550"
+  },
+  {
+   "id": "1239",
+   "nome": "Sorgo - Dekalb DKB 560"
+  },
+  {
+   "id": "134",
+   "nome": "Sorgo - Dekalb DKB 590"
+  },
+  {
+   "id": "823",
+   "nome": "Sorgo - DKB 350"
+  },
+  {
+   "id": "822",
+   "nome": "Sorgo - DKB 530"
+  },
+  {
+   "id": "1273",
+   "nome": "Sorgo - DKB 545"
+  },
+  {
+   "id": "1091",
+   "nome": "Sorgo - DKB 546"
+  },
+  {
+   "id": "416",
+   "nome": "Sorgo - Dow 1G100"
+  },
+  {
+   "id": "721",
+   "nome": "Sorgo - Dow 50A40"
+  },
+  {
+   "id": "981",
+   "nome": "Sorgo - Dow 50A40"
+  },
+  {
+   "id": "135",
+   "nome": "Sorgo - Dow 50A50"
+  },
+  {
+   "id": "1965",
+   "nome": "Sorgo - Enforcer"
+  },
+  {
+   "id": "1689",
+   "nome": "Sorgo - FS66SG"
+  },
+  {
+   "id": "971",
+   "nome": "Sorgo - Granífero Alvo"
+  },
+  {
+   "id": "1245",
+   "nome": "Sorgo - JB1314"
+  },
+  {
+   "id": "1927",
+   "nome": "Sorgo - Jotabasso 1324"
+  },
+  {
+   "id": "1097",
+   "nome": "Sorgo - KWS K200"
+  },
+  {
+   "id": "1216",
+   "nome": "Sorgo - KWS K700"
+  },
+  {
+   "id": "1429",
+   "nome": "Sorgo - M 2220"
+  },
+  {
+   "id": "877",
+   "nome": "Sorgo - MR 43"
+  },
+  {
+   "id": "1227",
+   "nome": "Sorgo - NTX S100"
+  },
+  {
+   "id": "1973",
+   "nome": "Sorgo - NTX S202"
+  },
+  {
+   "id": "1974",
+   "nome": "Sorgo - NTX S500"
+  },
+  {
+   "id": "1447",
+   "nome": "Sorgo - Nugrain 250"
+  },
+  {
+   "id": "878",
+   "nome": "Sorgo - Nugrain 420"
+  },
+  {
+   "id": "1099",
+   "nome": "Sorgo - Nugrain 430"
+  },
+  {
+   "id": "1899",
+   "nome": "Sorgo - Nugrain 9001"
+  },
+  {
+   "id": "1751",
+   "nome": "Sorgo - Nusil 426"
+  },
+  {
+   "id": "1467",
+   "nome": "Sorgo - Oilema 1999"
+  },
+  {
+   "id": "1089",
+   "nome": "Sorgo - Pioneer 50A40"
+  },
+  {
+   "id": "975",
+   "nome": "Sorgo - Pioneer 50A40"
+  },
+  {
+   "id": "977",
+   "nome": "Sorgo - Pioneer 50A60"
+  },
+  {
+   "id": "1090",
+   "nome": "Sorgo - Pioneer 84G05"
+  },
+  {
+   "id": "1406",
+   "nome": "Sorgo - pioneer 85G05"
+  },
+  {
+   "id": "2015",
+   "nome": "Sorgo - PR40G34 Produtiva"
+  },
+  {
+   "id": "750",
+   "nome": "Sorgo - Volumax"
+  },
+  {
+   "id": "21",
+   "nome": "Sorgo Semente - Atlantica"
+  },
+  {
+   "id": "211",
+   "nome": "Sorgo Semente - Atlantica"
+  },
+  {
+   "id": "440",
+   "nome": "Sorgo Semente - Corteva"
+  },
+  {
+   "id": "2049",
+   "nome": "Sorgo Semente - GDM"
+  },
+  {
+   "id": "1264",
+   "nome": "Sorgo Semente - Jmen"
+  },
+  {
+   "id": "1251",
+   "nome": "Sorgo Semente - Long Ping"
+  },
+  {
+   "id": "1949",
+   "nome": "Sorgo Semente - NuSeeds"
+  },
+  {
+   "id": "2046",
+   "nome": "Sorgo Semente - PRS 1021"
+  },
+  {
+   "id": "1945",
+   "nome": "Sorgo Semente - PRS 1053"
+  },
+  {
+   "id": "884",
+   "nome": "Sorgo Semente - Riber KWS"
+  },
+  {
+   "id": "1923",
+   "nome": "Sorgo Semente Advanta - Advanta"
+  },
+  {
+   "id": "1249",
+   "nome": "Sorgo Semente Helix - Helix"
+  },
+  {
+   "id": "780",
+   "nome": "Sorgo Semente Satus - Satus Ager"
+  },
+  {
+   "id": "2030",
+   "nome": "Soybean - 3270"
+  },
+  {
+   "id": "1711",
+   "nome": "Soybean - A27E35"
+  },
+  {
+   "id": "1534",
+   "nome": "Soybean - Beck's 2663 XF"
+  },
+  {
+   "id": "2031",
+   "nome": "Soybean - GH2674E3"
+  },
+  {
+   "id": "2028",
+   "nome": "Soybean - GH2856E3S"
+  },
+  {
+   "id": "1713",
+   "nome": "Soybean - GH3035E3"
+  },
+  {
+   "id": "2029",
+   "nome": "Soybean - P33Z17"
+  },
+  {
+   "id": "1712",
+   "nome": "Soybean - P33Z17E3"
+  },
+  {
+   "id": "1486",
+   "nome": "Soybean - Soybean 3144 XF - Lewis Hibrids"
+  },
+  {
+   "id": "1496",
+   "nome": "Soybean - Spirit 2730"
+  },
+  {
+   "id": "1884",
+   "nome": "Soybean - Pannar T39 - Soybean - Pannar T39"
+  },
+  {
+   "id": "1329",
+   "nome": "Soybean Bayer - AG27XF3"
+  },
+  {
+   "id": "401",
+   "nome": "STAR CHECK - MILHO DOCE - DIAGNOSTICO"
+  },
+  {
+   "id": "400",
+   "nome": "STAR CHECK - TOMATE - DIAGNOSTICO"
+  },
+  {
+   "id": "1183",
+   "nome": "Sugar Beet - Sugar Beet"
+  },
+  {
+   "id": "1885",
+   "nome": "Sunflower - Sunflower Pannar 7180"
+  },
+  {
+   "id": "996",
+   "nome": "Tabaco - PHV Híbrido"
+  },
+  {
+   "id": "1301",
+   "nome": "testeKey - testeKey"
+  },
+  {
+   "id": "1166",
+   "nome": "Tobacco - LK46"
+  },
+  {
+   "id": "1167",
+   "nome": "Tobacco - LT93"
+  },
+  {
+   "id": "46",
+   "nome": "Tomate Industria - AP"
+  },
+  {
+   "id": "795",
+   "nome": "Tomate Industria - AP529"
+  },
+  {
+   "id": "899",
+   "nome": "Tomate Industria - AP529"
+  },
+  {
+   "id": "1987",
+   "nome": "Tomate Industria - APRIX"
+  },
+  {
+   "id": "785",
+   "nome": "Tomate Industria - BA5630"
+  },
+  {
+   "id": "2005",
+   "nome": "Tomate Industria - BSP SALIM"
+  },
+  {
+   "id": "786",
+   "nome": "Tomate Industria - BSP0031"
+  },
+  {
+   "id": "787",
+   "nome": "Tomate Industria - BSP0032"
+  },
+  {
+   "id": "788",
+   "nome": "Tomate Industria - BSP0033"
+  },
+  {
+   "id": "789",
+   "nome": "Tomate Industria - BSP0034"
+  },
+  {
+   "id": "1957",
+   "nome": "Tomate Industria - BSP0037"
+  },
+  {
+   "id": "790",
+   "nome": "Tomate Industria - BSP0086"
+  },
+  {
+   "id": "791",
+   "nome": "Tomate Industria - BSP0087"
+  },
+  {
+   "id": "792",
+   "nome": "Tomate Industria - BSP0088"
+  },
+  {
+   "id": "793",
+   "nome": "Tomate Industria - BSP0089"
+  },
+  {
+   "id": "1979",
+   "nome": "Tomate Industria - BSP0137"
+  },
+  {
+   "id": "794",
+   "nome": "Tomate Industria - F0574"
+  },
+  {
+   "id": "799",
+   "nome": "Tomate Industria - H1015"
+  },
+  {
+   "id": "890",
+   "nome": "Tomate Industria - H1015"
+  },
+  {
+   "id": "1659",
+   "nome": "Tomate Industria - H2022"
+  },
+  {
+   "id": "800",
+   "nome": "Tomate Industria - H9553"
+  },
+  {
+   "id": "801",
+   "nome": "Tomate Industria - H9992"
+  },
+  {
+   "id": "1978",
+   "nome": "Tomate Industria - Heinz 1881"
+  },
+  {
+   "id": "1692",
+   "nome": "Tomate Industria - HM 4890"
+  },
+  {
+   "id": "1289",
+   "nome": "Tomate Industria - HM5369 - 4 fases"
+  },
+  {
+   "id": "802",
+   "nome": "Tomate Industria - HMX 3888"
+  },
+  {
+   "id": "796",
+   "nome": "Tomate Industria - HMX 7885"
+  },
+  {
+   "id": "891",
+   "nome": "Tomate Industria - N901"
+  },
+  {
+   "id": "1498",
+   "nome": "Tomate Industria - HM7885 - HM7885"
+  },
+  {
+   "id": "993",
+   "nome": "Tomate Industria - Pesquisa Cargill - CVR2909 - Kc Embrapa"
+  },
+  {
+   "id": "992",
+   "nome": "Tomate Industria - Pesquisa Cargill - CVR2909 - Kc iCrop"
+  },
+  {
+   "id": "995",
+   "nome": "Tomate Industria - Pesquisa Cargill - HM7885 - Kc Embrapa"
+  },
+  {
+   "id": "994",
+   "nome": "Tomate Industria - Pesquisa Cargill - HM7885 - Kc iCrop"
+  },
+  {
+   "id": "1261",
+   "nome": "Tomate Mesa - HM5369"
+  },
+  {
+   "id": "484",
+   "nome": "Tomate Mesa - Tyson"
+  },
+  {
+   "id": "1281",
+   "nome": "Tremoço - Padrão"
+  },
+  {
+   "id": "1303",
+   "nome": "Trigo - 4 fases"
+  },
+  {
+   "id": "1121",
+   "nome": "Trigo - Absoluto"
+  },
+  {
+   "id": "1503",
+   "nome": "Trigo - BAR 10"
+  },
+  {
+   "id": "767",
+   "nome": "Trigo - BioTrigo Aton"
+  },
+  {
+   "id": "614",
+   "nome": "Trigo - BioTrigo Audaz"
+  },
+  {
+   "id": "1986",
+   "nome": "Trigo - Biotrigo Dinamo"
+  },
+  {
+   "id": "1679",
+   "nome": "Trigo - BioTrigo Duque"
+  },
+  {
+   "id": "885",
+   "nome": "Trigo - BioTrigo Duque"
+  },
+  {
+   "id": "888",
+   "nome": "Trigo - BioTrigo Noble"
+  },
+  {
+   "id": "14",
+   "nome": "Trigo - BioTrigo Onix"
+  },
+  {
+   "id": "770",
+   "nome": "Trigo - BioTrigo Ponteiro"
+  },
+  {
+   "id": "112",
+   "nome": "Trigo - BioTrigo Quartzo"
+  },
+  {
+   "id": "2003",
+   "nome": "Trigo - Biotrigo Sigma"
+  },
+  {
+   "id": "111",
+   "nome": "Trigo - BioTrigo Sintonia"
+  },
+  {
+   "id": "108",
+   "nome": "Trigo - Biotrigo Sinuelo"
+  },
+  {
+   "id": "765",
+   "nome": "Trigo - BioTrigo Sonic"
+  },
+  {
+   "id": "420",
+   "nome": "Trigo - BioTrigo Sossego"
+  },
+  {
+   "id": "902",
+   "nome": "Trigo - BioTrigo Toruk"
+  },
+  {
+   "id": "110",
+   "nome": "Trigo - BioTrigo Toruk"
+  },
+  {
+   "id": "1545",
+   "nome": "Trigo - BioTrigo Trunfo"
+  },
+  {
+   "id": "635",
+   "nome": "Trigo - BRS 254"
+  },
+  {
+   "id": "2020",
+   "nome": "Trigo - BRS Savana"
+  },
+  {
+   "id": "1966",
+   "nome": "Trigo - BRS Tarumaxi Duplo Propósito"
+  },
+  {
+   "id": "903",
+   "nome": "Trigo - Byotech Esporão"
+  },
+  {
+   "id": "57",
+   "nome": "Trigo - Codetec CD108"
+  },
+  {
+   "id": "77",
+   "nome": "Trigo - Codetec CD150"
+  },
+  {
+   "id": "1682",
+   "nome": "Trigo - DM 3026"
+  },
+  {
+   "id": "1678",
+   "nome": "Trigo - DM 4025"
+  },
+  {
+   "id": "109",
+   "nome": "Trigo - Embrapa BRS 220"
+  },
+  {
+   "id": "611",
+   "nome": "Trigo - Embrapa BRS 264"
+  },
+  {
+   "id": "620",
+   "nome": "Trigo - Embrapa BRS 394"
+  },
+  {
+   "id": "621",
+   "nome": "Trigo - Embrapa BRS 394"
+  },
+  {
+   "id": "258",
+   "nome": "Trigo - Embrapa BRS404"
+  },
+  {
+   "id": "1120",
+   "nome": "Trigo - Energic"
+  },
+  {
+   "id": "1283",
+   "nome": "Trigo - Feroz"
+  },
+  {
+   "id": "1124",
+   "nome": "Trigo - FPS Regente"
+  },
+  {
+   "id": "1681",
+   "nome": "Trigo - Gladiador"
+  },
+  {
+   "id": "1123",
+   "nome": "Trigo - Guardião"
+  },
+  {
+   "id": "312",
+   "nome": "Trigo - Iguaçu"
+  },
+  {
+   "id": "1009",
+   "nome": "Trigo - IPR CATUARA"
+  },
+  {
+   "id": "1784",
+   "nome": "Trigo - LCS Valiant"
+  },
+  {
+   "id": "1295",
+   "nome": "Trigo - LG ORO - limagrain"
+  },
+  {
+   "id": "610",
+   "nome": "Trigo - Mourisco"
+  },
+  {
+   "id": "2002",
+   "nome": "Trigo - Olaneasca 3-Zanzibar"
+  },
+  {
+   "id": "2021",
+   "nome": "Trigo - OR Lampião"
+  },
+  {
+   "id": "1683",
+   "nome": "Trigo - ORS Falcão"
+  },
+  {
+   "id": "1504",
+   "nome": "Trigo - ORS Selvagem"
+  },
+  {
+   "id": "1481",
+   "nome": "Trigo - ORS Turbo"
+  },
+  {
+   "id": "423",
+   "nome": "Trigo - Pardelo"
+  },
+  {
+   "id": "315",
+   "nome": "Trigo - Semente Básica BRS264"
+  },
+  {
+   "id": "1282",
+   "nome": "Trigo - Sena"
+  },
+  {
+   "id": "1286",
+   "nome": "Trigo - Sonic"
+  },
+  {
+   "id": "1980",
+   "nome": "Trigo - Spectra"
+  },
+  {
+   "id": "1469",
+   "nome": "Trigo - TBIO BLANC"
+  },
+  {
+   "id": "1275",
+   "nome": "Trigo - TBio Calibre"
+  },
+  {
+   "id": "1687",
+   "nome": "Trigo - TBIO Escalibur"
+  },
+  {
+   "id": "1943",
+   "nome": "Trigo - TBio Excalibur"
+  },
+  {
+   "id": "1494",
+   "nome": "Trigo - Tbio Motriz"
+  },
+  {
+   "id": "764",
+   "nome": "Trigo - TBio Sonic"
+  },
+  {
+   "id": "1673",
+   "nome": "Trigo - TBio Titan"
+  },
+  {
+   "id": "1688",
+   "nome": "Trigo - TBIO Veloz"
+  },
+  {
+   "id": "1485",
+   "nome": "Trigo - Trigo Talism"
+  },
+  {
+   "id": "1680",
+   "nome": "Trigo - Trigo TBIO CONVICTO"
+  },
+  {
+   "id": "1982",
+   "nome": "Trigo - Valente"
+  },
+  {
+   "id": "496",
+   "nome": "Trigo - BioTrigo - Sintonia"
+  },
+  {
+   "id": "613",
+   "nome": "Trigo - BioTrigo - Sossego"
+  },
+  {
+   "id": "612",
+   "nome": "Trigo - BioTrigo - Toruk"
+  },
+  {
+   "id": "1127",
+   "nome": "Trigo - BioTrigo - Toruk"
+  },
+  {
+   "id": "2017",
+   "nome": "Triticale - BRS Saturno"
+  },
+  {
+   "id": "632",
+   "nome": "Triticale - Harmonia"
+  },
+  {
+   "id": "1685",
+   "nome": "Triticale - Iamoré"
+  },
+  {
+   "id": "1684",
+   "nome": "Triticale - Tambaqui"
+  },
+  {
+   "id": "1018",
+   "nome": "Uva - Niágara"
+  },
+  {
+   "id": "1019",
+   "nome": "Uva - Núbia"
+  },
+  {
+   "id": "851",
+   "nome": "Uva - Syrah"
+  },
+  {
+   "id": "1004",
+   "nome": "Uva - Teste"
+  },
+  {
+   "id": "1016",
+   "nome": "Uva - Vitória"
+  },
+  {
+   "id": "1993",
+   "nome": "Wheat - Agen"
+  },
+  {
+   "id": "1997",
+   "nome": "Wheat - Algeri"
+  },
+  {
+   "id": "1992",
+   "nome": "Wheat - Ardes"
+  },
+  {
+   "id": "1988",
+   "nome": "Wheat - Avenue"
+  },
+  {
+   "id": "1991",
+   "nome": "Wheat - Izalco"
+  },
+  {
+   "id": "1013",
+   "nome": "Wheat - Lichtenburg Test Farm"
+  },
+  {
+   "id": "1998",
+   "nome": "Wheat - Olaneasca 1-Midnight"
+  },
+  {
+   "id": "1995",
+   "nome": "Wheat - Olaneasca Frison-Monaco"
+  },
+  {
+   "id": "1996",
+   "nome": "Wheat - Pribac"
+  },
+  {
+   "id": "1304",
+   "nome": "Wheat - Sensako SST843"
+  },
+  {
+   "id": "1311",
+   "nome": "Wheat - SST8502"
+  },
+  {
+   "id": "1511",
+   "nome": "Wheat - Wheat - Codetec CD108"
+  },
+  {
+   "id": "1126",
+   "nome": "Wheat - South Africa - Wheat"
+  },
+  {
+   "id": "1915",
+   "nome": "Wheat Egypt - Wheat Egypt"
+  },
+  {
+   "id": "1609",
+   "nome": "Wheat Egypt - Wheat Egypt"
+  },
+  {
+   "id": "1916",
+   "nome": "Wheat Egypt - Wheat Egypt - Toshka"
+  },
+  {
+   "id": "1718",
+   "nome": "White Corn - Pioneer P1306 W"
+  },
+  {
+   "id": "1533",
+   "nome": "White Corn - Pioneer P1309 WAM"
+  }
+ ]
+}

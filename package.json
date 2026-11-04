@@ -1,0 +1,17 @@
+{
+  "name": "projeto-irrigacao",
+  "private": true,
+  "version": "0.1.0",
+  "description": "IRRIVERT — gestão de irrigação da Agropecuária Vertente",
+  "workspaces": [
+    "packages/core",
+    "apps/api",
+    "apps/web"
+  ],
+  "scripts": {
+    "test": "npm test --workspace packages/core",
+    "dev:api": "npm run dev --workspace apps/api",
+    "dev:web": "npm run dev --workspace apps/web",
+    "build:web": "npm run build --workspace apps/web"
+  }
+}

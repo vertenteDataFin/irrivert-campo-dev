@@ -1,0 +1,3534 @@
+{
+ "fonte": "Derivado dos históricos diários do iCrop (01/06 a 22/10/2026): curva de Kc/raiz por dia desde o plantio para cada cultura, parâmetros de solo e do equipamento conforme o iCrop os usa no balanço",
+ "capturadoEm": "2026-10-23",
+ "observacoes": [
+  "Fase 1 = inicial (Kc constante), fase 2 = desenvolvimento (Kc e raiz sobem linearmente por dia), fase 3 = média (Kc constante). A fase final não foi observada em nenhuma parcela.",
+  "Mombaça 3: só entra em fase 2 no dia 1 (sem fase 1), Kc 0,60 -> 1,005 em 10 dias, depois 1,05; raiz cresce 1 cm/dia até ~40 cm e segue devagar até 51,7 cm no dia 144.",
+  "Amendoim IAC 677/503: fase 1 de 10 dias com Kc 0,55 (raiz 16 -> 25 cm), fase 2 com Kc +0,0167/dia a partir de 0,5667 (dia 37: 1,00) e raiz até 29,5 cm.",
+  "Preparo do solo: Kc 0,60 fixo, raiz 20 cm.",
+  "Profundidade de absorção = raiz x 1,3. CTA = (CC - PMP)/100 x densidade x profundidade (mm). CRA = 50% da CTA. Umidade de segurança = PMP + (CC - PMP) x 0,5.",
+  "Eficiência de irrigação = uniformidade x área molhada (ex. Pivô 01: 0,9277 x 0,9497 = 0,881; o iCrop mostra 0,8877, conferir a fórmula exata)."
+ ],
+ "culturas": [
+  {
+   "cultura": "Pastagem - Mombaça 3",
+   "plantioExemplo": "01/06/2026",
+   "porDia": [
+    {
+     "dia": 1,
+     "fase": 2,
+     "kc": 0.6,
+     "raiz_cm": 31,
+     "prof_absorcao_cm": 40.3,
+     "ks": 0.8153,
+     "kl": 0.9745,
+     "area_sombreada": 77.5
+    },
+    {
+     "dia": 2,
+     "fase": 2,
+     "kc": 0.645,
+     "raiz_cm": 32,
+     "prof_absorcao_cm": 41.6,
+     "ks": 0.9444,
+     "kl": 0.9745,
+     "area_sombreada": 80
+    },
+    {
+     "dia": 3,
+     "fase": 2,
+     "kc": 0.69,
+     "raiz_cm": 33,
+     "prof_absorcao_cm": 42.9,
+     "ks": 0.911,
+     "kl": 0.9745,
+     "area_sombreada": 82.5
+    },
+    {
+     "dia": 4,
+     "fase": 2,
+     "kc": 0.735,
+     "raiz_cm": 34,
+     "prof_absorcao_cm": 44.2,
+     "ks": 1,
+     "kl": 0.9745,
+     "area_sombreada": 85
+    },
+    {
+     "dia": 5,
+     "fase": 2,
+     "kc": 0.78,
+     "raiz_cm": 35,
+     "prof_absorcao_cm": 45.5,
+     "ks": 0.9614,
+     "kl": 0.9745,
+     "area_sombreada": 87.5
+    },
+    {
+     "dia": 6,
+     "fase": 2,
+     "kc": 0.825,
+     "raiz_cm": 36,
+     "prof_absorcao_cm": 46.8,
+     "ks": 1,
+     "kl": 0.9745,
+     "area_sombreada": 90
+    },
+    {
+     "dia": 7,
+     "fase": 2,
+     "kc": 0.87,
+     "raiz_cm": 37,
+     "prof_absorcao_cm": 48.1,
+     "ks": 0.9613,
+     "kl": 0.9745,
+     "area_sombreada": 92.5
+    },
+    {
+     "dia": 8,
+     "fase": 2,
+     "kc": 0.915,
+     "raiz_cm": 38,
+     "prof_absorcao_cm": 49.4,
+     "ks": 1,
+     "kl": 0.9747,
+     "area_sombreada": 95
+    },
+    {
+     "dia": 9,
+     "fase": 2,
+     "kc": 0.96,
+     "raiz_cm": 39,
+     "prof_absorcao_cm": 50.7,
+     "ks": 0.9583,
+     "kl": 0.9874,
+     "area_sombreada": 97.5
+    },
+    {
+     "dia": 10,
+     "fase": 2,
+     "kc": 1.005,
+     "raiz_cm": 40,
+     "prof_absorcao_cm": 52,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 11,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 40.0278,
+     "prof_absorcao_cm": 52.0361,
+     "ks": 0.9664,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 12,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 40.0556,
+     "prof_absorcao_cm": 52.0722,
+     "ks": 0.9274,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 13,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.0167,
+     "prof_absorcao_cm": 66.3217,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 14,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.0222,
+     "prof_absorcao_cm": 66.3289,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 15,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.0278,
+     "prof_absorcao_cm": 66.3361,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 16,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.0333,
+     "prof_absorcao_cm": 66.3433,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 17,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.0389,
+     "prof_absorcao_cm": 66.3506,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 18,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.0444,
+     "prof_absorcao_cm": 66.3578,
+     "ks": 0.9751,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 19,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.05,
+     "prof_absorcao_cm": 66.365,
+     "ks": 0.9409,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 20,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.0556,
+     "prof_absorcao_cm": 66.3722,
+     "ks": 0.9413,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 21,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.0611,
+     "prof_absorcao_cm": 66.3794,
+     "ks": 0.9854,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 22,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.0667,
+     "prof_absorcao_cm": 66.3867,
+     "ks": 0.9736,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 23,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.0722,
+     "prof_absorcao_cm": 66.3939,
+     "ks": 0.9445,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 24,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.0778,
+     "prof_absorcao_cm": 66.4011,
+     "ks": 0.935,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 25,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.0833,
+     "prof_absorcao_cm": 66.4083,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 26,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.0889,
+     "prof_absorcao_cm": 66.4156,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 27,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.0944,
+     "prof_absorcao_cm": 66.4228,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 28,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.1,
+     "prof_absorcao_cm": 66.43,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 29,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.1056,
+     "prof_absorcao_cm": 66.4372,
+     "ks": 0.9577,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 30,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.1111,
+     "prof_absorcao_cm": 66.4444,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 31,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.1167,
+     "prof_absorcao_cm": 66.4517,
+     "ks": 0.9587,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 32,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.1222,
+     "prof_absorcao_cm": 66.4589,
+     "ks": 0.9183,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 33,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.1278,
+     "prof_absorcao_cm": 66.4661,
+     "ks": 0.8837,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 34,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.1333,
+     "prof_absorcao_cm": 66.4733,
+     "ks": 0.8562,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 35,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.1389,
+     "prof_absorcao_cm": 66.4806,
+     "ks": 0.8322,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 36,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.1444,
+     "prof_absorcao_cm": 66.4878,
+     "ks": 0.8027,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 37,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.15,
+     "prof_absorcao_cm": 66.495,
+     "ks": 0.7753,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 38,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.1556,
+     "prof_absorcao_cm": 66.5022,
+     "ks": 0.7543,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 39,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.1611,
+     "prof_absorcao_cm": 66.5094,
+     "ks": 0.7307,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 40,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.1667,
+     "prof_absorcao_cm": 66.5167,
+     "ks": 0.7031,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 41,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.1722,
+     "prof_absorcao_cm": 66.5239,
+     "ks": 0.6752,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 42,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.1778,
+     "prof_absorcao_cm": 66.5311,
+     "ks": 0.6471,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 43,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.1833,
+     "prof_absorcao_cm": 66.5383,
+     "ks": 0.8203,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 44,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.1889,
+     "prof_absorcao_cm": 66.5456,
+     "ks": 0.7918,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 45,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.1944,
+     "prof_absorcao_cm": 66.5528,
+     "ks": 0.765,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 46,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.2,
+     "prof_absorcao_cm": 66.56,
+     "ks": 0.8361,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 47,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.2056,
+     "prof_absorcao_cm": 66.5672,
+     "ks": 0.7965,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 48,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.2111,
+     "prof_absorcao_cm": 66.5744,
+     "ks": 0.8621,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 49,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.2167,
+     "prof_absorcao_cm": 66.5817,
+     "ks": 0.8202,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 50,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.2222,
+     "prof_absorcao_cm": 66.5889,
+     "ks": 0.8771,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 51,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.2278,
+     "prof_absorcao_cm": 66.5961,
+     "ks": 0.8359,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 52,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.2333,
+     "prof_absorcao_cm": 66.6033,
+     "ks": 0.7939,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 53,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.2389,
+     "prof_absorcao_cm": 66.6106,
+     "ks": 0.7562,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 54,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.2444,
+     "prof_absorcao_cm": 66.6178,
+     "ks": 0.8325,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 55,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.25,
+     "prof_absorcao_cm": 66.625,
+     "ks": 0.8014,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 56,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.2556,
+     "prof_absorcao_cm": 66.6322,
+     "ks": 0.7733,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 57,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.2611,
+     "prof_absorcao_cm": 66.6394,
+     "ks": 0.7394,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 58,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.2667,
+     "prof_absorcao_cm": 66.6467,
+     "ks": 0.7034,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 59,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.2722,
+     "prof_absorcao_cm": 66.6539,
+     "ks": 0.6676,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 60,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.2778,
+     "prof_absorcao_cm": 66.6611,
+     "ks": 0.634,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 61,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.2833,
+     "prof_absorcao_cm": 66.6683,
+     "ks": 0.6167,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 62,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.2889,
+     "prof_absorcao_cm": 66.6756,
+     "ks": 0.5875,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 63,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.2944,
+     "prof_absorcao_cm": 66.6828,
+     "ks": 0.5537,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 64,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.3,
+     "prof_absorcao_cm": 66.69,
+     "ks": 0.5287,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 65,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.3056,
+     "prof_absorcao_cm": 66.6972,
+     "ks": 0.5121,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 66,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.3111,
+     "prof_absorcao_cm": 66.7044,
+     "ks": 0.4916,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 67,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.3167,
+     "prof_absorcao_cm": 66.7117,
+     "ks": 0.4678,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 68,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.3222,
+     "prof_absorcao_cm": 66.7189,
+     "ks": 0.4408,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 69,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.3278,
+     "prof_absorcao_cm": 66.7261,
+     "ks": 0.5127,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 70,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.3333,
+     "prof_absorcao_cm": 66.7333,
+     "ks": 0.5786,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 71,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.3389,
+     "prof_absorcao_cm": 66.7406,
+     "ks": 0.6454,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 72,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.3444,
+     "prof_absorcao_cm": 66.7478,
+     "ks": 0.7151,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 73,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.35,
+     "prof_absorcao_cm": 66.755,
+     "ks": 0.7561,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 74,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.3556,
+     "prof_absorcao_cm": 66.7622,
+     "ks": 0.8032,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 75,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.3611,
+     "prof_absorcao_cm": 66.7694,
+     "ks": 0.8509,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 76,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.3667,
+     "prof_absorcao_cm": 66.7767,
+     "ks": 0.898,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 77,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.3722,
+     "prof_absorcao_cm": 66.7839,
+     "ks": 0.9261,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 78,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.3778,
+     "prof_absorcao_cm": 66.7911,
+     "ks": 0.9672,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 79,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.3833,
+     "prof_absorcao_cm": 66.7983,
+     "ks": 0.9727,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 80,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.3889,
+     "prof_absorcao_cm": 66.8056,
+     "ks": 0.9192,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 81,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.3944,
+     "prof_absorcao_cm": 66.8128,
+     "ks": 0.8718,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 82,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.4,
+     "prof_absorcao_cm": 66.82,
+     "ks": 0.8294,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 83,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.4056,
+     "prof_absorcao_cm": 66.8272,
+     "ks": 0.7862,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 84,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.4111,
+     "prof_absorcao_cm": 66.8344,
+     "ks": 0.7491,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 85,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.4167,
+     "prof_absorcao_cm": 66.8417,
+     "ks": 0.7117,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 86,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.4222,
+     "prof_absorcao_cm": 66.8489,
+     "ks": 0.678,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 87,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.4278,
+     "prof_absorcao_cm": 66.8561,
+     "ks": 0.6448,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 88,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.4333,
+     "prof_absorcao_cm": 66.8633,
+     "ks": 0.8522,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 89,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.4389,
+     "prof_absorcao_cm": 66.8706,
+     "ks": 0.9038,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 90,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.4444,
+     "prof_absorcao_cm": 66.8778,
+     "ks": 0.8457,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 91,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.45,
+     "prof_absorcao_cm": 66.885,
+     "ks": 0.8901,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 92,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.4556,
+     "prof_absorcao_cm": 66.8922,
+     "ks": 0.9433,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 93,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.4611,
+     "prof_absorcao_cm": 66.8994,
+     "ks": 0.9775,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 94,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.4667,
+     "prof_absorcao_cm": 66.9067,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 95,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.4722,
+     "prof_absorcao_cm": 66.9139,
+     "ks": 0.9425,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 96,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.4778,
+     "prof_absorcao_cm": 66.9211,
+     "ks": 0.9838,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 97,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.4833,
+     "prof_absorcao_cm": 66.9283,
+     "ks": 0.9195,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 98,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.4889,
+     "prof_absorcao_cm": 66.9356,
+     "ks": 0.907,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 99,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.4944,
+     "prof_absorcao_cm": 66.9428,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 100,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.5,
+     "prof_absorcao_cm": 66.95,
+     "ks": 0.9873,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 101,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.5056,
+     "prof_absorcao_cm": 66.9572,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 102,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.5111,
+     "prof_absorcao_cm": 66.9644,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 103,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.5167,
+     "prof_absorcao_cm": 66.9717,
+     "ks": 0.934,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 104,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.5222,
+     "prof_absorcao_cm": 66.9789,
+     "ks": 0.924,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 105,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.5278,
+     "prof_absorcao_cm": 66.9861,
+     "ks": 0.893,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 106,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.5333,
+     "prof_absorcao_cm": 66.9933,
+     "ks": 0.9327,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 107,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.5389,
+     "prof_absorcao_cm": 67.0006,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 108,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.5444,
+     "prof_absorcao_cm": 67.0078,
+     "ks": 0.9712,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 109,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.55,
+     "prof_absorcao_cm": 67.015,
+     "ks": 0.9137,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 110,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.5556,
+     "prof_absorcao_cm": 67.0222,
+     "ks": 0.8544,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 111,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.5611,
+     "prof_absorcao_cm": 67.0294,
+     "ks": 0.9069,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 112,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.5667,
+     "prof_absorcao_cm": 67.0367,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 113,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.5722,
+     "prof_absorcao_cm": 67.0439,
+     "ks": 0.9633,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 114,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.5778,
+     "prof_absorcao_cm": 67.0511,
+     "ks": 0.8961,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 115,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.5833,
+     "prof_absorcao_cm": 67.0583,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 116,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.5889,
+     "prof_absorcao_cm": 67.0656,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 117,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.5944,
+     "prof_absorcao_cm": 67.0728,
+     "ks": 0.9452,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 118,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.6,
+     "prof_absorcao_cm": 67.08,
+     "ks": 0.8789,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 119,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.6056,
+     "prof_absorcao_cm": 67.0872,
+     "ks": 0.9145,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 120,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.6111,
+     "prof_absorcao_cm": 67.0944,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 121,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.6167,
+     "prof_absorcao_cm": 67.1017,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 122,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.6222,
+     "prof_absorcao_cm": 67.1089,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 123,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.6278,
+     "prof_absorcao_cm": 67.1161,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 124,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.6333,
+     "prof_absorcao_cm": 67.1233,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 125,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.6389,
+     "prof_absorcao_cm": 67.1306,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 126,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.6444,
+     "prof_absorcao_cm": 67.1378,
+     "ks": 0.9437,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 127,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.65,
+     "prof_absorcao_cm": 67.145,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 128,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.6556,
+     "prof_absorcao_cm": 67.1522,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 129,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.6611,
+     "prof_absorcao_cm": 67.1594,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 130,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.6667,
+     "prof_absorcao_cm": 67.1667,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 131,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.6722,
+     "prof_absorcao_cm": 67.1739,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 132,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.6778,
+     "prof_absorcao_cm": 67.1811,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 133,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.6833,
+     "prof_absorcao_cm": 67.1883,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 134,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.6889,
+     "prof_absorcao_cm": 67.1956,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 135,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.6944,
+     "prof_absorcao_cm": 67.2028,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 136,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.7,
+     "prof_absorcao_cm": 67.21,
+     "ks": 0.9293,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 137,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.7056,
+     "prof_absorcao_cm": 67.2172,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 138,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.7111,
+     "prof_absorcao_cm": 67.2244,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 139,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.7167,
+     "prof_absorcao_cm": 67.2317,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 140,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.7222,
+     "prof_absorcao_cm": 67.2389,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 141,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.7278,
+     "prof_absorcao_cm": 67.2461,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 142,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.7333,
+     "prof_absorcao_cm": 67.2533,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 143,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.7389,
+     "prof_absorcao_cm": 67.2606,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    },
+    {
+     "dia": 144,
+     "fase": 3,
+     "kc": 1.05,
+     "raiz_cm": 51.7444,
+     "prof_absorcao_cm": 67.2678,
+     "ks": 1,
+     "kl": 1,
+     "area_sombreada": 100
+    }
+   ],
+   "fasesObservadas": [
+    {
+     "fase": 2,
+     "dia_inicio": 1,
+     "dia_fim": 10,
+     "kc_inicio": 0.6,
+     "kc_fim": 1.005,
+     "raiz_inicio_cm": 31,
+     "raiz_fim_cm": 40
+    },
+    {
+     "fase": 3,
+     "dia_inicio": 11,
+     "dia_fim": 144,
+     "kc_inicio": 1.05,
+     "kc_fim": 1.05,
+     "raiz_inicio_cm": 40.0278,
+     "raiz_fim_cm": 51.7444
+    }
+   ],
+   "diasObservados": [
+    1,
+    144
+   ]
+  },
+  {
+   "cultura": "Preparo - Preparo do solo",
+   "plantioExemplo": "20/07/2026",
+   "porDia": [
+    {
+     "dia": 1,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.8958,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 2,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.8958,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 3,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.8257,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 4,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.7928,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 5,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.7687,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 6,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.7399,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 7,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.7116,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 8,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.6736,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 9,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.6283,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 10,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.5767,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 11,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.5214,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 12,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.4904,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 13,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.4321,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 14,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.3551,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 15,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.2931,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 16,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.2514,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 17,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.1982,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 18,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.138,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 19,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.0773,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 20,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.6241,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 21,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.7824,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 22,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.8852,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 23,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.9648,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 24,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 25,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 26,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 27,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 28,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 29,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 30,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 31,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.9734,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 32,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.947,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 33,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.9206,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 34,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.8907,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 35,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.8618,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 36,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.8294,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 37,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.7966,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 38,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.7603,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 39,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 40,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.972,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 41,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.9386,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 42,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.9012,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 43,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.8691,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 44,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.823,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 45,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.9083,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 46,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.8741,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 47,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.8336,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 48,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.7877,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 49,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.7877,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 50,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.9746,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 51,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.9683,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 52,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.9422,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 53,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.9126,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 54,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.8735,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 55,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.8224,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 56,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.7991,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 57,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.7804,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 58,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.7988,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 59,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.801,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 60,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.7568,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 61,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.7035,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 62,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.653,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 63,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.9694,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 64,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.9506,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 65,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.9054,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 66,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 67,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.9799,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 68,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.952,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 69,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.9136,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 70,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.8694,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 71,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.8188,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 72,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.8689,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 73,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.8292,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 74,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 75,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 76,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.9934,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 77,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.9679,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 78,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 79,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 80,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 81,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 82,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 83,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 84,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 85,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 86,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 87,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.9663,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 88,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 89,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 90,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 91,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 92,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 93,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 1,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 94,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.9667,
+     "kl": 0.973,
+     "area_sombreada": 10
+    },
+    {
+     "dia": 95,
+     "fase": 1,
+     "kc": 0.6,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.9303,
+     "kl": 0.973,
+     "area_sombreada": 10
+    }
+   ],
+   "fasesObservadas": [
+    {
+     "fase": 1,
+     "dia_inicio": 1,
+     "dia_fim": 95,
+     "kc_inicio": 0.6,
+     "kc_fim": 0.6,
+     "raiz_inicio_cm": 20,
+     "raiz_fim_cm": 20
+    }
+   ],
+   "diasObservados": [
+    1,
+    95
+   ]
+  },
+  {
+   "cultura": "Amendoim - IAC 677",
+   "plantioExemplo": "21/09/2026",
+   "porDia": [
+    {
+     "dia": 1,
+     "fase": 1,
+     "kc": 0.55,
+     "raiz_cm": 16,
+     "prof_absorcao_cm": 20.8,
+     "ks": 0.8625,
+     "kl": 1,
+     "area_sombreada": 18.5
+    },
+    {
+     "dia": 2,
+     "fase": 1,
+     "kc": 0.55,
+     "raiz_cm": 17,
+     "prof_absorcao_cm": 22.1,
+     "ks": 0.8371,
+     "kl": 1,
+     "area_sombreada": 22
+    },
+    {
+     "dia": 3,
+     "fase": 1,
+     "kc": 0.55,
+     "raiz_cm": 18,
+     "prof_absorcao_cm": 23.4,
+     "ks": 0.9764,
+     "kl": 1,
+     "area_sombreada": 25.5
+    },
+    {
+     "dia": 4,
+     "fase": 1,
+     "kc": 0.55,
+     "raiz_cm": 19,
+     "prof_absorcao_cm": 24.7,
+     "ks": 0.9555,
+     "kl": 1,
+     "area_sombreada": 29
+    },
+    {
+     "dia": 5,
+     "fase": 1,
+     "kc": 0.55,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.897,
+     "kl": 1,
+     "area_sombreada": 32.5
+    },
+    {
+     "dia": 6,
+     "fase": 1,
+     "kc": 0.55,
+     "raiz_cm": 21,
+     "prof_absorcao_cm": 27.3,
+     "ks": 0.9832,
+     "kl": 1,
+     "area_sombreada": 36
+    },
+    {
+     "dia": 7,
+     "fase": 1,
+     "kc": 0.55,
+     "raiz_cm": 22,
+     "prof_absorcao_cm": 28.6,
+     "ks": 0.9848,
+     "kl": 1,
+     "area_sombreada": 39.5
+    },
+    {
+     "dia": 8,
+     "fase": 1,
+     "kc": 0.55,
+     "raiz_cm": 23,
+     "prof_absorcao_cm": 29.9,
+     "ks": 0.9862,
+     "kl": 1,
+     "area_sombreada": 43
+    },
+    {
+     "dia": 9,
+     "fase": 1,
+     "kc": 0.55,
+     "raiz_cm": 24,
+     "prof_absorcao_cm": 31.2,
+     "ks": 0.9874,
+     "kl": 1,
+     "area_sombreada": 46.5
+    },
+    {
+     "dia": 10,
+     "fase": 1,
+     "kc": 0.55,
+     "raiz_cm": 25,
+     "prof_absorcao_cm": 32.5,
+     "ks": 0.9885,
+     "kl": 1,
+     "area_sombreada": 50
+    },
+    {
+     "dia": 11,
+     "fase": 2,
+     "kc": 0.5667,
+     "raiz_cm": 25.1667,
+     "prof_absorcao_cm": 32.7167,
+     "ks": 0.9982,
+     "kl": 1,
+     "area_sombreada": 51.6667
+    },
+    {
+     "dia": 12,
+     "fase": 2,
+     "kc": 0.5833,
+     "raiz_cm": 25.3333,
+     "prof_absorcao_cm": 32.9333,
+     "ks": 0.9982,
+     "kl": 1,
+     "area_sombreada": 53.3333
+    },
+    {
+     "dia": 13,
+     "fase": 2,
+     "kc": 0.6,
+     "raiz_cm": 25.5,
+     "prof_absorcao_cm": 33.15,
+     "ks": 0.9982,
+     "kl": 1,
+     "area_sombreada": 55
+    },
+    {
+     "dia": 14,
+     "fase": 2,
+     "kc": 0.6167,
+     "raiz_cm": 25.6667,
+     "prof_absorcao_cm": 33.3667,
+     "ks": 0.9492,
+     "kl": 1,
+     "area_sombreada": 56.6667
+    },
+    {
+     "dia": 15,
+     "fase": 2,
+     "kc": 0.6333,
+     "raiz_cm": 25.8333,
+     "prof_absorcao_cm": 33.5833,
+     "ks": 0.9983,
+     "kl": 1,
+     "area_sombreada": 58.3333
+    },
+    {
+     "dia": 16,
+     "fase": 2,
+     "kc": 0.65,
+     "raiz_cm": 26,
+     "prof_absorcao_cm": 33.8,
+     "ks": 0.9983,
+     "kl": 1,
+     "area_sombreada": 60
+    },
+    {
+     "dia": 17,
+     "fase": 2,
+     "kc": 0.6667,
+     "raiz_cm": 26.1667,
+     "prof_absorcao_cm": 34.0167,
+     "ks": 0.9983,
+     "kl": 1,
+     "area_sombreada": 61.6667
+    },
+    {
+     "dia": 18,
+     "fase": 2,
+     "kc": 0.6833,
+     "raiz_cm": 26.3333,
+     "prof_absorcao_cm": 34.2333,
+     "ks": 0.9983,
+     "kl": 1,
+     "area_sombreada": 63.3333
+    },
+    {
+     "dia": 19,
+     "fase": 2,
+     "kc": 0.7,
+     "raiz_cm": 26.5,
+     "prof_absorcao_cm": 34.45,
+     "ks": 0.9984,
+     "kl": 1,
+     "area_sombreada": 65
+    },
+    {
+     "dia": 20,
+     "fase": 2,
+     "kc": 0.7167,
+     "raiz_cm": 26.6667,
+     "prof_absorcao_cm": 34.6667,
+     "ks": 0.9984,
+     "kl": 1,
+     "area_sombreada": 66.6667
+    },
+    {
+     "dia": 21,
+     "fase": 2,
+     "kc": 0.7333,
+     "raiz_cm": 26.8333,
+     "prof_absorcao_cm": 34.8833,
+     "ks": 0.9984,
+     "kl": 1,
+     "area_sombreada": 68.3333
+    },
+    {
+     "dia": 22,
+     "fase": 2,
+     "kc": 0.75,
+     "raiz_cm": 27,
+     "prof_absorcao_cm": 35.1,
+     "ks": 0.9984,
+     "kl": 1,
+     "area_sombreada": 70
+    },
+    {
+     "dia": 23,
+     "fase": 2,
+     "kc": 0.7667,
+     "raiz_cm": 27.1667,
+     "prof_absorcao_cm": 35.3167,
+     "ks": 0.9984,
+     "kl": 1,
+     "area_sombreada": 71.6667
+    },
+    {
+     "dia": 24,
+     "fase": 2,
+     "kc": 0.7833,
+     "raiz_cm": 27.3333,
+     "prof_absorcao_cm": 35.5333,
+     "ks": 0.9201,
+     "kl": 1,
+     "area_sombreada": 73.3333
+    },
+    {
+     "dia": 25,
+     "fase": 2,
+     "kc": 0.8,
+     "raiz_cm": 27.5,
+     "prof_absorcao_cm": 35.75,
+     "ks": 0.9985,
+     "kl": 1,
+     "area_sombreada": 75
+    },
+    {
+     "dia": 26,
+     "fase": 2,
+     "kc": 0.8167,
+     "raiz_cm": 27.6667,
+     "prof_absorcao_cm": 35.9667,
+     "ks": 0.9985,
+     "kl": 1,
+     "area_sombreada": 76.6667
+    },
+    {
+     "dia": 27,
+     "fase": 2,
+     "kc": 0.8333,
+     "raiz_cm": 27.8333,
+     "prof_absorcao_cm": 36.1833,
+     "ks": 0.9985,
+     "kl": 1,
+     "area_sombreada": 78.3333
+    },
+    {
+     "dia": 28,
+     "fase": 2,
+     "kc": 0.85,
+     "raiz_cm": 28,
+     "prof_absorcao_cm": 36.4,
+     "ks": 0.9985,
+     "kl": 1,
+     "area_sombreada": 80
+    },
+    {
+     "dia": 29,
+     "fase": 2,
+     "kc": 0.8667,
+     "raiz_cm": 28.1667,
+     "prof_absorcao_cm": 36.6167,
+     "ks": 0.9986,
+     "kl": 1,
+     "area_sombreada": 81.6667
+    },
+    {
+     "dia": 30,
+     "fase": 2,
+     "kc": 0.8833,
+     "raiz_cm": 28.3333,
+     "prof_absorcao_cm": 36.8333,
+     "ks": 0.9986,
+     "kl": 1,
+     "area_sombreada": 83.3333
+    },
+    {
+     "dia": 31,
+     "fase": 2,
+     "kc": 0.9,
+     "raiz_cm": 28.5,
+     "prof_absorcao_cm": 37.05,
+     "ks": 0.9986,
+     "kl": 1,
+     "area_sombreada": 85
+    },
+    {
+     "dia": 32,
+     "fase": 2,
+     "kc": 0.9167,
+     "raiz_cm": 28.6667,
+     "prof_absorcao_cm": 37.2667,
+     "ks": 0.9123,
+     "kl": 1,
+     "area_sombreada": 86.6667
+    },
+    {
+     "dia": 33,
+     "fase": 2,
+     "kc": 0.9333,
+     "raiz_cm": 28.8333,
+     "prof_absorcao_cm": 37.4833,
+     "ks": 0.9986,
+     "kl": 0.9744,
+     "area_sombreada": 88.3333
+    },
+    {
+     "dia": 34,
+     "fase": 2,
+     "kc": 0.95,
+     "raiz_cm": 29,
+     "prof_absorcao_cm": 37.7,
+     "ks": 0.9986,
+     "kl": 0.9744,
+     "area_sombreada": 90
+    },
+    {
+     "dia": 35,
+     "fase": 2,
+     "kc": 0.9667,
+     "raiz_cm": 29.1667,
+     "prof_absorcao_cm": 37.9167,
+     "ks": 0.9987,
+     "kl": 0.9744,
+     "area_sombreada": 91.6667
+    },
+    {
+     "dia": 36,
+     "fase": 2,
+     "kc": 0.9833,
+     "raiz_cm": 29.3333,
+     "prof_absorcao_cm": 38.1333,
+     "ks": 0.9987,
+     "kl": 0.9744,
+     "area_sombreada": 93.3333
+    },
+    {
+     "dia": 37,
+     "fase": 2,
+     "kc": 1,
+     "raiz_cm": 29.5,
+     "prof_absorcao_cm": 38.35,
+     "ks": 0.9993,
+     "kl": 1,
+     "area_sombreada": 95
+    }
+   ],
+   "fasesObservadas": [
+    {
+     "fase": 1,
+     "dia_inicio": 1,
+     "dia_fim": 10,
+     "kc_inicio": 0.55,
+     "kc_fim": 0.55,
+     "raiz_inicio_cm": 16,
+     "raiz_fim_cm": 25
+    },
+    {
+     "fase": 2,
+     "dia_inicio": 11,
+     "dia_fim": 37,
+     "kc_inicio": 0.5667,
+     "kc_fim": 1,
+     "raiz_inicio_cm": 25.1667,
+     "raiz_fim_cm": 29.5
+    }
+   ],
+   "diasObservados": [
+    1,
+    37
+   ]
+  },
+  {
+   "cultura": "Amendoim - IAC 503",
+   "plantioExemplo": "28/09/2026",
+   "porDia": [
+    {
+     "dia": 1,
+     "fase": 1,
+     "kc": 0.55,
+     "raiz_cm": 16,
+     "prof_absorcao_cm": 20.8,
+     "ks": 0.9308,
+     "kl": 0.9742,
+     "area_sombreada": 18.5
+    },
+    {
+     "dia": 2,
+     "fase": 1,
+     "kc": 0.55,
+     "raiz_cm": 17,
+     "prof_absorcao_cm": 22.1,
+     "ks": 0.9171,
+     "kl": 0.9742,
+     "area_sombreada": 22
+    },
+    {
+     "dia": 3,
+     "fase": 1,
+     "kc": 0.55,
+     "raiz_cm": 18,
+     "prof_absorcao_cm": 23.4,
+     "ks": 0.9878,
+     "kl": 0.9742,
+     "area_sombreada": 25.5
+    },
+    {
+     "dia": 4,
+     "fase": 1,
+     "kc": 0.55,
+     "raiz_cm": 19,
+     "prof_absorcao_cm": 24.7,
+     "ks": 0.9892,
+     "kl": 0.9742,
+     "area_sombreada": 29
+    },
+    {
+     "dia": 5,
+     "fase": 1,
+     "kc": 0.55,
+     "raiz_cm": 20,
+     "prof_absorcao_cm": 26,
+     "ks": 0.9903,
+     "kl": 0.9742,
+     "area_sombreada": 32.5
+    },
+    {
+     "dia": 6,
+     "fase": 1,
+     "kc": 0.55,
+     "raiz_cm": 21,
+     "prof_absorcao_cm": 27.3,
+     "ks": 0.9912,
+     "kl": 0.9742,
+     "area_sombreada": 36
+    },
+    {
+     "dia": 7,
+     "fase": 1,
+     "kc": 0.55,
+     "raiz_cm": 22,
+     "prof_absorcao_cm": 28.6,
+     "ks": 0.9281,
+     "kl": 0.9742,
+     "area_sombreada": 39.5
+    },
+    {
+     "dia": 8,
+     "fase": 1,
+     "kc": 0.55,
+     "raiz_cm": 23,
+     "prof_absorcao_cm": 29.9,
+     "ks": 0.9928,
+     "kl": 0.9742,
+     "area_sombreada": 43
+    },
+    {
+     "dia": 9,
+     "fase": 1,
+     "kc": 0.55,
+     "raiz_cm": 24,
+     "prof_absorcao_cm": 31.2,
+     "ks": 0.9934,
+     "kl": 0.9742,
+     "area_sombreada": 46.5
+    },
+    {
+     "dia": 10,
+     "fase": 1,
+     "kc": 0.55,
+     "raiz_cm": 25,
+     "prof_absorcao_cm": 32.5,
+     "ks": 0.9939,
+     "kl": 0.9742,
+     "area_sombreada": 50
+    },
+    {
+     "dia": 11,
+     "fase": 2,
+     "kc": 0.5667,
+     "raiz_cm": 25.1667,
+     "prof_absorcao_cm": 32.7167,
+     "ks": 0.999,
+     "kl": 0.9742,
+     "area_sombreada": 51.6667
+    },
+    {
+     "dia": 12,
+     "fase": 2,
+     "kc": 0.5833,
+     "raiz_cm": 25.3333,
+     "prof_absorcao_cm": 32.9333,
+     "ks": 0.999,
+     "kl": 0.9742,
+     "area_sombreada": 53.3333
+    },
+    {
+     "dia": 13,
+     "fase": 2,
+     "kc": 0.6,
+     "raiz_cm": 25.5,
+     "prof_absorcao_cm": 33.15,
+     "ks": 0.9991,
+     "kl": 0.9742,
+     "area_sombreada": 55
+    },
+    {
+     "dia": 14,
+     "fase": 2,
+     "kc": 0.6167,
+     "raiz_cm": 25.6667,
+     "prof_absorcao_cm": 33.3667,
+     "ks": 0.9991,
+     "kl": 0.9742,
+     "area_sombreada": 56.6667
+    },
+    {
+     "dia": 15,
+     "fase": 2,
+     "kc": 0.6333,
+     "raiz_cm": 25.8333,
+     "prof_absorcao_cm": 33.5833,
+     "ks": 0.9991,
+     "kl": 0.9742,
+     "area_sombreada": 58.3333
+    },
+    {
+     "dia": 16,
+     "fase": 2,
+     "kc": 0.65,
+     "raiz_cm": 26,
+     "prof_absorcao_cm": 33.8,
+     "ks": 0.9991,
+     "kl": 0.9742,
+     "area_sombreada": 60
+    },
+    {
+     "dia": 17,
+     "fase": 2,
+     "kc": 0.6667,
+     "raiz_cm": 26.1667,
+     "prof_absorcao_cm": 34.0167,
+     "ks": 0.9162,
+     "kl": 0.9742,
+     "area_sombreada": 61.6667
+    },
+    {
+     "dia": 18,
+     "fase": 2,
+     "kc": 0.6833,
+     "raiz_cm": 26.3333,
+     "prof_absorcao_cm": 34.2333,
+     "ks": 0.9991,
+     "kl": 0.9742,
+     "area_sombreada": 63.3333
+    },
+    {
+     "dia": 19,
+     "fase": 2,
+     "kc": 0.7,
+     "raiz_cm": 26.5,
+     "prof_absorcao_cm": 34.45,
+     "ks": 0.9991,
+     "kl": 0.9742,
+     "area_sombreada": 65
+    },
+    {
+     "dia": 20,
+     "fase": 2,
+     "kc": 0.7167,
+     "raiz_cm": 26.6667,
+     "prof_absorcao_cm": 34.6667,
+     "ks": 0.9991,
+     "kl": 0.9742,
+     "area_sombreada": 66.6667
+    },
+    {
+     "dia": 21,
+     "fase": 2,
+     "kc": 0.7333,
+     "raiz_cm": 26.8333,
+     "prof_absorcao_cm": 34.8833,
+     "ks": 0.9992,
+     "kl": 0.9742,
+     "area_sombreada": 68.3333
+    },
+    {
+     "dia": 22,
+     "fase": 2,
+     "kc": 0.75,
+     "raiz_cm": 27,
+     "prof_absorcao_cm": 35.1,
+     "ks": 0.9992,
+     "kl": 0.9742,
+     "area_sombreada": 70
+    },
+    {
+     "dia": 23,
+     "fase": 2,
+     "kc": 0.7667,
+     "raiz_cm": 27.1667,
+     "prof_absorcao_cm": 35.3167,
+     "ks": 0.9992,
+     "kl": 0.9742,
+     "area_sombreada": 71.6667
+    },
+    {
+     "dia": 24,
+     "fase": 2,
+     "kc": 0.7833,
+     "raiz_cm": 27.3333,
+     "prof_absorcao_cm": 35.5333,
+     "ks": 0.9992,
+     "kl": 0.9742,
+     "area_sombreada": 73.3333
+    },
+    {
+     "dia": 25,
+     "fase": 2,
+     "kc": 0.8,
+     "raiz_cm": 27.5,
+     "prof_absorcao_cm": 35.75,
+     "ks": 0.9043,
+     "kl": 0.9742,
+     "area_sombreada": 75
+    }
+   ],
+   "fasesObservadas": [
+    {
+     "fase": 1,
+     "dia_inicio": 1,
+     "dia_fim": 10,
+     "kc_inicio": 0.55,
+     "kc_fim": 0.55,
+     "raiz_inicio_cm": 16,
+     "raiz_fim_cm": 25
+    },
+    {
+     "fase": 2,
+     "dia_inicio": 11,
+     "dia_fim": 25,
+     "kc_inicio": 0.5667,
+     "kc_fim": 0.8,
+     "raiz_inicio_cm": 25.1667,
+     "raiz_fim_cm": 27.5
+    }
+   ],
+   "diasObservados": [
+    1,
+    25
+   ]
+  }
+ ],
+ "solos": [
+  {
+   "nome": "PIVOS 1 AO 6",
+   "cc_pct": 23.945,
+   "pmp_pct": 15.31,
+   "densidade_g_cm3": 1.285,
+   "cta_camada1_mm": 21.554,
+   "umidade_seguranca_pct": 19.6275,
+   "parcelas": 61
+  },
+  {
+   "nome": "PIVOS 09 AO 15",
+   "cc_pct": 24.5523,
+   "pmp_pct": 14.9646,
+   "densidade_g_cm3": 1.3162,
+   "cta_camada1_mm": 24.3922,
+   "umidade_seguranca_pct": 21.1966,
+   "parcelas": 11
+  },
+  {
+   "nome": "PIVOS 7, 8, 16 AO 18",
+   "cc_pct": 25.745,
+   "pmp_pct": 15.67,
+   "densidade_g_cm3": 1.3,
+   "cta_camada1_mm": 24.3922,
+   "umidade_seguranca_pct": 20.7075,
+   "parcelas": 24
+  }
+ ],
+ "pivos": [
+  {
+   "nome": "Pivô 01",
+   "eficiencia_irrigacao": 0.8877,
+   "tempo_volta_100_h": 9.1361,
+   "taxa_aplicacao_mm_h": 0.5025,
+   "lamina_bruta_21h_mm": 10.5516,
+   "area_pivo_ha": 64.0052,
+   "uniformidade": 92.77,
+   "icrop_id": "15230",
+   "raio_m": 418.77,
+   "raio_apos_m": 32.6,
+   "vazao_m3h": 321.6,
+   "velocidade_100_mh": 288,
+   "area_molhada_pct": 94.97,
+   "uniformidade_pct": 92.77
+  },
+  {
+   "nome": "Pivô 02",
+   "eficiencia_irrigacao": 0.8937,
+   "tempo_volta_100_h": 13.4857,
+   "taxa_aplicacao_mm_h": 0.5018,
+   "lamina_bruta_21h_mm": 10.538,
+   "area_pivo_ha": 128.7762,
+   "uniformidade": 93.37,
+   "icrop_id": "15231",
+   "raio_m": 618.14,
+   "raio_apos_m": 22.1,
+   "vazao_m3h": 646.21,
+   "velocidade_100_mh": 288,
+   "area_molhada_pct": 100,
+   "uniformidade_pct": 93.37
+  },
+  {
+   "nome": "Pivô 03",
+   "eficiencia_irrigacao": 0.8889,
+   "tempo_volta_100_h": 10.0367,
+   "taxa_aplicacao_mm_h": 0.5078,
+   "lamina_bruta_21h_mm": 10.6629,
+   "area_pivo_ha": 75.1682,
+   "uniformidade": 92.89,
+   "icrop_id": "15232",
+   "raio_m": 460.05,
+   "raio_apos_m": 29.1,
+   "vazao_m3h": 381.67,
+   "velocidade_100_mh": 288,
+   "area_molhada_pct": 94.94,
+   "uniformidade_pct": 92.89
+  },
+  {
+   "nome": "Pivô 04",
+   "eficiencia_irrigacao": 0.8888,
+   "tempo_volta_100_h": 10.4827,
+   "taxa_aplicacao_mm_h": 0.4979,
+   "lamina_bruta_21h_mm": 10.4568,
+   "area_pivo_ha": 81.6135,
+   "uniformidade": 92.88,
+   "icrop_id": "15208",
+   "raio_m": 480.49,
+   "raio_apos_m": 29.2,
+   "vazao_m3h": 406.39,
+   "velocidade_100_mh": 288,
+   "area_molhada_pct": 94.98,
+   "uniformidade_pct": 92.88
+  },
+  {
+   "nome": "Pivô 05",
+   "eficiencia_irrigacao": 0.8835,
+   "tempo_volta_100_h": 7.3574,
+   "taxa_aplicacao_mm_h": 0.4898,
+   "lamina_bruta_21h_mm": 10.2856,
+   "area_pivo_ha": 43.041,
+   "uniformidade": 92.35,
+   "icrop_id": "15233",
+   "raio_m": 337.24,
+   "raio_apos_m": 32.9,
+   "vazao_m3h": 210.81,
+   "velocidade_100_mh": 288,
+   "area_molhada_pct": 94.88,
+   "uniformidade_pct": 92.35
+  },
+  {
+   "nome": "Pivô 06",
+   "eficiencia_irrigacao": 0.8892,
+   "tempo_volta_100_h": 10.631,
+   "taxa_aplicacao_mm_h": 0.4977,
+   "lamina_bruta_21h_mm": 10.4509,
+   "area_pivo_ha": 84.1956,
+   "uniformidade": 92.92,
+   "icrop_id": "15234",
+   "raio_m": 487.29,
+   "raio_apos_m": 30.4,
+   "vazao_m3h": 419.01,
+   "velocidade_100_mh": 288,
+   "area_molhada_pct": 94.98,
+   "uniformidade_pct": 92.92
+  },
+  {
+   "nome": "Pivô 09",
+   "eficiencia_irrigacao": 0.8735,
+   "tempo_volta_100_h": 9.0599,
+   "taxa_aplicacao_mm_h": 0.5718,
+   "lamina_bruta_21h_mm": 12.0083,
+   "area_pivo_ha": 67.7481,
+   "uniformidade": 91.35,
+   "icrop_id": "15241",
+   "raio_m": 432.58,
+   "raio_apos_m": 31.8,
+   "vazao_m3h": 387.4,
+   "velocidade_100_mh": 300,
+   "area_molhada_pct": 94.67,
+   "uniformidade_pct": 91.35
+  },
+  {
+   "nome": "Pivô 10",
+   "eficiencia_irrigacao": 0.878,
+   "tempo_volta_100_h": 11.6371,
+   "taxa_aplicacao_mm_h": 0.548,
+   "lamina_bruta_21h_mm": 11.5078,
+   "area_pivo_ha": 106.8635,
+   "uniformidade": 91.8,
+   "icrop_id": "15242",
+   "raio_m": 555.63,
+   "raio_apos_m": 27.6,
+   "vazao_m3h": 585.6,
+   "velocidade_100_mh": 300,
+   "area_molhada_pct": 100,
+   "uniformidade_pct": 91.8
+  },
+  {
+   "nome": "Pivô 11",
+   "eficiencia_irrigacao": 0.8627,
+   "tempo_volta_100_h": 7.2056,
+   "taxa_aplicacao_mm_h": 0.5465,
+   "lamina_bruta_21h_mm": 11.4757,
+   "area_pivo_ha": 44.0468,
+   "uniformidade": 90.27,
+   "icrop_id": "15239",
+   "raio_m": 344.04,
+   "raio_apos_m": 30.4,
+   "vazao_m3h": 240.7,
+   "velocidade_100_mh": 300,
+   "area_molhada_pct": 100,
+   "uniformidade_pct": 90.27
+  },
+  {
+   "nome": "Pivô 12",
+   "eficiencia_irrigacao": 0.882,
+   "tempo_volta_100_h": 6.4893,
+   "taxa_aplicacao_mm_h": 0.5233,
+   "lamina_bruta_21h_mm": 10.989,
+   "area_pivo_ha": 35.9843,
+   "uniformidade": 92.2,
+   "icrop_id": "15237",
+   "raio_m": 309.84,
+   "raio_apos_m": 28.6,
+   "vazao_m3h": 188.3,
+   "velocidade_100_mh": 300,
+   "area_molhada_pct": 94.94,
+   "uniformidade_pct": 92.2
+  },
+  {
+   "nome": "Pivô 13",
+   "eficiencia_irrigacao": 0.8832,
+   "tempo_volta_100_h": 6.815,
+   "taxa_aplicacao_mm_h": 0.5219,
+   "lamina_bruta_21h_mm": 10.96,
+   "area_pivo_ha": 38.5703,
+   "uniformidade": 92.32,
+   "icrop_id": "15238",
+   "raio_m": 325.39,
+   "raio_apos_m": 25,
+   "vazao_m3h": 201.3,
+   "velocidade_100_mh": 300,
+   "area_molhada_pct": 94.94,
+   "uniformidade_pct": 92.32
+  },
+  {
+   "nome": "Pivô 14",
+   "eficiencia_irrigacao": 0.8891,
+   "tempo_volta_100_h": 11.0494,
+   "taxa_aplicacao_mm_h": 0.5041,
+   "lamina_bruta_21h_mm": 10.586,
+   "area_pivo_ha": 74.4324,
+   "uniformidade": 92.91,
+   "icrop_id": "15591",
+   "raio_m": 462.15,
+   "raio_apos_m": 24.6,
+   "vazao_m3h": 375.21,
+   "velocidade_100_mh": 262.8,
+   "area_molhada_pct": 94.96,
+   "uniformidade_pct": 92.91
+  },
+  {
+   "nome": "Pivô 15",
+   "eficiencia_irrigacao": 0.8925,
+   "tempo_volta_100_h": 14.124,
+   "taxa_aplicacao_mm_h": 0.5007,
+   "lamina_bruta_21h_mm": 10.5149,
+   "area_pivo_ha": 121.993,
+   "uniformidade": 93.25,
+   "icrop_id": "15592",
+   "raio_m": 590.75,
+   "raio_apos_m": 32.4,
+   "vazao_m3h": 610.83,
+   "velocidade_100_mh": 262.8,
+   "area_molhada_pct": 94.91,
+   "uniformidade_pct": 93.25
+  },
+  {
+   "nome": "Pivô 16",
+   "eficiencia_irrigacao": 0.8776,
+   "tempo_volta_100_h": 6.8505,
+   "taxa_aplicacao_mm_h": 0.5239,
+   "lamina_bruta_21h_mm": 11.002,
+   "area_pivo_ha": 31.0933,
+   "uniformidade": 91.76,
+   "icrop_id": "15243",
+   "raio_m": 288.6,
+   "raio_apos_m": 26,
+   "vazao_m3h": 162.9,
+   "velocidade_100_mh": 264.7,
+   "area_molhada_pct": 94.52,
+   "uniformidade_pct": 91.76
+  },
+  {
+   "nome": "Pivô 17",
+   "eficiencia_irrigacao": 0.8818,
+   "tempo_volta_100_h": 8.27,
+   "taxa_aplicacao_mm_h": 0.5159,
+   "lamina_bruta_21h_mm": 10.8347,
+   "area_pivo_ha": 40.8962,
+   "uniformidade": 92.18,
+   "icrop_id": "15245",
+   "raio_m": 348.4,
+   "raio_apos_m": 12.4,
+   "vazao_m3h": 211,
+   "velocidade_100_mh": 264.7,
+   "area_molhada_pct": 94.93,
+   "uniformidade_pct": 92.18
+  },
+  {
+   "nome": "Pivô 18",
+   "eficiencia_irrigacao": 0.8785,
+   "tempo_volta_100_h": 7.1282,
+   "taxa_aplicacao_mm_h": 0.515,
+   "lamina_bruta_21h_mm": 10.8148,
+   "area_pivo_ha": 33.5927,
+   "uniformidade": 91.85,
+   "icrop_id": "15246",
+   "raio_m": 300.3,
+   "raio_apos_m": 26.7,
+   "vazao_m3h": 173,
+   "velocidade_100_mh": 264.7,
+   "area_molhada_pct": 100,
+   "uniformidade_pct": 91.85
+  },
+  {
+   "nome": "Pivô 19",
+   "eficiencia_irrigacao": 0.905,
+   "tempo_volta_100_h": 7.6801,
+   "taxa_aplicacao_mm_h": 0.5371,
+   "lamina_bruta_21h_mm": 11.2794,
+   "area_pivo_ha": 35.5603,
+   "uniformidade": 94.5,
+   "icrop_id": "15820",
+   "raio_m": 325.14,
+   "raio_apos_m": 11.3,
+   "vazao_m3h": 191,
+   "velocidade_100_mh": 266,
+   "area_molhada_pct": 100,
+   "uniformidade_pct": 94.5
+  },
+  {
+   "nome": "Pivô 31",
+   "eficiencia_irrigacao": 0.8767,
+   "tempo_volta_100_h": 6.4031,
+   "taxa_aplicacao_mm_h": 0.467,
+   "lamina_bruta_21h_mm": 9.8079,
+   "area_pivo_ha": 28.0017,
+   "uniformidade": 91.67,
+   "icrop_id": "15814",
+   "raio_m": 269.75,
+   "raio_apos_m": 28.8,
+   "vazao_m3h": 130.78,
+   "velocidade_100_mh": 264.7,
+   "area_molhada_pct": 100,
+   "uniformidade_pct": 91.67
+  },
+  {
+   "nome": "Pivô 32",
+   "eficiencia_irrigacao": 0.8878,
+   "tempo_volta_100_h": 11.1963,
+   "taxa_aplicacao_mm_h": 0.4278,
+   "lamina_bruta_21h_mm": 8.983,
+   "area_pivo_ha": 77.064,
+   "uniformidade": 92.78,
+   "icrop_id": "15813",
+   "raio_m": 471.68,
+   "raio_apos_m": 23.6,
+   "vazao_m3h": 329.65,
+   "velocidade_100_mh": 264.7,
+   "area_molhada_pct": 94.96,
+   "uniformidade_pct": 92.78
+  },
+  {
+   "nome": "Pivô 33",
+   "eficiencia_irrigacao": 0.881,
+   "tempo_volta_100_h": 8.3904,
+   "taxa_aplicacao_mm_h": 0.4391,
+   "lamina_bruta_21h_mm": 9.221,
+   "area_pivo_ha": 41.3281,
+   "uniformidade": 92.1,
+   "icrop_id": "15812",
+   "raio_m": 348.4,
+   "raio_apos_m": 14.3,
+   "vazao_m3h": 181.47,
+   "velocidade_100_mh": 260.9,
+   "area_molhada_pct": 100,
+   "uniformidade_pct": 92.1
+  },
+  {
+   "nome": "Pivô 34",
+   "eficiencia_irrigacao": 0.8881,
+   "tempo_volta_100_h": 11.9727,
+   "taxa_aplicacao_mm_h": 0.441,
+   "lamina_bruta_21h_mm": 9.2605,
+   "area_pivo_ha": 87.8116,
+   "uniformidade": 92.81,
+   "icrop_id": "15817",
+   "raio_m": 504.39,
+   "raio_apos_m": 24.3,
+   "vazao_m3h": 387.23,
+   "velocidade_100_mh": 264.7,
+   "area_molhada_pct": 94.91,
+   "uniformidade_pct": 92.81
+  },
+  {
+   "nome": "Pivô 35",
+   "eficiencia_irrigacao": 0.8895,
+   "tempo_volta_100_h": 12.667,
+   "taxa_aplicacao_mm_h": 0.4553,
+   "lamina_bruta_21h_mm": 9.5603,
+   "area_pivo_ha": 98.2883,
+   "uniformidade": 92.95,
+   "icrop_id": "15818",
+   "raio_m": 533.64,
+   "raio_apos_m": 25.7,
+   "vazao_m3h": 447.46,
+   "velocidade_100_mh": 264.7,
+   "area_molhada_pct": 94.97,
+   "uniformidade_pct": 92.95
+  },
+  {
+   "nome": "Pivô 36",
+   "eficiencia_irrigacao": 0.8881,
+   "tempo_volta_100_h": 11.3866,
+   "taxa_aplicacao_mm_h": 0.4738,
+   "lamina_bruta_21h_mm": 9.9502,
+   "area_pivo_ha": 79.1379,
+   "uniformidade": 92.81,
+   "icrop_id": "15819",
+   "raio_m": 479.7,
+   "raio_apos_m": 22.2,
+   "vazao_m3h": 374.97,
+   "velocidade_100_mh": 264.7,
+   "area_molhada_pct": 94.77,
+   "uniformidade_pct": 92.81
+  }
+ ]
+}

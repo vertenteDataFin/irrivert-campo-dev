@@ -1,0 +1,42 @@
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: irrigacao
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?defina DB_PASSWORD no .env}
+      POSTGRES_DB: irrigacao
+    volumes:
+      - dados:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U irrigacao -d irrigacao']
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    restart: unless-stopped
+    depends_on:
+      db: { condition: service_healthy }
+    environment:
+      NODE_ENV: production
+      TZ: America/Campo_Grande
+      DATABASE_URL: postgres://irrigacao:${DB_PASSWORD}@db:5432/irrigacao
+      JWT_SECRET: ${JWT_SECRET:?defina JWT_SECRET no .env}
+      ADMIN_EMAIL: ${ADMIN_EMAIL:-admin@vertente.local}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:?defina ADMIN_PASSWORD no .env}
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    restart: unless-stopped
+    depends_on: [api]
+    ports:
+      - '${WEB_PORT:-8080}:80'
+
+volumes:
+  dados:

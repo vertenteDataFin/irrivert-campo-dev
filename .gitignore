@@ -1,0 +1,12 @@
+node_modules
+dist
+.env
+*.log
+.vite
+
+# local
+.claude/
+*.tgz
+backups/
+tools/db-local/dados/
+tools/db-local/dados-*/
