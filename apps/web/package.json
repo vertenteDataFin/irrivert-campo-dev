@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -p . --noEmit && vite build",
+    "build:campo-demo": "tsc -p . --noEmit && vite build --config vite.campo.config.ts --mode demo",
+    "dev:campo-demo": "vite --config vite.campo.config.ts --mode demo",
     "typecheck": "tsc -p . --noEmit"
   },
   "dependencies": {
