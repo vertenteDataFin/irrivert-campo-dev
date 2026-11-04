@@ -97,4 +97,10 @@ html { scroll-padding-top: calc(var(--menu-h, 0px) + 12px); }
   .c-ghost { @apply inline-flex items-center justify-center rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-100 disabled:opacity-40 dark:text-slate-300 dark:hover:bg-slate-800; min-height: 40px; }
   .c-tab { @apply rounded-lg px-3 py-2 text-sm font-medium text-slate-500 transition dark:text-slate-400; min-height: 40px; }
   .c-tab[aria-current='page'] { @apply bg-white text-slate-900 shadow-sm dark:bg-slate-700 dark:text-white; }
+  /* etiqueta quadrada (sem pílula): cor pelo style */
+  .c-tag { @apply inline-flex items-center gap-1 rounded-sm px-1.5 py-0.5 text-[11px] font-semibold leading-4; }
+  .c-tag::before { content: ''; width: 6px; height: 6px; background: currentColor; flex: none; }
+  .c-btn { @apply inline-flex items-center justify-center rounded-md border border-slate-300 bg-white px-3 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-50 disabled:opacity-40 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800; min-height: 36px; }
+  .c-btn-pri { @apply inline-flex items-center justify-center rounded-md bg-agua-600 px-3 py-1.5 text-sm font-semibold text-white hover:bg-agua-700 disabled:opacity-40; min-height: 36px; }
+  .c-linha { @apply border-t border-slate-200 py-2.5 first:border-t-0 dark:border-slate-700; }
 }
