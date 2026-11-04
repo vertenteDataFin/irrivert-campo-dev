@@ -1,0 +1,9 @@
+{
+  "name": "IRRIVERT",
+  "short_name": "IRRIVERT",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1d3330",
+  "theme_color": "#1d3330",
+  "icons": [{ "src": "/icone.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
