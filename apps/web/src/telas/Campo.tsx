@@ -628,6 +628,8 @@ export default function Campo({ fazenda, usuario }: { fazenda: Fazenda; usuario:
   const emFila = fila.filter((v) => !v.erro).length;
   const pivoVist = vistoriando != null ? porId.get(vistoriando) : undefined;
   const plural = (n: number, s: string) => `${n} ${s}${n === 1 ? '' : 's'}`;
+  const grupos = new Map<string, ItemOrdem[]>();
+  for (const i of itens) { const c = porId.get(i.pivoId)?.culturas ?? 'Sem cultura'; grupos.set(c, [...(grupos.get(c) ?? []), i]); }
 
   return (
     <div className="space-y-3">
@@ -655,7 +657,10 @@ export default function Campo({ fazenda, usuario }: { fazenda: Fazenda; usuario:
             <span className="text-xs text-slate-500">{plural(itens.length, 'pivô')} · {kVist} vistoriado{kVist === 1 ? '' : 's'}</span>
           </header>
           {itens.length === 0 && <p className="py-2 text-sm text-slate-500">Nenhum pivô para irrigar hoje.</p>}
-          {itens.map((i) => {
+          {[...grupos.entries()].map(([cultura, lista]) => (
+          <div key={cultura}>
+          <div className="mt-3 border-b border-slate-200 pb-1 text-[11px] font-semibold uppercase tracking-wide text-slate-500 dark:border-slate-700">{cultura}</div>
+          {lista.map((i) => {
             const p = porId.get(i.pivoId);
             const cat = p?.telemetria?.categoria ?? null;
             const falhas = ativoComFalha(i.pivoId);
@@ -667,7 +672,7 @@ export default function Campo({ fazenda, usuario }: { fazenda: Fazenda; usuario:
             return (
               <div key={i.id} className="c-linha flex items-center gap-3">
                 <div className="min-w-0 flex-1">
-                  <div className="flex items-baseline gap-2"><b className="text-base">{i.pivoNome}</b><span className="text-xs text-slate-500">{p?.culturas ?? ''}</span></div>
+                  <b className="block text-base">{i.pivoNome}</b>
                   <p className="text-xs text-slate-500">{fmt(i.laminaMm, 1)} mm · {fmt(i.percentual, 0)} % · {sentidoTxt(i.sentido)}{i.anguloParada != null ? ` · parar em ${i.anguloParada}°` : ''}</p>
                   <p className="mt-0.5 text-xs"><span className="font-semibold" style={{ color: cat ? COR_TEL[cat] : CINZA }}>{txtTel}{i.status === 'enviada' ? ' · comando enviado' : ''}</span><span className="text-slate-400"> · </span><span style={{ color: corVist }}>{txtVist}</span></p>
                   {falhas.map((a) => <p key={a.id} className="text-xs font-medium" style={{ color: VERMELHO }}>{a.nome}: {a.falha!.descricao}{a.falha!.previsao ? ` · previsão ${a.falha!.previsao}` : ''}</p>)}
@@ -677,6 +682,8 @@ export default function Campo({ fazenda, usuario }: { fazenda: Fazenda; usuario:
               </div>
             );
           })}
+          </div>
+          ))}
         </section>
       )}
 
