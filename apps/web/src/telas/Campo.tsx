@@ -52,7 +52,6 @@ const ORIGENS: { v: FalhaVistoria['origem']; t: string }[] = [
   { v: 'captacao', t: 'Captação ou reservatório' },
   { v: 'adutora', t: 'Adutora: vazamento, válvula' },
 ];
-const MODELOS_PAINEL = ['Valley ICON10', 'Valley ICON1', 'Valley Pro2', 'Bauer SmartTouch', 'Bauer Universal Pro', 'Outro'];
 
 /** Telemetria diz que o pivô iniciou pelo comando remoto → vistoria rápida. */
 const iniciouRemoto = (p: PivoCampo | undefined) => p?.telemetria?.categoria === 'irrigando' || p?.telemetria?.categoria === 'movendo';
@@ -156,7 +155,7 @@ function FormVistoria({ pivo, item, ativos, data, aoFechar, aoSalvar }: { pivo: 
   const [etapa, setEtapa] = useState(0);
   const [r, setR] = useState<Rascunho>(() => ({
     tipo: remoto ? 'rapida' : 'completa', suspeita: null, passoEntrada: null,
-    integridade: { pneus: null, bicos: null, estrutura: null, caminho: null, posicaoGraus: pivo.telemetria?.angulo != null ? Math.round(pivo.telemetria.angulo) : null, gadoPiquetes: pivo.piquetes.filter((p) => p.ocupado).map((p) => p.id) },
+    integridade: { pneus: null, bicos: null, estrutura: null, caminho: null, posicaoGraus: pivo.telemetria?.angulo != null ? Math.round(pivo.telemetria.angulo) : null, gadoPiquetes: pivo.piquetes.filter((p) => p.ocupado).slice(0, 1).map((p) => p.id), observacao: '' },
     leituras: { pressaoBar: null, fonteEnergia: 'rede', tensaoV: null, painelRespondeu: pivo.telemetria ? !semResposta(pivo) : null },
     noPainel: !remoto, config: {
       modelo: pivo.painelModelo ?? '', sentido: item?.sentido === 1 ? 'anti_horario' : item?.sentido === 0 ? 'horario' : null, percentimetro: item?.percentual ?? null, laminaMm: item?.laminaMm ?? null,
@@ -177,7 +176,8 @@ function FormVistoria({ pivo, item, ativos, data, aoFechar, aoSalvar }: { pivo: 
   useEffect(() => {
     setR((x) => ({ ...x, config: { ...x.config, setorDe: planoSetor.setor?.de ?? null, setorAte: planoSetor.setor?.ate ?? null, sentido: planoSetor.sentido ?? x.config.sentido } }));
   }, [planoSetor]);
-  const alternarPiquete = (id: number) => setI({ gadoPiquetes: ocupados.has(id) ? [...ocupados].filter((x) => x !== id) : [...ocupados, id] });
+  // os animais ocupam um único piquete por vez: escolher outro troca a seleção
+  const alternarPiquete = (id: number) => setI({ gadoPiquetes: ocupados.has(id) ? [] : [id] });
 
   // trava a rolagem da página enquanto a folha está aberta; cada etapa começa no topo
   useEffect(() => { const antes = document.body.style.overflow; document.body.style.overflow = 'hidden'; return () => { document.body.style.overflow = antes; }; }, []);
@@ -201,7 +201,7 @@ function FormVistoria({ pivo, item, ativos, data, aoFechar, aoSalvar }: { pivo: 
     aoSalvar({
       clientUuid: novoUuid(), pivoId: pivo.id, ordemId: item?.id ?? null, data, tipo: r.tipo, iniciadaEm, concluidaEm: new Date().toISOString(),
       suspeita: r.suspeita, passoEntrada: r.passoEntrada,
-      integridade: { ...r.integridade, posicaoGraus: n(r.integridade.posicaoGraus), gadoPiquetes: r.integridade.gadoPiquetes?.length ? r.integridade.gadoPiquetes : null },
+      integridade: { ...r.integridade, posicaoGraus: n(r.integridade.posicaoGraus), gadoPiquetes: r.integridade.gadoPiquetes?.length ? r.integridade.gadoPiquetes : null, observacao: r.integridade.observacao?.trim() || null },
       leituras: { ...r.leituras, pressaoBar: n(r.leituras.pressaoBar), tensaoV: n(r.leituras.tensaoV) },
       configPainel: r.noPainel ? { ...r.config, modelo: r.config.modelo || null, percentimetro: n(r.config.percentimetro), laminaMm: n(r.config.laminaMm), setorDe: n(r.config.setorDe), setorAte: n(r.config.setorAte), partidaEm: r.config.partidaEm || new Date().toISOString() } : null,
       falha: r.comFalha ? { ...r.falha, ativoId: r.falha.origem === 'pivo' ? null : r.falha.ativoId ?? null, local: r.falha.local || null, descricao: r.falha.descricao || null, previsao: r.falha.previsao || null } : null,
@@ -270,6 +270,7 @@ function FormVistoria({ pivo, item, ativos, data, aoFechar, aoSalvar }: { pivo: 
             {planoSetor.avisos.map((a) => ` ${a}`)}
           </p>
         )}
+        <Campo_ r="Observação sobre a estrutura" id="obs-int"><textarea id="obs-int" className="campo text-base" rows={3} maxLength={1000} placeholder="ex.: pneu da torre 4 murcho, calibrar" value={r.integridade.observacao ?? ''} onChange={(e) => setI({ observacao: e.target.value })} /></Campo_>
       </>
     ),
     leituras: (
@@ -287,10 +288,7 @@ function FormVistoria({ pivo, item, ativos, data, aoFechar, aoSalvar }: { pivo: 
         <Opt v={r.noPainel} t="Irrigação configurada direto no painel do pivô" sub="Só quando a equipe programou no painel em vez do comando remoto. É o que a telemetria não vê." aoMudar={(b) => set({ noPainel: b })} />
         {r.noPainel ? (
           <>
-            <Campo_ r="Modelo do painel" id="mod">
-              <input id="mod" className="campo !py-2.5 text-base" list="modelos-painel" value={r.config.modelo ?? ''} onChange={(e) => setC({ modelo: e.target.value })} placeholder="Valley ICON10" />
-              <datalist id="modelos-painel">{MODELOS_PAINEL.map((m) => <option key={m} value={m} />)}</datalist>
-            </Campo_>
+            <p className="text-sm"><span className="text-xs text-slate-500">Painel do pivô: </span><b>{pivo.painelModelo ?? 'modelo não cadastrado'}</b></p>
             <Campo_ r="Sentido de giro"><Seg opcoes={[{ v: 'horario' as const, t: '↻ Horário' }, { v: 'anti_horario' as const, t: '↺ Anti-horário' }]} v={r.config.sentido} aoMudar={(v) => setC({ sentido: v })} /></Campo_>
             <div className="grid grid-cols-2 gap-3">
               <Campo_ r="Percentímetro (%)" id="perc"><NumInput id="perc" v={r.config.percentimetro} aoMudar={(n) => setC({ percentimetro: n })} min={1} max={100} /></Campo_>
@@ -344,7 +342,7 @@ function FormVistoria({ pivo, item, ativos, data, aoFechar, aoSalvar }: { pivo: 
           <div className="space-y-1.5">
             {fotoBtn('painel', 'Foto do painel', r.noPainel)}
             {fotoBtn('ultima_torre', 'Foto da última torre')}
-            {r.comFalha && fotoBtn('quadro', 'Foto do quadro ou medidor')}
+            {r.comFalha && fotoBtn('quadro', 'Foto da falha: quadro elétrico, medidor, peça')}
           </div>
           {lendo && <p className="mt-1 text-xs text-slate-500">Preparando a foto…</p>}
           {r.fotos.length > 0 && <div className="mt-2 flex flex-wrap gap-2">{r.fotos.map((f) => <img key={f.tipo} src={f.dados} alt={f.tipo} className="h-20 rounded-md" />)}</div>}
@@ -528,6 +526,7 @@ function Registros({ fazenda, data, fila, porId, aoDescartar }: { fazenda: Fazen
           {v.integridade.gadoPiquetes?.length ? <span style={{ color: ROXO }}> · gado em {v.integridade.gadoPiquetes.map((id) => porId.get(v.pivoId)?.piquetes.find((p) => p.id === id)?.nome ?? `#${id}`).join(', ')}</span> : null}
         </p>
         {v.falha && <p className="mt-0.5 text-xs font-medium" style={{ color: VERMELHO }}>Falha: {ORIGENS.find((o) => o.v === v.falha!.origem)?.t ?? v.falha.origem}{v.falha.local ? ` · ${v.falha.local}` : ''}{v.falha.descricao ? ` · ${v.falha.descricao}` : ''} · {v.resolvidoLocal ? 'resolvida no local' : 'encaminhada'}</p>}
+        {v.integridade.observacao && <p className="mt-0.5 text-xs text-slate-600 dark:text-slate-300">Estrutura: {v.integridade.observacao}</p>}
         {v.observacao && <p className="mt-0.5 text-xs text-slate-600 dark:text-slate-300">{v.observacao}</p>}
         {('id' in v && v.fotos.length > 0) || (pendente && erro) ? (
           <div className="mt-1.5 flex flex-wrap items-center gap-1.5">

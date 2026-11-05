@@ -28,7 +28,7 @@ const vistoriaCorpo = z.object({
   passoEntrada: z.number().int().min(1).max(6).nullish(),
   integridade: z.object({
     pneus: z.boolean().nullish(), bicos: z.boolean().nullish(), estrutura: z.boolean().nullish(), caminho: z.boolean().nullish(),
-    posicaoGraus: z.number().min(0).max(360).nullish(), gadoPiquetes: z.array(z.number().int()).max(40).nullish(),
+    posicaoGraus: z.number().min(0).max(360).nullish(), gadoPiquetes: z.array(z.number().int()).max(40).nullish(), observacao: z.string().trim().max(1000).nullish(),
   }).default({}),
   leituras: z.object({
     pressaoBar: z.number().min(0).max(30).nullish(), fonteEnergia: z.enum(['rede', 'usina', 'gerador']).nullish(),

@@ -491,7 +491,7 @@ CREATE TABLE IF NOT EXISTS roteiro_dia (
 );
 
 -- Vistoria presencial de um pivô. client_uuid torna o envio offline idempotente (fila no aparelho).
--- integridade: {pneus, bicos, estrutura, caminho, posicaoGraus (0-360), gadoPiquetes: [parcela_id]}; config_painel.setorDe/setorAte em graus; leituras: {pressaoBar, fonteEnergia, tensaoV, painelRespondeu}
+-- integridade: {pneus, bicos, estrutura, caminho, posicaoGraus (0-360), gadoPiquetes: [parcela_id] (um só piquete por vez), observacao}; config_painel.setorDe/setorAte em graus; leituras: {pressaoBar, fonteEnergia, tensaoV, painelRespondeu}
 -- config_painel (só quando a equipe programou direto no painel): {modelo, sentido, percentimetro, laminaMm, agua, setorDe, setorAte, partidaEm}
 -- falha: {passo, origem, ativoId, local, descricao, previsao}; passo = etapa da cadeia (1 comunicação … 6 painel)
 CREATE TABLE IF NOT EXISTS vistoria (

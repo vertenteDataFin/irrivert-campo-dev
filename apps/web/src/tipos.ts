@@ -108,7 +108,7 @@ export interface Parada { tipo: 'pivo' | 'ativo'; id: number; nota?: string | nu
 export interface Roteiro { saida: string | null; paradas: Parada[]; atualizadoEm: string }
 export interface PlanoCampo { data: string; ordem: Ordem; pivos: PivoCampo[]; ativos: Ativo[]; roteiro: Roteiro | null }
 
-export interface Integridade { pneus?: boolean | null; bicos?: boolean | null; estrutura?: boolean | null; caminho?: boolean | null; posicaoGraus?: number | null; gadoPiquetes?: number[] | null }
+export interface Integridade { pneus?: boolean | null; bicos?: boolean | null; estrutura?: boolean | null; caminho?: boolean | null; posicaoGraus?: number | null; gadoPiquetes?: number[] | null; observacao?: string | null }
 export interface Leituras { pressaoBar?: number | null; fonteEnergia?: 'rede' | 'usina' | 'gerador' | null; tensaoV?: number | null; painelRespondeu?: boolean | null }
 export interface ConfigPainel {
   modelo?: string | null; sentido?: 'horario' | 'anti_horario' | null; percentimetro?: number | null; laminaMm?: number | null;

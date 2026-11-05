@@ -49,7 +49,16 @@ function estadoInicial(): Estado {
       { id: 2, tipo: 'casa_bomba', nome: 'Casa de bombas 3', observacao: null, ativo: true, pivos: [4, 5], falha: { id: 1, descricao: 'Falta a fase R na entrada', previsao: 'hoje, 22:30', abertaEm: haMin(140) } },
       { id: 3, tipo: 'transformador', nome: 'Transformador T2', observacao: null, ativo: true, pivos: [6, 7, 8], falha: null },
     ],
-    situacao: { 7: { inoperanteDesde: hoje(), inoperanteMotivo: 'placa de relé do ICON10 queimada', reparoPrevisto: null, painelModelo: 'Valley ICON10' } },
+    situacao: {
+      1: { inoperanteDesde: null, inoperanteMotivo: null, reparoPrevisto: null, painelModelo: 'Valley ICON10' },
+      2: { inoperanteDesde: null, inoperanteMotivo: null, reparoPrevisto: null, painelModelo: 'Valley ICON10' },
+      3: { inoperanteDesde: null, inoperanteMotivo: null, reparoPrevisto: null, painelModelo: 'Bauer SmartTouch' },
+      4: { inoperanteDesde: null, inoperanteMotivo: null, reparoPrevisto: null, painelModelo: 'Bauer SmartTouch' },
+      5: { inoperanteDesde: null, inoperanteMotivo: null, reparoPrevisto: null, painelModelo: 'Bauer SmartTouch' },
+      6: { inoperanteDesde: null, inoperanteMotivo: null, reparoPrevisto: null, painelModelo: 'Bauer Universal Pro' },
+      7: { inoperanteDesde: hoje(), inoperanteMotivo: 'placa de relé do ICON10 queimada', reparoPrevisto: null, painelModelo: 'Valley ICON10' },
+      8: { inoperanteDesde: null, inoperanteMotivo: null, reparoPrevisto: null, painelModelo: 'Valley ICON10' },
+    },
     gado: { 103: true, 501: true },
     seq: 10,
   };
