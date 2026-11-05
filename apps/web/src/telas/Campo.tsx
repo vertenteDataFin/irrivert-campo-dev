@@ -448,38 +448,32 @@ function RoteiroView({ fazenda, plano, itens, porId, pendentes, aoSalvo }: { faz
   }, [itens, plano.ativos, porId]);
   const valido = (p: Parada) => (p.tipo === 'pivo' ? porId.has(p.id) : plano.ativos.some((a) => a.id === p.id));
   const [paradas, setParadas] = useState<Parada[]>(() => (plano.roteiro?.paradas.filter(valido).length ? plano.roteiro.paradas.filter(valido) : sugerido));
-  const [saida, setSaida] = useState(plano.roteiro?.saida ?? '19:30');
   const [erro, setErro] = useState('');
-  const salvar = useMutation({ mutationFn: () => api(`/fazendas/${fazenda.id}/campo/roteiro`, { method: 'PUT', corpo: { data: plano.data, saida: saida || null, paradas } }), onSuccess: () => { setErro(''); aoSalvo(); }, onError: (x) => setErro(msg(x)) });
+  const salvar = useMutation({ mutationFn: () => api(`/fazendas/${fazenda.id}/campo/roteiro`, { method: 'PUT', corpo: { data: plano.data, saida: plano.roteiro?.saida ?? null, paradas } }), onSuccess: () => { setErro(''); aoSalvo(); }, onError: (x) => setErro(msg(x)) });
   const mover = (i: number, d: -1 | 1) => { const j = i + d; if (j < 0 || j >= paradas.length) return; const n = [...paradas]; [n[i], n[j]] = [n[j], n[i]]; setParadas(n); };
   const fora = itens.filter((i) => !paradas.some((p) => p.tipo === 'pivo' && p.id === i.pivoId));
   const ativosFora = plano.ativos.filter((a) => !paradas.some((p) => p.tipo === 'ativo' && p.id === a.id));
 
-  // hora prevista de chegada: deslocamento fixo + duração da parada anterior (ajuste fino vem com o mapa das estradas)
-  const inicioMin = saida ? Number(saida.slice(0, 2)) * 60 + Number(saida.slice(3, 5)) : 0;
-  let min = inicioMin;
+  // duração estimada de cada parada (sem hora prevista: o horário real vem da vistoria feita)
+  let min = 0;
   const linhas = paradas.map((p) => {
-    const chegada = min;
     const pivo = p.tipo === 'pivo' ? porId.get(p.id) : undefined;
     const dur = p.tipo === 'ativo' ? DUR.ativo : pendentes.has(p.id) || pivo?.vistoriaHoje ? DUR.rapida : iniciouRemoto(pivo) ? DUR.rapida : DUR.completa;
     min += dur + DUR.deslocamento;
-    return { p, chegada, dur, pivo, ativo: p.tipo === 'ativo' ? plano.ativos.find((a) => a.id === p.id) : undefined };
+    return { p, dur, pivo, ativo: p.tipo === 'ativo' ? plano.ativos.find((a) => a.id === p.id) : undefined };
   });
-  const hm = (m: number) => `${String(Math.floor((m / 60) % 24)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
 
   return (
-    <Painel titulo="Roteiro de vistoria" sub="Sugestão: pivôs sem resposta primeiro, depois a sequência da ordem; antes de cada pivô, o ativo com falha que o alimenta."
-      extra={<label className="flex items-center gap-2 text-xs text-slate-500">Saída <input type="time" className="campo !w-auto !py-1.5" value={saida} onChange={(e) => setSaida(e.target.value)} /></label>}>
-      <p className="mb-2 text-xs text-slate-500">{paradas.length} parada{paradas.length === 1 ? '' : 's'} · {fmt((min - inicioMin) / 60, 1)} h previstas{plano.roteiro ? ` · salvo ${haQuanto(plano.roteiro.atualizadoEm)}` : ''}</p>
+    <Painel titulo="Roteiro de vistoria" sub="Sugestão: pivôs sem resposta primeiro, depois a sequência da ordem; antes de cada pivô, o ativo com falha que o alimenta.">
+      <p className="mb-2 text-xs text-slate-500">{paradas.length} parada{paradas.length === 1 ? '' : 's'} · cerca de {fmt(min / 60, 1)} h{plano.roteiro ? ` · salvo ${haQuanto(plano.roteiro.atualizadoEm)}` : ''}</p>
       <ol>
-        {linhas.map(({ p, chegada, dur, pivo, ativo }, i) => {
+        {linhas.map(({ p, dur, pivo, ativo }, i) => {
           const item = pivo ? itens.find((x) => x.pivoId === pivo.id) : undefined;
           const cor = ativo ? (ativo.falha ? VERMELHO : AZUL) : pivo?.vistoriaHoje || (pivo && pendentes.has(pivo.id)) ? VERDE : iniciouRemoto(pivo) ? VERDE : semResposta(pivo) ? VERMELHO : AMBAR;
           const estado = ativo ? (ativo.falha ? `conferir: ${ativo.falha.descricao}` : ROTULO_ATIVO[ativo.tipo]) : pivo?.vistoriaHoje || (pivo && pendentes.has(pivo.id)) ? 'vistoriado' : iniciouRemoto(pivo) ? 'roteiro rápido' : semResposta(pivo) ? 'sem resposta · roteiro completo' : 'roteiro completo';
           return (
-            <li key={`${p.tipo}${p.id}`} className="c-linha grid grid-cols-[1.5rem_3rem_1fr_auto] items-center gap-x-2 text-sm">
+            <li key={`${p.tipo}${p.id}`} className="c-linha grid grid-cols-[1.5rem_1fr_auto] items-center gap-x-2 text-sm">
               <span className="text-xs font-semibold tabular-nums text-slate-400">{i + 1}.</span>
-              <span className="text-sm font-semibold tabular-nums">{hm(chegada)}</span>
               <span className="min-w-0">
                 <span className="block truncate"><b>{ativo ? ativo.nome : pivo?.nome}</b>{pivo?.vistoriaHoje ? <span className="text-xs text-slate-500"> · vistoriado {hora(pivo.vistoriaHoje.concluidaEm)}</span> : null}</span>
                 <span className="block truncate text-xs" style={{ color: cor }}>{estado} · {dur} min</span>
