@@ -15,7 +15,6 @@ import {
   type PiqueteCampo, type ResultadoVistoria, type TipoAtivo, type TipoFoto, type Usuario, type VistoriaEnvio, type VistoriaRegistro,
 } from '../tipos';
 import { arcoSvg, cunha, planejarSetor, pontoAzimute, type Arco } from '../setor';
-import { Numero } from '../ui';
 
 const TZ = 'America/Campo_Grande';
 const AZUL = '#0e7490';
@@ -557,13 +556,13 @@ function Registros({ fazenda, data, fila, porId, aoDescartar }: { fazenda: Fazen
 }
 
 /* ---------------- tela ---------------- */
-type Tela = 'plano' | 'roteiro' | 'registros';
+type Tela = 'hoje' | 'roteiro' | 'registros' | 'mais';
 
 export default function Campo({ fazenda, usuario }: { fazenda: Fazenda; usuario: Usuario }) {
   const qc = useQueryClient();
   const podeEditar = usuario.papel !== 'operador';
   const chave = `irrigacao.campo.${fazenda.id}`;
-  const [tela, setTela] = useState<Tela>('plano');
+  const [tela, setTela] = useState<Tela>('hoje');
   const [online, setOnline] = useState(() => navigator.onLine);
   const [fila, setFila] = useState<VistoriaFila[]>([]);
   const [aviso, setAviso] = useState<string | null>(null);
@@ -625,104 +624,81 @@ export default function Campo({ fazenda, usuario }: { fazenda: Fazenda; usuario:
       : <p role="alert" className="c-card text-sm text-red-600">{(plano.error as Error)?.message ?? 'Erro ao carregar o plano do dia'}. Sem cópia guardada no aparelho.</p>;
   }
 
-  const kRemoto = itens.filter((i) => iniciouRemoto(porId.get(i.pivoId))).length;
-  const kSem = itens.filter((i) => semResposta(porId.get(i.pivoId))).length;
   const kVist = itens.filter((i) => vistoriado(porId.get(i.pivoId))).length;
   const emFila = fila.filter((v) => !v.erro).length;
-  const grupos = new Map<string, ItemOrdem[]>();
-  for (const i of itens) { const c = porId.get(i.pivoId)?.culturas ?? 'Sem cultura'; grupos.set(c, [...(grupos.get(c) ?? []), i]); }
   const pivoVist = vistoriando != null ? porId.get(vistoriando) : undefined;
-
-  const kpi = (rotulo: string, valor: number, cor: string, de?: number) => (
-    <div className="min-w-0 px-2 py-2 first:pl-0 last:pr-0">
-      <div className="truncate text-[11px] font-semibold uppercase tracking-wide text-slate-500">{rotulo}</div>
-      <div className="flex items-baseline gap-1"><span className="num-grande text-2xl" style={{ color: cor }}><Numero valor={valor} /></span>{de != null && <span className="text-xs text-slate-500">de {de}</span>}</div>
-    </div>
-  );
+  const plural = (n: number, s: string) => `${n} ${s}${n === 1 ? '' : 's'}`;
 
   return (
     <div className="space-y-3">
-      {/* barra de comando */}
-      <div className="c-card !py-3">
-        <div className="flex items-center gap-2">
+      {/* cabeçalho enxuto: situação da conexão, data e as partes do app */}
+      <div className="c-card !py-2">
+        <div className="flex items-center gap-2 text-xs text-slate-500">
           <span className={online ? 'ponto-vivo' : 'h-2.5 w-2.5 rounded-full bg-slate-400'} aria-hidden />
-          <h1 className="text-base font-bold">Campo · vistoria dos pivôs</h1>
-          <span className="ml-auto text-xs text-slate-500">{dataBR(d.data)}</span>
+          <span className="min-w-0 flex-1 truncate">{dataBR(d.data)} · {fazenda.nome}{!online ? ' · sem internet' : ''}{emFila > 0 ? ` · ${plural(emFila, 'vistoria')} a enviar` : ''}</span>
+          {emFila > 0 && online && <button className="c-btn !min-h-8 !px-2 !py-1 text-xs" onClick={sincronizar}>Enviar</button>}
         </div>
-        <p className="mt-0.5 text-xs text-slate-500">{fazenda.nome}{plano.dataUpdatedAt ? ` · atualizado ${haQuanto(new Date(plano.dataUpdatedAt).toISOString())}` : ''}{!online ? ' · sem internet, salvando no aparelho' : ''}{emFila > 0 ? ` · ${emFila} vistoria${emFila > 1 ? 's' : ''} aguardando envio` : ''}</p>
-        <div className="mt-2 flex items-center gap-2">
-          <nav className="flex flex-1 gap-1 rounded-xl bg-slate-100 p-1 dark:bg-slate-800" aria-label="Partes do campo">
-            {([['plano', 'Plano do dia'], ['roteiro', 'Roteiro'], ['registros', 'Registros']] as [Tela, string][]).map(([id, t]) => (
-              <button key={id} onClick={() => { setTela(id); setVistoriando(null); }} aria-current={tela === id ? 'page' : undefined} className="c-tab flex-1">{t}</button>
-            ))}
-          </nav>
-          {emFila > 0 && online && <button className="c-btn-pri" onClick={sincronizar}>Enviar</button>}
-        </div>
+        <nav className="mt-2 flex gap-1 rounded-xl bg-slate-100 p-1 dark:bg-slate-800" aria-label="Partes do campo">
+          {([['hoje', 'Hoje'], ['roteiro', 'Roteiro'], ['registros', 'Registros'], ['mais', 'Mais']] as [Tela, string][]).map(([id, t]) => (
+            <button key={id} onClick={() => { setTela(id); setVistoriando(null); }} aria-current={tela === id ? 'page' : undefined} className="c-tab flex-1">{t}</button>
+          ))}
+        </nav>
       </div>
       {erroAcao && <p role="alert" className="c-card text-sm text-red-600">{erroAcao}</p>}
 
-      {tela === 'plano' && (
+      {pivoVist && <FormVistoria pivo={pivoVist} item={itens.find((i) => i.pivoId === pivoVist.id) ?? null} ativos={d.ativos} data={d.data} aoFechar={() => setVistoriando(null)} aoSalvar={salvar} />}
+
+      {tela === 'hoje' && (
+        <section className="c-card">
+          <header className="mb-1 flex items-baseline justify-between gap-2">
+            <h2 className="text-base font-bold">Irrigar hoje</h2>
+            <span className="text-xs text-slate-500">{plural(itens.length, 'pivô')} · {kVist} vistoriado{kVist === 1 ? '' : 's'}</span>
+          </header>
+          {itens.length === 0 && <p className="py-2 text-sm text-slate-500">Nenhum pivô para irrigar hoje.</p>}
+          {itens.map((i) => {
+            const p = porId.get(i.pivoId);
+            const cat = p?.telemetria?.categoria ?? null;
+            const falhas = ativoComFalha(i.pivoId);
+            const vist = p?.vistoriaHoje;
+            const pend = !!p && pendentes.has(p.id);
+            const corVist = vist || pend ? VERDE : semResposta(p) || falhas.length ? VERMELHO : AMBAR;
+            const txtVist = vist ? `Vistoriado ${hora(vist.concluidaEm)} · ${ROTULO_RESULTADO[vist.resultado]}` : pend ? 'Vistoria no aparelho' : iniciouRemoto(p) ? 'Vistoria rápida pendente' : 'Vistoria completa pendente';
+            const txtTel = cat ? ROTULO_TEL[cat] : 'Sem telemetria';
+            return (
+              <div key={i.id} className="c-linha flex items-center gap-3">
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-baseline gap-2"><b className="text-base">{i.pivoNome}</b><span className="text-xs text-slate-500">{p?.culturas ?? ''}</span></div>
+                  <p className="text-xs text-slate-500">{fmt(i.laminaMm, 1)} mm · {fmt(i.percentual, 0)} % · {sentidoTxt(i.sentido)}{i.anguloParada != null ? ` · parar em ${i.anguloParada}°` : ''}</p>
+                  <p className="mt-0.5 text-xs"><span className="font-semibold" style={{ color: cat ? COR_TEL[cat] : CINZA }}>{txtTel}{i.status === 'enviada' ? ' · comando enviado' : ''}</span><span className="text-slate-400"> · </span><span style={{ color: corVist }}>{txtVist}</span></p>
+                  {falhas.map((a) => <p key={a.id} className="text-xs font-medium" style={{ color: VERMELHO }}>{a.nome}: {a.falha!.descricao}{a.falha!.previsao ? ` · previsão ${a.falha!.previsao}` : ''}</p>)}
+                  {p?.gado.length ? <p className="text-xs" style={{ color: ROXO }}>Gado em {setorDoGado(p)}</p> : null}
+                </div>
+                <button className={vist || pend ? 'c-btn' : 'c-btn-pri'} onClick={() => setVistoriando(i.pivoId)}>{vist || pend ? 'Nova' : 'Vistoriar'}</button>
+              </div>
+            );
+          })}
+        </section>
+      )}
+
+      {tela === 'mais' && (
         <>
-          <div className="c-card grid grid-cols-4 divide-x divide-slate-200 !py-1 dark:divide-slate-700">
-            {kpi('Na ordem', itens.length, AZUL)}
-            {kpi('Remoto', kRemoto, VERDE, itens.length)}
-            {kpi('Sem resposta', kSem, kSem ? VERMELHO : CINZA)}
-            {kpi('Vistoriados', kVist, kVist === itens.length && itens.length ? VERDE : AMBAR, itens.length)}
-          </div>
-
-          {pivoVist && <FormVistoria pivo={pivoVist} item={itens.find((i) => i.pivoId === pivoVist.id) ?? null} ativos={d.ativos} data={d.data} aoFechar={() => setVistoriando(null)} aoSalvar={salvar} />}
-
-          <Painel titulo={`Irrigar hoje · ${itens.length}`}>
-            {itens.length === 0 && <p className="text-sm text-slate-500">Nenhum pivô na ordem de hoje. A ordem é montada na aba "Ordem de irrigação".</p>}
-            {[...grupos.entries()].map(([cultura, lista]) => (
-              <div key={cultura} className="mb-2 last:mb-0">
-                <div className="mt-2 border-b border-slate-200 pb-1 text-[11px] font-semibold uppercase tracking-wide text-slate-500 dark:border-slate-700">{cultura}</div>
-                {lista.map((i) => {
-                  const p = porId.get(i.pivoId);
-                  const cat = p?.telemetria?.categoria ?? null;
-                  const falhas = ativoComFalha(i.pivoId);
-                  const vist = p?.vistoriaHoje;
-                  const pend = !!p && pendentes.has(p.id);
-                  const corVist = vist || pend ? VERDE : semResposta(p) || falhas.length ? VERMELHO : AMBAR;
-                  const txtVist = vist ? `Vistoriado ${hora(vist.concluidaEm)} · ${ROTULO_RESULTADO[vist.resultado]}` : pend ? 'Vistoria no aparelho' : iniciouRemoto(p) ? 'Vistoria rápida pendente' : 'Vistoria completa pendente';
-                  return (
-                    <div key={i.id} className="c-linha">
-                      <div className="flex items-baseline gap-2">
-                        <span className="w-5 shrink-0 text-xs font-semibold tabular-nums text-slate-400">{i.sequencia}</span>
-                        <b className="text-[15px]">{i.pivoNome}</b>
-                        <span className="min-w-0 flex-1 truncate text-right text-xs text-slate-500">{fmt(i.laminaMm, 1)} mm · {fmt(i.percentual, 0)} % · {sentidoTxt(i.sentido)}{i.anguloParada != null ? ` · parar em ${i.anguloParada}°` : ''}</span>
-                      </div>
-                      <div className="mt-1 flex items-center gap-2 pl-7">
-                        <span className="min-w-0 flex-1">
-                          <span className="block truncate text-xs font-semibold" style={{ color: cat ? COR_TEL[cat] : CINZA }}>{cat ? ROTULO_TEL[cat] : 'Sem telemetria'}{i.status === 'enviada' ? ' · comando enviado' : ''}{p?.telemetria?.statusTxt && cat && p.telemetria.statusTxt !== ROTULO_TEL[cat] ? ` · ${p.telemetria.statusTxt}` : ''}</span>
-                          <span className="block truncate text-xs" style={{ color: corVist }}>{txtVist}</span>
-                        </span>
-                        <button className={vist || pend ? 'c-btn' : 'c-btn-pri'} onClick={() => setVistoriando(i.pivoId)}>{vist || pend ? 'Nova vistoria' : 'Vistoriar'}</button>
-                        {podeEditar && i.status !== 'concluida' && <button className="c-ghost !px-2" title="Tirar da ordem por orientação de manejo" onClick={() => { const m = window.prompt(`Tirar ${i.pivoNome} da ordem. Motivo (ex.: capim alto, segurar o crescimento):`); if (m?.trim()) manejo.mutate({ id: i.id, motivo: m.trim() }); }}>Manejo</button>}
-                      </div>
-                      {(falhas.length > 0 || p?.gado.length || p?.painelModelo) ? (
-                        <div className="mt-0.5 pl-7 text-xs">
-                          {falhas.map((a) => <span key={a.id} className="block font-medium" style={{ color: VERMELHO }}>{a.nome}: {a.falha!.descricao}{a.falha!.previsao ? ` · previsão ${a.falha!.previsao}` : ''}</span>)}
-                          {p?.gado.length ? <span className="block" style={{ color: ROXO }}>Gado em {setorDoGado(p)}</span> : null}
-                          {p?.painelModelo && <span className="block text-slate-500">Painel {p.painelModelo}</span>}
-                        </div>
-                      ) : null}
-                    </div>
-                  );
-                })}
+          <Painel titulo="Fora da ordem" sub="Pivôs retirados por orientação de manejo. O déficit fica registrado como intencional." extra={podeEditar && itens.length > 0 ? (
+            <select className="campo !w-auto !py-1.5 text-xs" value="" onChange={(e) => {
+              const id = Number(e.target.value); if (!id) return;
+              const i = itens.find((x) => x.id === id); if (!i) return;
+              const m = window.prompt(`Tirar ${i.pivoNome} da ordem. Motivo (ex.: capim alto, segurar o crescimento):`); if (m?.trim()) manejo.mutate({ id, motivo: m.trim() });
+            }}>
+              <option value="">Tirar da ordem…</option>
+              {itens.filter((i) => i.status !== 'concluida').map((i) => <option key={i.id} value={i.id}>{i.pivoNome}</option>)}
+            </select>
+          ) : undefined}>
+            {cancelados.length === 0 && <p className="text-sm text-slate-500">Nenhum pivô fora da ordem.</p>}
+            {cancelados.map((i) => (
+              <div key={i.id} className="c-linha flex items-center gap-2 text-sm">
+                <span className="min-w-0 flex-1"><b>{i.pivoNome}</b> <span className="text-xs text-slate-500">· {i.motivo ?? i.avisos.join(' ') ?? 'retirado'}</span></span>
+                {podeEditar && <button className="c-btn !min-h-8 !px-2 !py-1 text-xs" onClick={() => voltar.mutate(i.id)}>Voltar à ordem</button>}
               </div>
             ))}
-            {cancelados.length > 0 && (
-              <div className="mt-2">
-                <div className="mt-2 border-b border-slate-200 pb-1 text-[11px] font-semibold uppercase tracking-wide text-slate-500 dark:border-slate-700">Fora da ordem</div>
-                {cancelados.map((i) => (
-                  <div key={i.id} className="c-linha flex items-center gap-2 text-sm">
-                    <span className="min-w-0 flex-1"><b>{i.pivoNome}</b> <span className="text-xs text-slate-500">· {i.motivo ?? i.avisos.join(' ') ?? 'retirado'}</span></span>
-                    {podeEditar && <button className="c-btn !min-h-8 !px-2 !py-1 text-xs" onClick={() => voltar.mutate(i.id)}>Voltar à ordem</button>}
-                  </div>
-                ))}
-              </div>
-            )}
           </Painel>
 
           <Painel titulo={`Inoperantes com necessidade · ${inoperantes.length}`} sub="Pivôs que não podem irrigar por defeito. Continuam visíveis com a previsão de reparo." extra={podeEditar ? (
