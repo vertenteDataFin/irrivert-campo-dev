@@ -219,7 +219,7 @@ function FormVistoria({ pivo, item, ativos, data, aoFechar, aoSalvar }: { pivo: 
       </label>
     );
   };
-  const resumoCab = `${pivo.culturas ?? 'sem cultura'}${item ? ` · ${fmt(item.laminaMm, 1)} mm · ${fmt(item.percentual, 0)} % · parte ${hora(item.inicio)}` : ' · sem ordem hoje'}`;
+  const resumoCab = `${pivo.culturas ?? 'sem cultura'}${item ? ` · ${fmt(item.laminaMm, 1)} mm · ${fmt(item.percentual, 0)} %` : ' · sem ordem hoje'}`;
   const telTxt = pivo.telemetria ? (pivo.telemetria.categoria ? ROTULO_TEL[pivo.telemetria.categoria] : pivo.telemetria.statusTxt ?? '—') : 'sem telemetria';
 
   const corpo: Record<(typeof ETAPAS)[number]['id'], ReactNode> = {
@@ -482,7 +482,7 @@ function RoteiroView({ fazenda, plano, itens, porId, pendentes, aoSalvo }: { faz
               <span className="text-xs font-semibold tabular-nums text-slate-400">{i + 1}.</span>
               <span className="text-sm font-semibold tabular-nums">{hm(chegada)}</span>
               <span className="min-w-0">
-                <span className="block truncate"><b>{ativo ? ativo.nome : pivo?.nome}</b>{item?.inicio ? <span className="text-xs text-slate-500"> · parte {hora(item.inicio)}</span> : null}</span>
+                <span className="block truncate"><b>{ativo ? ativo.nome : pivo?.nome}</b>{pivo?.vistoriaHoje ? <span className="text-xs text-slate-500"> · vistoriado {hora(pivo.vistoriaHoje.concluidaEm)}</span> : null}</span>
                 <span className="block truncate text-xs" style={{ color: cor }}>{estado} · {dur} min</span>
               </span>
               <span className="flex gap-1">
@@ -672,7 +672,7 @@ export default function Campo({ fazenda, usuario }: { fazenda: Fazenda; usuario:
 
           {pivoVist && <FormVistoria pivo={pivoVist} item={itens.find((i) => i.pivoId === pivoVist.id) ?? null} ativos={d.ativos} data={d.data} aoFechar={() => setVistoriando(null)} aoSalvar={salvar} />}
 
-          <Painel titulo={`Pivôs com ordem · ${itens.length}`} sub="Todo pivô com ordem recebe vistoria no local; o comando remoto só encurta a vistoria.">
+          <Painel titulo={`Irrigar hoje · ${itens.length}`}>
             {itens.length === 0 && <p className="text-sm text-slate-500">Nenhum pivô na ordem de hoje. A ordem é montada na aba "Ordem de irrigação".</p>}
             {[...grupos.entries()].map(([cultura, lista]) => (
               <div key={cultura} className="mb-2 last:mb-0">
@@ -690,7 +690,7 @@ export default function Campo({ fazenda, usuario }: { fazenda: Fazenda; usuario:
                       <div className="flex items-baseline gap-2">
                         <span className="w-5 shrink-0 text-xs font-semibold tabular-nums text-slate-400">{i.sequencia}</span>
                         <b className="text-[15px]">{i.pivoNome}</b>
-                        <span className="min-w-0 flex-1 truncate text-right text-xs text-slate-500">{fmt(i.laminaMm, 1)} mm · {fmt(i.percentual, 0)} % · parte {hora(i.inicio)} · {sentidoTxt(i.sentido)}{i.anguloParada != null ? ` · parar em ${i.anguloParada}°` : ''}</span>
+                        <span className="min-w-0 flex-1 truncate text-right text-xs text-slate-500">{fmt(i.laminaMm, 1)} mm · {fmt(i.percentual, 0)} % · {sentidoTxt(i.sentido)}{i.anguloParada != null ? ` · parar em ${i.anguloParada}°` : ''}</span>
                       </div>
                       <div className="mt-1 flex items-center gap-2 pl-7">
                         <span className="min-w-0 flex-1">
